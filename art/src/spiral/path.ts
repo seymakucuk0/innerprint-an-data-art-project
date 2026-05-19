@@ -16,8 +16,6 @@ export const DEFAULT_SPIRAL: SpiralOptions = {
   organicFreq: 7.0,
 };
 
-export const CORRIDOR_WIDTH = 2.0;   // base; later modulated by screen time
-export const WALL_HEIGHT = 3.5;
 export const FLOOR_INSET = 0.02;     // slight gap so floor doesn't z-fight
 
 /**

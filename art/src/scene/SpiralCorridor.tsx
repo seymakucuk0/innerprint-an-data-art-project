@@ -7,14 +7,47 @@ import {
   ShaderMaterial,
 } from "three";
 import type { Day } from "../types";
-import {
-  CORRIDOR_WIDTH,
-  DEFAULT_SPIRAL,
-  WALL_HEIGHT,
-  spiralNormal,
-  spiralPoint,
-} from "../spiral/path";
+import { DEFAULT_SPIRAL, spiralNormal, spiralPoint } from "../spiral/path";
 import { fillSignatureGaps, weatherAnchor } from "../spiral/colors";
+
+// Screen time → corridor width + wall height.
+//
+// Intent (matches the user-locked mapping): heavy-screen days compress
+// you — narrow corridor, tall walls. Light-screen days open up. Below
+// HALF_WIDTH_MIN the corridor would stop being walkable, so we clamp.
+const SCREEN_NORM_MIN = 90;     // ≈ 1.5 h  → fully open
+const SCREEN_NORM_MAX = 960;    // ≈ 16 h   → fully compressed
+const HALF_WIDTH_OPEN = 1.55;   // 3.1 m corridor (open day)
+const HALF_WIDTH_TIGHT = 0.62;  // 1.24 m corridor (compressed day)
+const WALL_H_OPEN = 2.9;
+const WALL_H_TIGHT = 4.4;
+
+function clamp01(x: number): number {
+  return Math.min(1, Math.max(0, x));
+}
+function lerp(a: number, b: number, t: number): number {
+  return a + (b - a) * t;
+}
+
+function screenIntensity(min: number | null): number {
+  const v = min ?? SCREEN_NORM_MIN;
+  return clamp01((v - SCREEN_NORM_MIN) / (SCREEN_NORM_MAX - SCREEN_NORM_MIN));
+}
+
+function smoothSeries(values: number[], radius = 1): number[] {
+  const n = values.length;
+  const out: number[] = new Array(n);
+  for (let i = 0; i < n; i++) {
+    let sum = 0;
+    let count = 0;
+    for (let j = Math.max(0, i - radius); j <= Math.min(n - 1, i + radius); j++) {
+      sum += values[j];
+      count += 1;
+    }
+    out[i] = sum / count;
+  }
+  return out;
+}
 
 type Props = { days: Day[] };
 
@@ -41,7 +74,19 @@ export function SpiralCorridor({ days }: Props) {
 
 function buildCorridor(days: Day[]) {
   const N = days.length;
-  const halfW = CORRIDOR_WIDTH / 2;
+
+  // Per-day intensity (screen time), smoothed so jagged day-to-day swings
+  // don't crash the corridor open/closed.
+  const intensityRaw = days.map((d) => screenIntensity(d.screen_total_min));
+  const intensity = smoothSeries(intensityRaw, 1);
+
+  const halfWidths = intensity.map((x) =>
+    lerp(HALF_WIDTH_OPEN, HALF_WIDTH_TIGHT, x),
+  );
+  const wallHeights = intensity.map((x) =>
+    lerp(WALL_H_OPEN, WALL_H_TIGHT, x),
+  );
+
   const bottomHex = fillSignatureGaps(days);
   const topHex = days.map((d) => weatherAnchor(d));
 
@@ -65,6 +110,9 @@ function buildCorridor(days: Day[]) {
     const { pos } = spiralPoint(t, DEFAULT_SPIRAL);
     const n = spiralNormal(t, DEFAULT_SPIRAL);
 
+    const halfW = halfWidths[i];
+    const wallH = wallHeights[i];
+
     const ox = pos.x + n.x * halfW;
     const oz = pos.y + n.y * halfW;
     const ix = pos.x - n.x * halfW;
@@ -75,7 +123,7 @@ function buildCorridor(days: Day[]) {
     outerPos[i * 6 + 1] = 0;
     outerPos[i * 6 + 2] = oz;
     outerPos[i * 6 + 3] = ox;
-    outerPos[i * 6 + 4] = WALL_HEIGHT;
+    outerPos[i * 6 + 4] = wallH;
     outerPos[i * 6 + 5] = oz;
 
     // inner wall: bottom then top
@@ -83,7 +131,7 @@ function buildCorridor(days: Day[]) {
     innerPos[i * 6 + 1] = 0;
     innerPos[i * 6 + 2] = iz;
     innerPos[i * 6 + 3] = ix;
-    innerPos[i * 6 + 4] = WALL_HEIGHT;
+    innerPos[i * 6 + 4] = wallH;
     innerPos[i * 6 + 5] = iz;
 
     // floor: outer edge then inner edge (at y = 0.001 to avoid z-fight)

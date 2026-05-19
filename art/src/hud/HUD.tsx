@@ -85,7 +85,7 @@ export function HUD({ mode, currentDay, dayIndex, totalDays }: Props) {
                 textTransform: "none",
               }}
             >
-              {currentDay.top_album} — {currentDay.top_artist ?? "—"}
+              {currentDay.top_album} — {currentDay.album_signature_artist ?? currentDay.top_artist ?? "—"}
             </div>
           )}
           <div

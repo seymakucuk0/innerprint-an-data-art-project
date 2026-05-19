@@ -31,27 +31,68 @@ function hslToHex(h: number, s: number, l: number): string {
 }
 
 /**
- * Derive the upper "sky" anchor color from weather. Damonxart-style cool tops.
- * Cold → indigo, mild → blue, warm → teal. Rain mutes it; sun lifts it.
+ * Derive the upper anchor color from weather. Direct, literal mapping
+ * agreed with the user: sun → yellow/amber, rain → grey (deeper with
+ * amount), snow → ice white-blue, overcast no-rain → cool grey-blue,
+ * partly cloudy → smooth blend between the sunny and overcast ends.
+ *
+ * No discrete tiers — every input is folded through smooth interpolations
+ * so adjacent days never produce a hard step.
  */
 export function weatherAnchor(d: Day): string {
   const t = d.temp_mean_c ?? 14;
-  const sun = d.sunshine_hours ?? 6;
+  const sun = d.sunshine_hours ?? 0;
   const rain = d.rain_mm ?? 0;
   const snow = d.snowfall_cm ?? 0;
 
-  // hue: 8°C → 265 (indigo), 28°C → 188 (teal)
-  const hue = lerp(265, 188, clamp01((t - 8) / 20));
+  // Snow path: icy white-blue. Lighter the less snow there is.
+  if (snow > 0.2) {
+    const sNorm = clamp01(snow / 4);
+    const hue = 200;
+    const sat = lerp(0.20, 0.32, sNorm);
+    const light = lerp(0.80, 0.60, sNorm);
+    return hslToHex(hue, sat, light);
+  }
 
-  // base saturation: rain/snow desaturate it
-  const wet = clamp01(rain / 6 + snow / 4);
-  const sat = lerp(0.55, 0.20, wet);
+  // Rain path: near-pure grey, deeper grey with more rain. A faint cool
+  // tilt (hue 220) keeps the grey from looking dead — still atmospheric.
+  if (rain > 0.3) {
+    const rNorm = clamp01(rain / 12);
+    const hue = 220;
+    const sat = lerp(0.05, 0.02, rNorm);
+    const light = lerp(0.60, 0.28, rNorm);
+    return hslToHex(hue, sat, light);
+  }
 
-  // lightness rises with sunshine; falls if heavily wet
-  let light = 0.28 + 0.08 * clamp01(sun / 12);
-  light = lerp(light, light * 0.7, wet);
+  // No precipitation. Sunshine drives a smooth yellow ↔ grey-blue blend.
+  // sunshine_hours: 0..14 typical; 11 ~= "very sunny day".
+  const sNorm = clamp01(sun / 11);
 
-  return hslToHex(hue, sat, clamp01(light));
+  if (sNorm >= 0.62) {
+    // sunny zone — golden amber, hotter day shifts toward warmer gold
+    const k = (sNorm - 0.62) / 0.38; // 0..1 within zone
+    const hue = lerp(52, 42, clamp01((t - 8) / 20));
+    const sat = lerp(0.55, 0.78, k);
+    const light = lerp(0.55, 0.66, k);
+    return hslToHex(hue, sat, light);
+  }
+
+  if (sNorm <= 0.22) {
+    // overcast (no rain, no sun) — cool pale grey-blue, breathable
+    const k = sNorm / 0.22;
+    const hue = 222;
+    const sat = lerp(0.06, 0.09, k);
+    const light = lerp(0.52, 0.58, k);
+    return hslToHex(hue, sat, light);
+  }
+
+  // partly cloudy / variable — smooth blend between overcast and sunny
+  const k = (sNorm - 0.22) / 0.40;
+  // hue glides from cool grey-blue (222) to warm gold (52)
+  const hue = lerp(222, 52, k);
+  const sat = lerp(0.09, 0.55, k);
+  const light = lerp(0.58, 0.55, k);
+  return hslToHex(hue, sat, light);
 }
 
 /**

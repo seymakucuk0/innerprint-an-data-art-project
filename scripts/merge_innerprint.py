@@ -26,12 +26,16 @@ def load(path: Path) -> dict[str, dict]:
         return {r["date"]: r for r in csv.DictReader(f)}
 
 
-def load_signature_palette() -> dict[str, str]:
+def load_signature_palette() -> dict[str, dict]:
+    """Map album name → {signature_hex, artist} so consumers can read both."""
     path = REPO / "data" / "album_signature_palette.json"
     if not path.exists():
         return {}
     data = json.loads(path.read_text())
-    return {a["album"]: a["signature_hex"] for a in data["albums"]}
+    return {
+        a["album"]: {"signature_hex": a["signature_hex"], "artist": a["artist"]}
+        for a in data["albums"]
+    }
 
 
 def main() -> None:
@@ -55,7 +59,7 @@ def main() -> None:
         # spotify (subset; full detail stays in spotify.csv)
         "total_plays", "minutes_listened", "unique_tracks", "unique_artists",
         "top_artist", "top_artist_minutes", "top_album",
-        "album_signature_hex",
+        "album_signature_artist", "album_signature_hex",
         "library_match_ratio", "discovery_streams",
         "late_night_streams", "morning_streams", "search_count",
         "podcast_minutes", "dominant_color_hex",
@@ -101,7 +105,8 @@ def main() -> None:
                 out[c] = sp.get(c, "")
             album = sp.get("top_album", "").strip()
             if album and album in signature:
-                out["album_signature_hex"] = signature[album]
+                out["album_signature_hex"] = signature[album]["signature_hex"]
+                out["album_signature_artist"] = signature[album]["artist"]
             sources["spotify"] = "real"
 
         sc = screen.get(key)

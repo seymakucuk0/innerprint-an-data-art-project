@@ -20,6 +20,7 @@ export type Day = {
   unique_artists: number | null;
   top_artist: string | null;
   top_album: string | null;
+  album_signature_artist: string | null;
   album_signature_hex: string | null;
   late_night_streams: number | null;
   morning_streams: number | null;

@@ -1,0 +1,310 @@
+[
+  {
+    "album": "Stories From The City, Stories From The Sea",
+    "artist": "PJ Harvey",
+    "source": "itunes",
+    "palette": [
+      "#5C544E",
+      "#101819",
+      "#C08267",
+      "#332E2A"
+    ],
+    "hash_color": "#8D2CDC",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/59ccc8e44e.jpg",
+    "days": 11
+  },
+  {
+    "album": "Comedown Machine",
+    "artist": "The Strokes",
+    "source": "itunes",
+    "palette": [
+      "#CB2A2F",
+      "#D0B899",
+      "#BE9B87",
+      "#B55A4F"
+    ],
+    "hash_color": "#43DC2C",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/83bd4ee882.jpg",
+    "days": 6
+  },
+  {
+    "album": "Franz Ferdinand",
+    "artist": "Franz Ferdinand",
+    "source": "itunes",
+    "palette": [
+      "#01010B",
+      "#FEEDC2",
+      "#C18F36",
+      "#3F372D"
+    ],
+    "hash_color": "#AA2CDC",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/2ce4196fbd.jpg",
+    "days": 4
+  },
+  {
+    "album": "Whatever People Say I Am, That's What I'm Not",
+    "artist": "Arctic Monkeys",
+    "source": "itunes",
+    "palette": [
+      "#15191A",
+      "#FFFFFF",
+      "#77797A",
+      "#D9D9DA"
+    ],
+    "hash_color": "#DC6D2C",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/6c0665b9a2.jpg",
+    "days": 3
+  },
+  {
+    "album": "The Rise and Fall of a Midwest Princess",
+    "artist": "Chappell Roan",
+    "source": "itunes",
+    "palette": [
+      "#52180B",
+      "#E2C4A5",
+      "#051210",
+      "#D8AB80"
+    ],
+    "hash_color": "#722CDC",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/5477b5fd75.jpg",
+    "days": 3
+  },
+  {
+    "album": "Звезда по имени Солнце",
+    "artist": "Kino",
+    "source": "itunes",
+    "palette": [
+      "#000000",
+      "#FFFFFF",
+      "#2A2A2A",
+      "#414141"
+    ],
+    "hash_color": "#2CA4DC",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/18e4902730.jpg",
+    "days": 2
+  },
+  {
+    "album": "Ten",
+    "artist": "Pearl Jam",
+    "source": "itunes",
+    "palette": [
+      "#272324",
+      "#5C4D3C",
+      "#877158",
+      "#C5B29B"
+    ],
+    "hash_color": "#992CDC",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/561f23c9f4.jpg",
+    "days": 2
+  },
+  {
+    "album": "Firuze",
+    "artist": "Sezen Aksu",
+    "source": "itunes",
+    "palette": [
+      "#705741",
+      "#99683F",
+      "#584132",
+      "#D2A97A"
+    ],
+    "hash_color": "#2CDCB3",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/2c651c7ff5.jpg",
+    "days": 2
+  },
+  {
+    "album": "METRO BOOMIN PRESENTS SPIDER-MAN: ACROSS THE SPIDER-VERSE",
+    "artist": "Metro Boomin",
+    "source": "itunes",
+    "palette": [
+      "#000000",
+      "#1F352C",
+      "#1BE880",
+      "#46453D"
+    ],
+    "hash_color": "#2CDC52",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/fef485f106.jpg",
+    "days": 2
+  },
+  {
+    "album": "Plastic Beach",
+    "artist": "Gorillaz",
+    "source": "itunes",
+    "palette": [
+      "#1E313F",
+      "#01468B",
+      "#03356A",
+      "#F3F5F5"
+    ],
+    "hash_color": "#2CDC49",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/c7aecff5ba.jpg",
+    "days": 1
+  },
+  {
+    "album": "IV",
+    "artist": "Black Mountain",
+    "source": "itunes",
+    "palette": [
+      "#BCC3B3",
+      "#8EAFBD",
+      "#879D59",
+      "#7197AD"
+    ],
+    "hash_color": "#3E2CDC",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/4620c68515.jpg",
+    "days": 1
+  },
+  {
+    "album": "Circus (Deluxe Version)",
+    "artist": "Britney Spears",
+    "source": "itunes",
+    "palette": [
+      "#AA8E61",
+      "#C1AD7F",
+      "#AF2E29",
+      "#AA7047"
+    ],
+    "hash_color": "#72DC2C",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/6270ef69a0.jpg",
+    "days": 1
+  },
+  {
+    "album": "The Joshua Tree",
+    "artist": "U2",
+    "source": "itunes",
+    "palette": [
+      "#060606",
+      "#62605C",
+      "#858381",
+      "#2F2E2D"
+    ],
+    "hash_color": "#2CDCD0",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/ea04a5f982.jpg",
+    "days": 1
+  },
+  {
+    "album": "Songs of Her's",
+    "artist": "Her's",
+    "source": "itunes",
+    "palette": [
+      "#67294E",
+      "#301A3B",
+      "#9B2265",
+      "#A0869F"
+    ],
+    "hash_color": "#64DC2C",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/2590cf4e40.jpg",
+    "days": 1
+  },
+  {
+    "album": "Dark Night of The Soul",
+    "artist": "Danger Mouse",
+    "source": "itunes",
+    "palette": [
+      "#DCCCB2",
+      "#442E3C",
+      "#8B5D4E",
+      "#584C45"
+    ],
+    "hash_color": "#DC2CD3",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/64ab741e54.jpg",
+    "days": 1
+  },
+  {
+    "album": "Ultraviolence",
+    "artist": "Lana Del Rey",
+    "source": "itunes",
+    "palette": [
+      "#9D9CA1",
+      "#262628",
+      "#C5C4C8",
+      "#717075"
+    ],
+    "hash_color": "#2CDCA7",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/778abe1154.jpg",
+    "days": 1
+  },
+  {
+    "album": "En İyileriyle Ayla Algan",
+    "artist": "Ayla Algan",
+    "source": "itunes",
+    "palette": [
+      "#88AF7A",
+      "#969A9D",
+      "#AB673D",
+      "#CF8D57"
+    ],
+    "hash_color": "#DC2C81",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/4247be615d.jpg",
+    "days": 1
+  },
+  {
+    "album": "Feeding Seahorses by Hand",
+    "artist": "Billie Marten",
+    "source": "itunes",
+    "palette": [
+      "#92663A",
+      "#B95A32",
+      "#5D432F",
+      "#8C442B"
+    ],
+    "hash_color": "#2CBFDC",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/2d07fd5a01.jpg",
+    "days": 1
+  },
+  {
+    "album": "Messy",
+    "artist": "Lola Young",
+    "source": "itunes",
+    "palette": [
+      "#D59B8E",
+      "#A15453",
+      "#E3C0B6",
+      "#BE6E6A"
+    ],
+    "hash_color": "#2CDC55",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/d63dedae1b.jpg",
+    "days": 1
+  },
+  {
+    "album": "OMG",
+    "artist": "Suki Waterhouse",
+    "source": "itunes",
+    "palette": [
+      "#071D39",
+      "#E1C89A",
+      "#432B2E",
+      "#A28D4E"
+    ],
+    "hash_color": "#B92CDC",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/b5f3b8724c.jpg",
+    "days": 1
+  },
+  {
+    "album": "200 KM/H In The Wrong Lane",
+    "artist": "t.A.T.u.",
+    "source": "itunes",
+    "palette": [
+      "#141813",
+      "#FBFAE3",
+      "#2D4320",
+      "#505D30"
+    ],
+    "hash_color": "#DC9C2C",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/e1a754f022.jpg",
+    "days": 1
+  },
+  {
+    "album": "Git",
+    "artist": "Sezen Aksu",
+    "source": "itunes",
+    "palette": [
+      "#F4F3EF",
+      "#FAD5A4",
+      "#F9BE83",
+      "#49393C"
+    ],
+    "hash_color": "#2C67DC",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/322fd20e03.jpg",
+    "days": 1
+  }
+]

@@ -1,0 +1,699 @@
+{
+  "window": [
+    "2025-08-26",
+    "2026-05-18"
+  ],
+  "count": 115,
+  "albums": [
+    {
+      "album": "200 KM/H In The Wrong Lane",
+      "artist": "t.A.T.u.",
+      "signature_hex": "#5A7A2F",
+      "reason": "distinctive duotone olive-green photo treatment"
+    },
+    {
+      "album": "24/7",
+      "artist": "ALIZADE",
+      "signature_hex": "#1A1A1A",
+      "reason": "nocturnal Turkish rap noir"
+    },
+    {
+      "album": "All I Did Was Dream of You (feat. The Marías)",
+      "artist": "beabadoobee",
+      "signature_hex": "#7DA3C9",
+      "reason": "frosted icy snow-photograph blue"
+    },
+    {
+      "album": "Atlantis",
+      "artist": "Güneş",
+      "signature_hex": "#3F5CB0",
+      "reason": "deep underwater electric blue"
+    },
+    {
+      "album": "Baldur's Gate 3 (Original Game Soundtrack)",
+      "artist": "Borislav Slavov",
+      "signature_hex": "#8B0000",
+      "reason": "Faerûn fantasy dark red"
+    },
+    {
+      "album": "BEGEFENDİ",
+      "artist": "BEGE",
+      "signature_hex": "#6E3BD1",
+      "reason": "Turkish trap neon purple"
+    },
+    {
+      "album": "Begin to Hope",
+      "artist": "Regina Spektor",
+      "signature_hex": "#E63A2E",
+      "reason": "iconic small red heart and stars on the b&w portrait"
+    },
+    {
+      "album": "Beteri Yok Uslanmaktan",
+      "artist": "Nova Norda",
+      "signature_hex": "#D94F8A",
+      "reason": "Turkish indie-pop magenta"
+    },
+    {
+      "album": "BRAT",
+      "artist": "Charli xcx",
+      "signature_hex": "#8ACE00",
+      "reason": "slime green is the unmistakable BRAT identity"
+    },
+    {
+      "album": "BULLY",
+      "artist": "Kanye West",
+      "signature_hex": "#1A1A1A",
+      "reason": "high-contrast grayscale grit, identity is black"
+    },
+    {
+      "album": "Circus (Deluxe Version)",
+      "artist": "Britney Spears",
+      "signature_hex": "#E5C36A",
+      "reason": "big-top golden curtain backdrop"
+    },
+    {
+      "album": "Comedown Machine",
+      "artist": "The Strokes",
+      "signature_hex": "#D6312C",
+      "reason": "saturated RCA vinyl-sleeve red dominates and defines the cover"
+    },
+    {
+      "album": "CUNTISSIMO",
+      "artist": "MARINA",
+      "signature_hex": "#E84A8E",
+      "reason": "hot pink pop-femme palette"
+    },
+    {
+      "album": "Dark Night of The Soul",
+      "artist": "Danger Mouse",
+      "signature_hex": "#7A2E8C",
+      "reason": "purple psychedelic mushroom-cloud explosion"
+    },
+    {
+      "album": "Defansif Dizayn",
+      "artist": "Büyük Ev Ablukada",
+      "signature_hex": "#2E8B57",
+      "reason": "murky industrial green Istanbul"
+    },
+    {
+      "album": "Did My Best",
+      "artist": "The Voidz",
+      "signature_hex": "#1CF743",
+      "reason": "neon acid green of the title and marbled paint"
+    },
+    {
+      "album": "Dirty",
+      "artist": "Sonic Youth",
+      "signature_hex": "#3E8FB8",
+      "reason": "the cyan-blue duotone wash of the contact sheet"
+    },
+    {
+      "album": "Disco Elysium",
+      "artist": "Sea Power",
+      "signature_hex": "#C66A3F",
+      "reason": "warm tortured-clay orange of the figures"
+    },
+    {
+      "album": "Discovery",
+      "artist": "Daft Punk",
+      "signature_hex": "#C9CCD1",
+      "reason": "chrome liquid-metal logo"
+    },
+    {
+      "album": "Dummy",
+      "artist": "Portishead",
+      "signature_hex": "#13235B",
+      "reason": "deep noir cobalt blue background of the chair scene"
+    },
+    {
+      "album": "En İyileriyle Ayla Algan",
+      "artist": "Ayla Algan",
+      "signature_hex": "#8FBF9E",
+      "reason": "vintage mint-green backdrop"
+    },
+    {
+      "album": "England Made Me [25th Anniversary Edition]",
+      "artist": "Black Box Recorder",
+      "signature_hex": "#C8202A",
+      "reason": "the red title banner against monochrome scene"
+    },
+    {
+      "album": "Escapism.",
+      "artist": "RAYE",
+      "signature_hex": "#C16A55",
+      "reason": "fleshy mouth/lip pink-red of the close-up"
+    },
+    {
+      "album": "Fancy Some More?",
+      "artist": "PinkPantheress",
+      "signature_hex": "#FF6FB5",
+      "reason": "signature bubblegum pink"
+    },
+    {
+      "album": "Favourite Worst Nightmare",
+      "artist": "Arctic Monkeys",
+      "signature_hex": "#0E1A2B",
+      "reason": "midnight indie sleeve blue"
+    },
+    {
+      "album": "Feeding Seahorses by Hand",
+      "artist": "Billie Marten",
+      "signature_hex": "#C46A2A",
+      "reason": "warm amber-orange bathtub light wash"
+    },
+    {
+      "album": "FIRTINAYT",
+      "artist": "Büyük Ev Ablukada",
+      "signature_hex": "#1E3A6B",
+      "reason": "stormy night deep blue"
+    },
+    {
+      "album": "Firuze",
+      "artist": "Sezen Aksu",
+      "signature_hex": "#B97A38",
+      "reason": "warm earthen amber tones of the portrait"
+    },
+    {
+      "album": "Franz Ferdinand",
+      "artist": "Franz Ferdinand",
+      "signature_hex": "#E89A2A",
+      "reason": "signature orange underline bar against black-and-cream"
+    },
+    {
+      "album": "From The Pyre",
+      "artist": "The Last Dinner Party",
+      "signature_hex": "#7AA76B",
+      "reason": "twilight pastoral grass green dominates the tableau"
+    },
+    {
+      "album": "Girl, so confusing featuring lorde",
+      "artist": "Charli xcx",
+      "signature_hex": "#E6E81F",
+      "reason": "brat-yellow Lorde version sticker on the noir photo"
+    },
+    {
+      "album": "Git",
+      "artist": "Sezen Aksu",
+      "signature_hex": "#E8B68A",
+      "reason": "warm peach-cream skin tone against soft white"
+    },
+    {
+      "album": "Grace",
+      "artist": "Jeff Buckley",
+      "signature_hex": "#8A2F4E",
+      "reason": "deep magenta-velvet stage lighting"
+    },
+    {
+      "album": "Graduation",
+      "artist": "Kanye West",
+      "signature_hex": "#C03E8F",
+      "reason": "Murakami magenta-pink sky of the bear flight"
+    },
+    {
+      "album": "Guitar Songs",
+      "artist": "Billie Eilish",
+      "signature_hex": "#C9AEC4",
+      "reason": "hazy lilac dreamscape"
+    },
+    {
+      "album": "Hail To the Thief",
+      "artist": "Radiohead",
+      "signature_hex": "#A8221C",
+      "reason": "flag-red against deep blue, iconic political red"
+    },
+    {
+      "album": "Heligoland",
+      "artist": "Massive Attack",
+      "signature_hex": "#F3961D",
+      "reason": "vivid stencil orange wall behind the figure"
+    },
+    {
+      "album": "Hurry Up Tomorrow",
+      "artist": "The Weeknd",
+      "signature_hex": "#C0392B",
+      "reason": "scarred After Hours red"
+    },
+    {
+      "album": "I Could Live In Hope",
+      "artist": "Low",
+      "signature_hex": "#D89944",
+      "reason": "warm sepia ochre cardboard tone of the sleeve"
+    },
+    {
+      "album": "I Love You.",
+      "artist": "The Neighbourhood",
+      "signature_hex": "#A6121A",
+      "reason": "the deep blood-red field around the black tree"
+    },
+    {
+      "album": "In Rainbows",
+      "artist": "Radiohead",
+      "signature_hex": "#E2541C",
+      "reason": "molten orange splash is the signature of the cover"
+    },
+    {
+      "album": "In The Court Of The Crimson King (Expanded & Remastered Original Album Mix)",
+      "artist": "King Crimson",
+      "signature_hex": "#B8232A",
+      "reason": "screaming crimson face"
+    },
+    {
+      "album": "IV",
+      "artist": "Black Mountain",
+      "signature_hex": "#7AA4B8",
+      "reason": "hazy sky-blue dreamscape tone"
+    },
+    {
+      "album": "KABUL",
+      "artist": "Lin Pesto",
+      "signature_hex": "#1F7A5A",
+      "reason": "deep emerald Turkish indie"
+    },
+    {
+      "album": "La La Land",
+      "artist": "Justin Hurwitz",
+      "signature_hex": "#3FA8A7",
+      "reason": "signature teal wall behind the dancers"
+    },
+    {
+      "album": "Le Tigre",
+      "artist": "Le Tigre",
+      "signature_hex": "#C8202A",
+      "reason": "the bold red dress at the center of the trio"
+    },
+    {
+      "album": "Loose",
+      "artist": "Nelly Furtado",
+      "signature_hex": "#C8132A",
+      "reason": "the saturated cherry-red backdrop"
+    },
+    {
+      "album": "Melodrama",
+      "artist": "Lorde",
+      "signature_hex": "#2B4FB8",
+      "reason": "bruised cobalt blue of the painted bedsheet"
+    },
+    {
+      "album": "Melody of Certain Damaged Lemons",
+      "artist": "Blonde Redhead",
+      "signature_hex": "#D8302E",
+      "reason": "signature blood-red tinted polaroids"
+    },
+    {
+      "album": "Messy",
+      "artist": "Lola Young",
+      "signature_hex": "#C84A3F",
+      "reason": "red lipstick title typography and flushed skin"
+    },
+    {
+      "album": "METRO BOOMIN PRESENTS SPIDER-MAN: ACROSS THE SPIDER-VERSE",
+      "artist": "Metro Boomin",
+      "signature_hex": "#1BE880",
+      "reason": "neon spider-logo green pops against black"
+    },
+    {
+      "album": "Mezzanine",
+      "artist": "Massive Attack",
+      "signature_hex": "#0A0A0A",
+      "reason": "iconic monochrome beetle, black is the identity"
+    },
+    {
+      "album": "Misery Is a Butterfly",
+      "artist": "Blonde Redhead",
+      "signature_hex": "#6B8DA6",
+      "reason": "peacock-feather blue-grey border"
+    },
+    {
+      "album": "My Favourite Faded Fantasy",
+      "artist": "Damien Rice",
+      "signature_hex": "#E8DFCB",
+      "reason": "faded paper cream, the fantasy is faded"
+    },
+    {
+      "album": "Mystery",
+      "artist": "Jesse Jo Stark",
+      "signature_hex": "#3B1F2B",
+      "reason": "goth-noir oxblood plum"
+    },
+    {
+      "album": "No Faith Required",
+      "artist": "Snowy White",
+      "signature_hex": "#C97A4A",
+      "reason": "sun-baked sandstone monolith"
+    },
+    {
+      "album": "No One Noticed (Extended)",
+      "artist": "The Marías",
+      "signature_hex": "#3F6E84",
+      "reason": "underwater teal-blue haze"
+    },
+    {
+      "album": "Nothing Happens",
+      "artist": "Wallows",
+      "signature_hex": "#F2B5A0",
+      "reason": "peachy suburban indie-pop"
+    },
+    {
+      "album": "OK Computer",
+      "artist": "Radiohead",
+      "signature_hex": "#9FB7C8",
+      "reason": "iconic pale ice-blue of the highway sketch"
+    },
+    {
+      "album": "OMG",
+      "artist": "Suki Waterhouse",
+      "signature_hex": "#9BC04A",
+      "reason": "acid lime-green fur and hair tones"
+    },
+    {
+      "album": "Parachutes",
+      "artist": "Coldplay",
+      "signature_hex": "#D58A1E",
+      "reason": "amber-lit globe, the album's only color"
+    },
+    {
+      "album": "Phoenix",
+      "artist": "Charlotte Cardin",
+      "signature_hex": "#F45A1F",
+      "reason": "the blurred orange phoenix ring on cream"
+    },
+    {
+      "album": "Plastic Beach",
+      "artist": "Gorillaz",
+      "signature_hex": "#0E4FA0",
+      "reason": "deep ocean cobalt blue of the night seascape"
+    },
+    {
+      "album": "Prelude to Ecstasy",
+      "artist": "The Last Dinner Party",
+      "signature_hex": "#B83A2E",
+      "reason": "the scarlet corset that anchors the baroque portrait"
+    },
+    {
+      "album": "Pure Heroine",
+      "artist": "Lorde",
+      "signature_hex": "#E8B6C2",
+      "reason": "soft pink knit hat is the focal hue on this lullaby cover"
+    },
+    {
+      "album": "Rachmaninov: Piano Concerto No.2",
+      "artist": "Sergei Rachmaninoff",
+      "signature_hex": "#1B3A7F",
+      "reason": "deep classical Denon-label navy blue"
+    },
+    {
+      "album": "Random Access Memories",
+      "artist": "Daft Punk",
+      "signature_hex": "#D4A24C",
+      "reason": "the iconic gold helmet half"
+    },
+    {
+      "album": "Sahar",
+      "artist": "Tamino",
+      "signature_hex": "#8E7E6E",
+      "reason": "sepia warm-grey of the wrapped polaroid portrait"
+    },
+    {
+      "album": "Sana Neler Edeceğim",
+      "artist": "Ajda Pekkan",
+      "signature_hex": "#D62828",
+      "reason": "vintage Turkish pop red"
+    },
+    {
+      "album": "Section.80",
+      "artist": "Kendrick Lamar",
+      "signature_hex": "#E8E2D4",
+      "reason": "DAMN-style off-white tee, raw documentary cream"
+    },
+    {
+      "album": "Seksenlerin En Güzel 4 Albümü",
+      "artist": "Ajda Pekkan",
+      "signature_hex": "#E8C547",
+      "reason": "80s superstar glitter gold"
+    },
+    {
+      "album": "Sen Aglama",
+      "artist": "Sezen Aksu",
+      "signature_hex": "#E08A2A",
+      "reason": "warm amber candlelight shapes against the black"
+    },
+    {
+      "album": "Serçe",
+      "artist": "Sezen Aksu",
+      "signature_hex": "#C97A4A",
+      "reason": "warm sparrow terracotta"
+    },
+    {
+      "album": "Sezen Aksu '88",
+      "artist": "Sezen Aksu",
+      "signature_hex": "#E8A23A",
+      "reason": "warm amber gold title text against black"
+    },
+    {
+      "album": "Sit Down for Dinner",
+      "artist": "Blonde Redhead",
+      "signature_hex": "#D94A1F",
+      "reason": "warm orange dinner glow"
+    },
+    {
+      "album": "Skinty Fia",
+      "artist": "Fontaines D.C.",
+      "signature_hex": "#E0241A",
+      "reason": "vivid Irish-flag red field"
+    },
+    {
+      "album": "Songs of Her's",
+      "artist": "Her's",
+      "signature_hex": "#9E2467",
+      "reason": "vivid magenta-pink tiled floor"
+    },
+    {
+      "album": "Songs Of Innocence",
+      "artist": "U2",
+      "signature_hex": "#101010",
+      "reason": "iconic black void surrounding the embrace"
+    },
+    {
+      "album": "STOP SMOKING",
+      "artist": "ALIZADE",
+      "signature_hex": "#D9A441",
+      "reason": "smoky amber tobacco"
+    },
+    {
+      "album": "Stories From The City, Stories From The Sea",
+      "artist": "PJ Harvey",
+      "signature_hex": "#C44A22",
+      "reason": "Times Square neon red glow defining the night-city mood"
+    },
+    {
+      "album": "Submarine",
+      "artist": "The Marías",
+      "signature_hex": "#2E5A8C",
+      "reason": "underwater dreamy aquatic blue defines the cover"
+    },
+    {
+      "album": "Super Trouper",
+      "artist": "ABBA",
+      "signature_hex": "#F2A23C",
+      "reason": "warm stage spotlight amber on white outfits"
+    },
+    {
+      "album": "Süper Star, Vol.2",
+      "artist": "Ajda Pekkan",
+      "signature_hex": "#E84A2E",
+      "reason": "vivid red-orange script lettering"
+    },
+    {
+      "album": "Teatro d'ira - Vol. I",
+      "artist": "Måneskin",
+      "signature_hex": "#8C1C1C",
+      "reason": "theatrical blood red rock"
+    },
+    {
+      "album": "Teen Dream",
+      "artist": "Beach House",
+      "signature_hex": "#F4E7B5",
+      "reason": "pale cream-yellow dream haze of the iconic palms"
+    },
+    {
+      "album": "Ten",
+      "artist": "Pearl Jam",
+      "signature_hex": "#A87838",
+      "reason": "sepia MTV Unplugged stage glow"
+    },
+    {
+      "album": "The Best Of Ajda Pekkan",
+      "artist": "Ajda Pekkan",
+      "signature_hex": "#5B2E96",
+      "reason": "royal purple frame border"
+    },
+    {
+      "album": "The Black Parade",
+      "artist": "My Chemical Romance",
+      "signature_hex": "#0A0A0A",
+      "reason": "identity-defining black of the parade"
+    },
+    {
+      "album": "THE E.N.D. (THE ENERGY NEVER DIES)",
+      "artist": "Black Eyed Peas",
+      "signature_hex": "#2DC8E6",
+      "reason": "electric cyan pyramid glow"
+    },
+    {
+      "album": "The Joshua Tree",
+      "artist": "U2",
+      "signature_hex": "#0A0A0A",
+      "reason": "iconic black border framing the desert photo"
+    },
+    {
+      "album": "The Lumineers",
+      "artist": "The Lumineers",
+      "signature_hex": "#A8896B",
+      "reason": "sepia folk parchment brown"
+    },
+    {
+      "album": "The New Abnormal",
+      "artist": "The Strokes",
+      "signature_hex": "#E94B8C",
+      "reason": "Basquiat pink-magenta cover"
+    },
+    {
+      "album": "The Queen Is Dead",
+      "artist": "The Smiths",
+      "signature_hex": "#2C3F33",
+      "reason": "the iconic deep mossy green duotone"
+    },
+    {
+      "album": "The Rise and Fall of a Midwest Princess",
+      "artist": "Chappell Roan",
+      "signature_hex": "#1FA7C2",
+      "reason": "turquoise pageant dress, the cover's color anchor"
+    },
+    {
+      "album": "The Singles - Volume 01",
+      "artist": "The Strokes",
+      "signature_hex": "#3A6FB0",
+      "reason": "pool-water cobalt blue of the swimmer artwork"
+    },
+    {
+      "album": "Trench",
+      "artist": "Twenty One Pilots",
+      "signature_hex": "#D4B33A",
+      "reason": "Dema yellow against trench"
+    },
+    {
+      "album": "Tyranny",
+      "artist": "The Voidz",
+      "signature_hex": "#7A1B1B",
+      "reason": "oxblood militaristic chaos"
+    },
+    {
+      "album": "Ultraviolence",
+      "artist": "Lana Del Rey",
+      "signature_hex": "#2C2C2C",
+      "reason": "smoky black-and-white film aesthetic"
+    },
+    {
+      "album": "Visions",
+      "artist": "Grimes",
+      "signature_hex": "#F5D11A",
+      "reason": "saturated yellow face dominates this cover"
+    },
+    {
+      "album": "Volume One",
+      "artist": "She & Him",
+      "signature_hex": "#F4C95D",
+      "reason": "sunny indie-folk yellow"
+    },
+    {
+      "album": "Voulez-Vous",
+      "artist": "ABBA",
+      "signature_hex": "#1CA7D8",
+      "reason": "electric disco cyan-blue of the pyramid backdrop"
+    },
+    {
+      "album": "We're Just Making It Worse",
+      "artist": "Cameron Avery",
+      "signature_hex": "#2A2622",
+      "reason": "shadowed warm-black porch defines the mood"
+    },
+    {
+      "album": "Whatever People Say I Am, That's What I'm Not",
+      "artist": "Arctic Monkeys",
+      "signature_hex": "#101010",
+      "reason": "iconic black smoking-portrait monochrome identity"
+    },
+    {
+      "album": "Who Really Cares",
+      "artist": "TV Girl",
+      "signature_hex": "#E8B8C8",
+      "reason": "faded pastel pink lo-fi"
+    },
+    {
+      "album": "You Could Have It So Much Better",
+      "artist": "Franz Ferdinand",
+      "signature_hex": "#EF9107",
+      "reason": "the iconic Russian-constructivist orange diagonal"
+    },
+    {
+      "album": "Z",
+      "artist": "My Morning Jacket",
+      "signature_hex": "#7FAAA2",
+      "reason": "the pale teal of the surreal creature illustration"
+    },
+    {
+      "album": "Ах, как хочется жить",
+      "artist": "Alla Pugacheva",
+      "signature_hex": "#6E6F3A",
+      "reason": "muted olive-khaki sleeve frames the photograph"
+    },
+    {
+      "album": "В последний раз",
+      "artist": "kl4ra",
+      "signature_hex": "#6B4F7A",
+      "reason": "melancholic dusky violet"
+    },
+    {
+      "album": "Группа крови",
+      "artist": "Kino",
+      "signature_hex": "#E84C1A",
+      "reason": "constructivist orange diagonal stripe"
+    },
+    {
+      "album": "Для никого",
+      "artist": "Agatha Christie",
+      "signature_hex": "#7A2A2A",
+      "reason": "oxblood leather suitcase tone"
+    },
+    {
+      "album": "Звезда по имени Солнце",
+      "artist": "Kino",
+      "signature_hex": "#0A0A0A",
+      "reason": "stark black-and-white star, black is the identity"
+    },
+    {
+      "album": "Последний герой",
+      "artist": "Kino",
+      "signature_hex": "#D81E1E",
+      "reason": "the punchy ransom-note red accents on stark black/white"
+    },
+    {
+      "album": "ПРОСТИ МЕНЯ МОЯ ЛЮБОВЬ",
+      "artist": "Zemfira",
+      "signature_hex": "#C81E3A",
+      "reason": "raw Russian rock crimson"
+    },
+    {
+      "album": "Птица",
+      "artist": "Auktyon",
+      "signature_hex": "#F3DA8A",
+      "reason": "warm yellow watercolor and yellow Cyrillic spine that ties the collage"
+    },
+    {
+      "album": "Целуй меня",
+      "artist": "Марія Чайковська",
+      "signature_hex": "#BDBDBD",
+      "reason": "silvery monochrome portrait identity"
+    }
+  ]
+}

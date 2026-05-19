@@ -1,0 +1,1519 @@
+{
+  "window": [
+    "2025-08-26",
+    "2026-05-18"
+  ],
+  "albums": [
+    {
+      "album": "Super Trouper",
+      "artist": "ABBA",
+      "source": "itunes",
+      "palette": [
+        "#1C1C18",
+        "#3F2925",
+        "#EEE5C2",
+        "#904B35"
+      ],
+      "hash_color": "#81DC2C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/4fbc613395.jpg",
+      "days": 17
+    },
+    {
+      "album": "The New Abnormal",
+      "artist": "The Strokes",
+      "source": "hash",
+      "palette": [
+        "#DC2C9C"
+      ],
+      "hash_color": "#DC2C9C",
+      "cover": null,
+      "days": 12
+    },
+    {
+      "album": "Stories From The City, Stories From The Sea",
+      "artist": "PJ Harvey",
+      "source": "itunes",
+      "palette": [
+        "#5C544E",
+        "#101819",
+        "#C08267",
+        "#332E2A"
+      ],
+      "hash_color": "#8D2CDC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/59ccc8e44e.jpg",
+      "days": 11
+    },
+    {
+      "album": "Dummy",
+      "artist": "Portishead",
+      "source": "itunes",
+      "palette": [
+        "#022565",
+        "#081120",
+        "#3A4D88",
+        "#2A3157"
+      ],
+      "hash_color": "#2CDC55",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/4ee850eca3.jpg",
+      "days": 8
+    },
+    {
+      "album": "OK Computer",
+      "artist": "Radiohead",
+      "source": "itunes",
+      "palette": [
+        "#FFFFFF",
+        "#C9E4F2",
+        "#6C8DA2",
+        "#AFC2D2"
+      ],
+      "hash_color": "#2C4CDC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/f68ca3c877.jpg",
+      "days": 7
+    },
+    {
+      "album": "CUNTISSIMO",
+      "artist": "MARINA",
+      "source": "hash",
+      "palette": [
+        "#2C64DC"
+      ],
+      "hash_color": "#2C64DC",
+      "cover": null,
+      "days": 6
+    },
+    {
+      "album": "Misery Is a Butterfly",
+      "artist": "Blonde Redhead",
+      "source": "itunes",
+      "palette": [
+        "#6B836F",
+        "#4F574C",
+        "#333127",
+        "#57422E"
+      ],
+      "hash_color": "#DC2CB9",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/ae2499502a.jpg",
+      "days": 6
+    },
+    {
+      "album": "Comedown Machine",
+      "artist": "The Strokes",
+      "source": "itunes",
+      "palette": [
+        "#CB2A2F",
+        "#D0B899",
+        "#BE9B87",
+        "#B55A4F"
+      ],
+      "hash_color": "#43DC2C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/83bd4ee882.jpg",
+      "days": 6
+    },
+    {
+      "album": "Random Access Memories",
+      "artist": "Daft Punk",
+      "source": "itunes",
+      "palette": [
+        "#090D0E",
+        "#8999B4",
+        "#82726E",
+        "#C8CCC5"
+      ],
+      "hash_color": "#DC8D2C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/50788411e3.jpg",
+      "days": 5
+    },
+    {
+      "album": "Submarine",
+      "artist": "The Marías",
+      "source": "itunes",
+      "palette": [
+        "#1A3565",
+        "#7C8EB8",
+        "#244980",
+        "#0B0E39"
+      ],
+      "hash_color": "#ADDC2C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/66b8366c2a.jpg",
+      "days": 5
+    },
+    {
+      "album": "Melodrama",
+      "artist": "Lorde",
+      "source": "itunes",
+      "palette": [
+        "#0278D7",
+        "#033494",
+        "#DCD3CA",
+        "#110E1A"
+      ],
+      "hash_color": "#DC2CA4",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/26915304aa.jpg",
+      "days": 4
+    },
+    {
+      "album": "Tyranny",
+      "artist": "The Voidz",
+      "source": "hash",
+      "palette": [
+        "#4C2CDC"
+      ],
+      "hash_color": "#4C2CDC",
+      "cover": null,
+      "days": 4
+    },
+    {
+      "album": "Franz Ferdinand",
+      "artist": "Franz Ferdinand",
+      "source": "itunes",
+      "palette": [
+        "#01010B",
+        "#FEEDC2",
+        "#C18F36",
+        "#3F372D"
+      ],
+      "hash_color": "#AA2CDC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/2ce4196fbd.jpg",
+      "days": 4
+    },
+    {
+      "album": "Птица",
+      "artist": "Auktyon",
+      "source": "itunes",
+      "palette": [
+        "#BCC2B3",
+        "#807771",
+        "#F3DA8A",
+        "#97A89F"
+      ],
+      "hash_color": "#DC2CD0",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/753e247729.jpg",
+      "days": 3
+    },
+    {
+      "album": "Escapism.",
+      "artist": "RAYE",
+      "source": "itunes",
+      "palette": [
+        "#924633",
+        "#BBA798",
+        "#662D22",
+        "#F4F2F1"
+      ],
+      "hash_color": "#75DC2C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/42dbdf6474.jpg",
+      "days": 3
+    },
+    {
+      "album": "Volume One",
+      "artist": "She & Him",
+      "source": "hash",
+      "palette": [
+        "#46DC2C"
+      ],
+      "hash_color": "#46DC2C",
+      "cover": null,
+      "days": 3
+    },
+    {
+      "album": "In The Court Of The Crimson King (Expanded & Remastered Original Album Mix)",
+      "artist": "King Crimson",
+      "source": "hash",
+      "palette": [
+        "#8DDC2C"
+      ],
+      "hash_color": "#8DDC2C",
+      "cover": null,
+      "days": 3
+    },
+    {
+      "album": "Fancy Some More?",
+      "artist": "PinkPantheress",
+      "source": "hash",
+      "palette": [
+        "#DC2C2C"
+      ],
+      "hash_color": "#DC2C2C",
+      "cover": null,
+      "days": 3
+    },
+    {
+      "album": "BULLY",
+      "artist": "Kanye West",
+      "source": "itunes",
+      "palette": [
+        "#8D8D8D",
+        "#484848",
+        "#2A2A2A",
+        "#6B6B6B"
+      ],
+      "hash_color": "#2CDC58",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/6abf31dfbd.jpg",
+      "days": 3
+    },
+    {
+      "album": "Teatro d'ira - Vol. I",
+      "artist": "Måneskin",
+      "source": "hash",
+      "palette": [
+        "#B3DC2C"
+      ],
+      "hash_color": "#B3DC2C",
+      "cover": null,
+      "days": 3
+    },
+    {
+      "album": "Who Really Cares",
+      "artist": "TV Girl",
+      "source": "hash",
+      "palette": [
+        "#DC2C93"
+      ],
+      "hash_color": "#DC2C93",
+      "cover": null,
+      "days": 3
+    },
+    {
+      "album": "Whatever People Say I Am, That's What I'm Not",
+      "artist": "Arctic Monkeys",
+      "source": "itunes",
+      "palette": [
+        "#15191A",
+        "#FFFFFF",
+        "#77797A",
+        "#D9D9DA"
+      ],
+      "hash_color": "#DC6D2C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/6c0665b9a2.jpg",
+      "days": 3
+    },
+    {
+      "album": "Prelude to Ecstasy",
+      "artist": "The Last Dinner Party",
+      "source": "itunes",
+      "palette": [
+        "#5C4337",
+        "#AE9779",
+        "#F3E7D4",
+        "#A06D47"
+      ],
+      "hash_color": "#DC2C7E",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/bd30012ea1.jpg",
+      "days": 3
+    },
+    {
+      "album": "BEGEFENDİ",
+      "artist": "BEGE",
+      "source": "hash",
+      "palette": [
+        "#722CDC"
+      ],
+      "hash_color": "#722CDC",
+      "cover": null,
+      "days": 3
+    },
+    {
+      "album": "Did My Best",
+      "artist": "The Voidz",
+      "source": "itunes",
+      "palette": [
+        "#000000",
+        "#1CF743",
+        "#74F3CA",
+        "#BA63EE"
+      ],
+      "hash_color": "#4CDC2C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/c36a6d3f1a.jpg",
+      "days": 3
+    },
+    {
+      "album": "Melody of Certain Damaged Lemons",
+      "artist": "Blonde Redhead",
+      "source": "itunes",
+      "palette": [
+        "#000000",
+        "#E02E39",
+        "#5D212B",
+        "#9E2F36"
+      ],
+      "hash_color": "#2CDC75",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/db2dcd3eef.jpg",
+      "days": 3
+    },
+    {
+      "album": "The Rise and Fall of a Midwest Princess",
+      "artist": "Chappell Roan",
+      "source": "itunes",
+      "palette": [
+        "#52180B",
+        "#E2C4A5",
+        "#051210",
+        "#D8AB80"
+      ],
+      "hash_color": "#722CDC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/5477b5fd75.jpg",
+      "days": 3
+    },
+    {
+      "album": "La La Land",
+      "artist": "Justin Hurwitz",
+      "source": "itunes",
+      "palette": [
+        "#EEE4C9",
+        "#49ABAA",
+        "#000000",
+        "#3C8B89"
+      ],
+      "hash_color": "#96DC2C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/2a83c49638.jpg",
+      "days": 2
+    },
+    {
+      "album": "From The Pyre",
+      "artist": "The Last Dinner Party",
+      "source": "itunes",
+      "palette": [
+        "#435345",
+        "#E0D4DF",
+        "#1F2726",
+        "#A59BA4"
+      ],
+      "hash_color": "#2C90DC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/675aedee65.jpg",
+      "days": 2
+    },
+    {
+      "album": "ПРОСТИ МЕНЯ МОЯ ЛЮБОВЬ",
+      "artist": "Zemfira",
+      "source": "hash",
+      "palette": [
+        "#DC2C6D"
+      ],
+      "hash_color": "#DC2C6D",
+      "cover": null,
+      "days": 2
+    },
+    {
+      "album": "Defansif Dizayn",
+      "artist": "Büyük Ev Ablukada",
+      "source": "hash",
+      "palette": [
+        "#DC2C6A"
+      ],
+      "hash_color": "#DC2C6A",
+      "cover": null,
+      "days": 2
+    },
+    {
+      "album": "Целуй меня",
+      "artist": "Марія Чайковська",
+      "source": "itunes",
+      "palette": [
+        "#222222",
+        "#CCCCCC",
+        "#616161",
+        "#ECECEC"
+      ],
+      "hash_color": "#DCB02C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/1003bea158.jpg",
+      "days": 2
+    },
+    {
+      "album": "KABUL",
+      "artist": "Lin Pesto",
+      "source": "hash",
+      "palette": [
+        "#2CDC9C"
+      ],
+      "hash_color": "#2CDC9C",
+      "cover": null,
+      "days": 2
+    },
+    {
+      "album": "Звезда по имени Солнце",
+      "artist": "Kino",
+      "source": "itunes",
+      "palette": [
+        "#000000",
+        "#FFFFFF",
+        "#2A2A2A",
+        "#414141"
+      ],
+      "hash_color": "#2CA4DC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/18e4902730.jpg",
+      "days": 2
+    },
+    {
+      "album": "Seksenlerin En Güzel 4 Albümü",
+      "artist": "Ajda Pekkan",
+      "source": "hash",
+      "palette": [
+        "#DCBF2C"
+      ],
+      "hash_color": "#DCBF2C",
+      "cover": null,
+      "days": 2
+    },
+    {
+      "album": "Phoenix",
+      "artist": "Charlotte Cardin",
+      "source": "itunes",
+      "palette": [
+        "#F1F2EC",
+        "#F75B2B",
+        "#F8DFC0",
+        "#FA7D45"
+      ],
+      "hash_color": "#C5DC2C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/6b3438a1f4.jpg",
+      "days": 2
+    },
+    {
+      "album": "Sezen Aksu '88",
+      "artist": "Sezen Aksu",
+      "source": "itunes",
+      "palette": [
+        "#11120D",
+        "#F0C089",
+        "#BD8649",
+        "#573B1E"
+      ],
+      "hash_color": "#DC2CBC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/f03be8d074.jpg",
+      "days": 2
+    },
+    {
+      "album": "Disco Elysium",
+      "artist": "Sea Power",
+      "source": "itunes",
+      "palette": [
+        "#483335",
+        "#907267",
+        "#151216",
+        "#6F5B58"
+      ],
+      "hash_color": "#2C58DC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/d479a4e797.jpg",
+      "days": 2
+    },
+    {
+      "album": "Ten",
+      "artist": "Pearl Jam",
+      "source": "itunes",
+      "palette": [
+        "#272324",
+        "#5C4D3C",
+        "#877158",
+        "#C5B29B"
+      ],
+      "hash_color": "#992CDC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/561f23c9f4.jpg",
+      "days": 2
+    },
+    {
+      "album": "Girl, so confusing featuring lorde",
+      "artist": "Charli xcx",
+      "source": "itunes",
+      "palette": [
+        "#444444",
+        "#232323",
+        "#D3D3CF",
+        "#7A7A79"
+      ],
+      "hash_color": "#49DC2C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/26799ee36e.jpg",
+      "days": 2
+    },
+    {
+      "album": "Pure Heroine",
+      "artist": "Lorde",
+      "source": "itunes",
+      "palette": [
+        "#000000",
+        "#EDE1E1",
+        "#D08C97",
+        "#E1BFBE"
+      ],
+      "hash_color": "#2CDC41",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/3f6b0d3306.jpg",
+      "days": 2
+    },
+    {
+      "album": "No One Noticed (Extended)",
+      "artist": "The Marías",
+      "source": "itunes",
+      "palette": [
+        "#79AEB7",
+        "#274359",
+        "#4C818B",
+        "#355F69"
+      ],
+      "hash_color": "#752CDC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/6c9303953f.jpg",
+      "days": 2
+    },
+    {
+      "album": "Firuze",
+      "artist": "Sezen Aksu",
+      "source": "itunes",
+      "palette": [
+        "#705741",
+        "#99683F",
+        "#584132",
+        "#D2A97A"
+      ],
+      "hash_color": "#2CDCB3",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/2c651c7ff5.jpg",
+      "days": 2
+    },
+    {
+      "album": "Beteri Yok Uslanmaktan",
+      "artist": "Nova Norda",
+      "source": "hash",
+      "palette": [
+        "#672CDC"
+      ],
+      "hash_color": "#672CDC",
+      "cover": null,
+      "days": 2
+    },
+    {
+      "album": "FIRTINAYT",
+      "artist": "Büyük Ev Ablukada",
+      "source": "hash",
+      "palette": [
+        "#DC2C99"
+      ],
+      "hash_color": "#DC2C99",
+      "cover": null,
+      "days": 2
+    },
+    {
+      "album": "Atlantis",
+      "artist": "Güneş",
+      "source": "itunes",
+      "palette": [
+        "#32435E",
+        "#798FC9",
+        "#133F77",
+        "#355A99"
+      ],
+      "hash_color": "#2C3EDC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/eeffac5d8b.jpg",
+      "days": 2
+    },
+    {
+      "album": "Последний герой",
+      "artist": "Kino",
+      "source": "itunes",
+      "palette": [
+        "#FFFFFF",
+        "#1E1A19",
+        "#A9A6A3",
+        "#E4DED2"
+      ],
+      "hash_color": "#DC2C7B",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/d1c3863802.jpg",
+      "days": 2
+    },
+    {
+      "album": "24/7",
+      "artist": "ALIZADE",
+      "source": "hash",
+      "palette": [
+        "#812CDC"
+      ],
+      "hash_color": "#812CDC",
+      "cover": null,
+      "days": 2
+    },
+    {
+      "album": "THE E.N.D. (THE ENERGY NEVER DIES)",
+      "artist": "Black Eyed Peas",
+      "source": "itunes",
+      "palette": [
+        "#1D2C3F",
+        "#12171F",
+        "#41546B",
+        "#9CADB7"
+      ],
+      "hash_color": "#DC2C9C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/50eae30a56.jpg",
+      "days": 2
+    },
+    {
+      "album": "METRO BOOMIN PRESENTS SPIDER-MAN: ACROSS THE SPIDER-VERSE",
+      "artist": "Metro Boomin",
+      "source": "itunes",
+      "palette": [
+        "#000000",
+        "#1F352C",
+        "#1BE880",
+        "#46453D"
+      ],
+      "hash_color": "#2CDC52",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/fef485f106.jpg",
+      "days": 2
+    },
+    {
+      "album": "Hurry Up Tomorrow",
+      "artist": "The Weeknd",
+      "source": "hash",
+      "palette": [
+        "#2C90DC"
+      ],
+      "hash_color": "#2C90DC",
+      "cover": null,
+      "days": 2
+    },
+    {
+      "album": "Teen Dream",
+      "artist": "Beach House",
+      "source": "itunes",
+      "palette": [
+        "#FFFFFF"
+      ],
+      "hash_color": "#672CDC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/f88b81af95.jpg",
+      "days": 2
+    },
+    {
+      "album": "Mezzanine",
+      "artist": "Massive Attack",
+      "source": "itunes",
+      "palette": [
+        "#221E1F",
+        "#EEF4F0",
+        "#636465"
+      ],
+      "hash_color": "#DC2C61",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/f6100a8fbd.jpg",
+      "days": 2
+    },
+    {
+      "album": "Songs Of Innocence",
+      "artist": "U2",
+      "source": "itunes",
+      "palette": [
+        "#020305",
+        "#5C5F62",
+        "#3E4244",
+        "#1F2223"
+      ],
+      "hash_color": "#43DC2C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/59a9d6b0ea.jpg",
+      "days": 2
+    },
+    {
+      "album": "Plastic Beach",
+      "artist": "Gorillaz",
+      "source": "itunes",
+      "palette": [
+        "#1E313F",
+        "#01468B",
+        "#03356A",
+        "#F3F5F5"
+      ],
+      "hash_color": "#2CDC49",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/c7aecff5ba.jpg",
+      "days": 1
+    },
+    {
+      "album": "I Could Live In Hope",
+      "artist": "Low",
+      "source": "itunes",
+      "palette": [
+        "#C88D40",
+        "#E5AF5A",
+        "#202525",
+        "#A6733B"
+      ],
+      "hash_color": "#2CDC99",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/5b6be442d0.jpg",
+      "days": 1
+    },
+    {
+      "album": "Voulez-Vous",
+      "artist": "ABBA",
+      "source": "itunes",
+      "palette": [
+        "#347197",
+        "#049FCD",
+        "#383836",
+        "#F8EDC9"
+      ],
+      "hash_color": "#2CDCAD",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/d9f6a5ef69.jpg",
+      "days": 1
+    },
+    {
+      "album": "В последний раз",
+      "artist": "kl4ra",
+      "source": "hash",
+      "palette": [
+        "#2CDC7E"
+      ],
+      "hash_color": "#2CDC7E",
+      "cover": null,
+      "days": 1
+    },
+    {
+      "album": "The Best Of Ajda Pekkan",
+      "artist": "Ajda Pekkan",
+      "source": "itunes",
+      "palette": [
+        "#D4CDD4",
+        "#36186F",
+        "#E8C4A3",
+        "#CFA15E"
+      ],
+      "hash_color": "#8D2CDC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/06d78b3bfc.jpg",
+      "days": 1
+    },
+    {
+      "album": "Serçe",
+      "artist": "Sezen Aksu",
+      "source": "hash",
+      "palette": [
+        "#412CDC"
+      ],
+      "hash_color": "#412CDC",
+      "cover": null,
+      "days": 1
+    },
+    {
+      "album": "Baldur's Gate 3 (Original Game Soundtrack)",
+      "artist": "Borislav Slavov",
+      "source": "hash",
+      "palette": [
+        "#67DC2C"
+      ],
+      "hash_color": "#67DC2C",
+      "cover": null,
+      "days": 1
+    },
+    {
+      "album": "IV",
+      "artist": "Black Mountain",
+      "source": "itunes",
+      "palette": [
+        "#BCC3B3",
+        "#8EAFBD",
+        "#879D59",
+        "#7197AD"
+      ],
+      "hash_color": "#3E2CDC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/4620c68515.jpg",
+      "days": 1
+    },
+    {
+      "album": "Heligoland",
+      "artist": "Massive Attack",
+      "source": "itunes",
+      "palette": [
+        "#F3961D",
+        "#D4CDD8",
+        "#887B8A",
+        "#1E161E"
+      ],
+      "hash_color": "#DC752C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/6d9e87e317.jpg",
+      "days": 1
+    },
+    {
+      "album": "Süper Star, Vol.2",
+      "artist": "Ajda Pekkan",
+      "source": "itunes",
+      "palette": [
+        "#F0EFE1",
+        "#5E4736",
+        "#F6CC9B",
+        "#392E26"
+      ],
+      "hash_color": "#2C81DC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/f0a3faec6a.jpg",
+      "days": 1
+    },
+    {
+      "album": "Grace",
+      "artist": "Jeff Buckley",
+      "source": "itunes",
+      "palette": [
+        "#3D333D",
+        "#E7C2BD",
+        "#181918",
+        "#9A6369"
+      ],
+      "hash_color": "#70DC2C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/31e16c8017.jpg",
+      "days": 1
+    },
+    {
+      "album": "Nothing Happens",
+      "artist": "Wallows",
+      "source": "hash",
+      "palette": [
+        "#2C75DC"
+      ],
+      "hash_color": "#2C75DC",
+      "cover": null,
+      "days": 1
+    },
+    {
+      "album": "Circus (Deluxe Version)",
+      "artist": "Britney Spears",
+      "source": "itunes",
+      "palette": [
+        "#AA8E61",
+        "#C1AD7F",
+        "#AF2E29",
+        "#AA7047"
+      ],
+      "hash_color": "#72DC2C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/6270ef69a0.jpg",
+      "days": 1
+    },
+    {
+      "album": "Begin to Hope",
+      "artist": "Regina Spektor",
+      "source": "itunes",
+      "palette": [
+        "#FFFEFC",
+        "#120C0C",
+        "#E7E4E3",
+        "#A59D9A"
+      ],
+      "hash_color": "#7EDC2C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/2a93a38f07.jpg",
+      "days": 1
+    },
+    {
+      "album": "Visions",
+      "artist": "Grimes",
+      "source": "itunes",
+      "palette": [
+        "#000000",
+        "#FEC709",
+        "#15173D",
+        "#7A3F32"
+      ],
+      "hash_color": "#DC2C8D",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/ac92cbfa65.jpg",
+      "days": 1
+    },
+    {
+      "album": "Sit Down for Dinner",
+      "artist": "Blonde Redhead",
+      "source": "hash",
+      "palette": [
+        "#DCD02C"
+      ],
+      "hash_color": "#DCD02C",
+      "cover": null,
+      "days": 1
+    },
+    {
+      "album": "Discovery",
+      "artist": "Daft Punk",
+      "source": "itunes",
+      "palette": [
+        "#000002",
+        "#121816",
+        "#DDDEE3",
+        "#6D7578"
+      ],
+      "hash_color": "#2C9FDC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/6e368db32d.jpg",
+      "days": 1
+    },
+    {
+      "album": "The Joshua Tree",
+      "artist": "U2",
+      "source": "itunes",
+      "palette": [
+        "#060606",
+        "#62605C",
+        "#858381",
+        "#2F2E2D"
+      ],
+      "hash_color": "#2CDCD0",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/ea04a5f982.jpg",
+      "days": 1
+    },
+    {
+      "album": "STOP SMOKING",
+      "artist": "ALIZADE",
+      "source": "hash",
+      "palette": [
+        "#DCC22C"
+      ],
+      "hash_color": "#DCC22C",
+      "cover": null,
+      "days": 1
+    },
+    {
+      "album": "England Made Me [25th Anniversary Edition]",
+      "artist": "Black Box Recorder",
+      "source": "itunes",
+      "palette": [
+        "#FFFFFF",
+        "#000000",
+        "#636263",
+        "#343434"
+      ],
+      "hash_color": "#2CDC75",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/727446c525.jpg",
+      "days": 1
+    },
+    {
+      "album": "All I Did Was Dream of You (feat. The Marías)",
+      "artist": "beabadoobee",
+      "source": "itunes",
+      "palette": [
+        "#7496BE",
+        "#F0F1F5",
+        "#D2D6D9",
+        "#A4AFB1"
+      ],
+      "hash_color": "#2CDC99",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/5548feff43.jpg",
+      "days": 1
+    },
+    {
+      "album": "My Favourite Faded Fantasy",
+      "artist": "Damien Rice",
+      "source": "itunes",
+      "palette": [
+        "#CFC8BE",
+        "#F9F2E9",
+        "#E4DDD4",
+        "#ABA39A"
+      ],
+      "hash_color": "#DC2CCB",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/addd99fe75.jpg",
+      "days": 1
+    },
+    {
+      "album": "Songs of Her's",
+      "artist": "Her's",
+      "source": "itunes",
+      "palette": [
+        "#67294E",
+        "#301A3B",
+        "#9B2265",
+        "#A0869F"
+      ],
+      "hash_color": "#64DC2C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/2590cf4e40.jpg",
+      "days": 1
+    },
+    {
+      "album": "Sen Aglama",
+      "artist": "Sezen Aksu",
+      "source": "itunes",
+      "palette": [
+        "#0F0F0F",
+        "#AD8447",
+        "#454036",
+        "#3A2319"
+      ],
+      "hash_color": "#2CDCBF",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/3279c0b567.jpg",
+      "days": 1
+    },
+    {
+      "album": "BRAT",
+      "artist": "Charli xcx",
+      "source": "itunes",
+      "palette": [
+        "#F7F8F2",
+        "#9E9895"
+      ],
+      "hash_color": "#DC2CAD",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/cec202cfdd.jpg",
+      "days": 1
+    },
+    {
+      "album": "Sana Neler Edeceğim",
+      "artist": "Ajda Pekkan",
+      "source": "hash",
+      "palette": [
+        "#DC432C"
+      ],
+      "hash_color": "#DC432C",
+      "cover": null,
+      "days": 1
+    },
+    {
+      "album": "Guitar Songs",
+      "artist": "Billie Eilish",
+      "source": "itunes",
+      "palette": [
+        "#C7B1AE",
+        "#9B928B",
+        "#E7E0CF",
+        "#595358"
+      ],
+      "hash_color": "#2CDCB9",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/198acaa9df.jpg",
+      "days": 1
+    },
+    {
+      "album": "Dark Night of The Soul",
+      "artist": "Danger Mouse",
+      "source": "itunes",
+      "palette": [
+        "#DCCCB2",
+        "#442E3C",
+        "#8B5D4E",
+        "#584C45"
+      ],
+      "hash_color": "#DC2CD3",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/64ab741e54.jpg",
+      "days": 1
+    },
+    {
+      "album": "Le Tigre",
+      "artist": "Le Tigre",
+      "source": "itunes",
+      "palette": [
+        "#F8F5F4",
+        "#E1C7A2",
+        "#9A0106",
+        "#110103"
+      ],
+      "hash_color": "#DCB62C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/77d2f17827.jpg",
+      "days": 1
+    },
+    {
+      "album": "The Singles - Volume 01",
+      "artist": "The Strokes",
+      "source": "itunes",
+      "palette": [
+        "#70A1D0",
+        "#F0DDCC",
+        "#ADC2D9",
+        "#DDF0FC"
+      ],
+      "hash_color": "#DC2C64",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/47533af18d.jpg",
+      "days": 1
+    },
+    {
+      "album": "No Faith Required",
+      "artist": "Snowy White",
+      "source": "itunes",
+      "palette": [
+        "#CBBAB6",
+        "#23282E",
+        "#A98D7C",
+        "#B7A39A"
+      ],
+      "hash_color": "#2C8ADC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/f60d665bb4.jpg",
+      "days": 1
+    },
+    {
+      "album": "Mystery",
+      "artist": "Jesse Jo Stark",
+      "source": "hash",
+      "palette": [
+        "#2CD9DC"
+      ],
+      "hash_color": "#2CD9DC",
+      "cover": null,
+      "days": 1
+    },
+    {
+      "album": "Ultraviolence",
+      "artist": "Lana Del Rey",
+      "source": "itunes",
+      "palette": [
+        "#9D9CA1",
+        "#262628",
+        "#C5C4C8",
+        "#717075"
+      ],
+      "hash_color": "#2CDCA7",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/778abe1154.jpg",
+      "days": 1
+    },
+    {
+      "album": "The Black Parade",
+      "artist": "My Chemical Romance",
+      "source": "itunes",
+      "palette": [
+        "#140E0E",
+        "#E5E3E0",
+        "#C1BDBA",
+        "#9A9693"
+      ],
+      "hash_color": "#DCB02C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/cc3094d4fd.jpg",
+      "days": 1
+    },
+    {
+      "album": "Rachmaninov: Piano Concerto No.2",
+      "artist": "Sergei Rachmaninoff",
+      "source": "itunes",
+      "palette": [
+        "#1B3A7F",
+        "#4A3237",
+        "#F8FBFC",
+        "#CFCDC5"
+      ],
+      "hash_color": "#DC2C96",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/378817c42b.jpg",
+      "days": 1
+    },
+    {
+      "album": "Section.80",
+      "artist": "Kendrick Lamar",
+      "source": "itunes",
+      "palette": [
+        "#FAFAFA",
+        "#222222",
+        "#474747",
+        "#5D5D5D"
+      ],
+      "hash_color": "#2C5BDC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/726cccec8d.jpg",
+      "days": 1
+    },
+    {
+      "album": "En İyileriyle Ayla Algan",
+      "artist": "Ayla Algan",
+      "source": "itunes",
+      "palette": [
+        "#88AF7A",
+        "#969A9D",
+        "#AB673D",
+        "#CF8D57"
+      ],
+      "hash_color": "#DC2C81",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/4247be615d.jpg",
+      "days": 1
+    },
+    {
+      "album": "You Could Have It So Much Better",
+      "artist": "Franz Ferdinand",
+      "source": "itunes",
+      "palette": [
+        "#060E10",
+        "#FFFFFF",
+        "#EF9107",
+        "#F8ECD7"
+      ],
+      "hash_color": "#2CDCA4",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/f96b4a52b6.jpg",
+      "days": 1
+    },
+    {
+      "album": "Graduation",
+      "artist": "Kanye West",
+      "source": "itunes",
+      "palette": [
+        "#A4579A",
+        "#873082",
+        "#C06369",
+        "#632F7F"
+      ],
+      "hash_color": "#2CDCDC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/6b6b32277d.jpg",
+      "days": 1
+    },
+    {
+      "album": "Skinty Fia",
+      "artist": "Fontaines D.C.",
+      "source": "itunes",
+      "palette": [
+        "#E2281C",
+        "#F2C10A",
+        "#EA7A12",
+        "#B42118"
+      ],
+      "hash_color": "#2CDC4F",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/cc3b06eb3e.jpg",
+      "days": 1
+    },
+    {
+      "album": "Feeding Seahorses by Hand",
+      "artist": "Billie Marten",
+      "source": "itunes",
+      "palette": [
+        "#92663A",
+        "#B95A32",
+        "#5D432F",
+        "#8C442B"
+      ],
+      "hash_color": "#2CBFDC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/2d07fd5a01.jpg",
+      "days": 1
+    },
+    {
+      "album": "Z",
+      "artist": "My Morning Jacket",
+      "source": "itunes",
+      "palette": [
+        "#7FAAA2",
+        "#1A1A1A",
+        "#40463C",
+        "#4F6D65"
+      ],
+      "hash_color": "#2CB6DC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/3cb3b66076.jpg",
+      "days": 1
+    },
+    {
+      "album": "Sahar",
+      "artist": "Tamino",
+      "source": "itunes",
+      "palette": [
+        "#FEFEFE",
+        "#1F1F23",
+        "#D5D2CF",
+        "#EAE8E7"
+      ],
+      "hash_color": "#DC2CBC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/16869d2124.jpg",
+      "days": 1
+    },
+    {
+      "album": "Parachutes",
+      "artist": "Coldplay",
+      "source": "itunes",
+      "palette": [
+        "#000000",
+        "#D58412",
+        "#C2620A",
+        "#812D0A"
+      ],
+      "hash_color": "#2C32DC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/cfc39335d1.jpg",
+      "days": 1
+    },
+    {
+      "album": "Messy",
+      "artist": "Lola Young",
+      "source": "itunes",
+      "palette": [
+        "#D59B8E",
+        "#A15453",
+        "#E3C0B6",
+        "#BE6E6A"
+      ],
+      "hash_color": "#2CDC55",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/d63dedae1b.jpg",
+      "days": 1
+    },
+    {
+      "album": "I Love You.",
+      "artist": "The Neighbourhood",
+      "source": "itunes",
+      "palette": [
+        "#AB1514",
+        "#030005",
+        "#4D0B0D"
+      ],
+      "hash_color": "#DC2C5B",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/44b885b864.jpg",
+      "days": 1
+    },
+    {
+      "album": "Ах, как хочется жить",
+      "artist": "Alla Pugacheva",
+      "source": "itunes",
+      "palette": [
+        "#3B3728",
+        "#C3C7B7",
+        "#BAA881",
+        "#9A8A67"
+      ],
+      "hash_color": "#DC2C5E",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/8abf198c56.jpg",
+      "days": 1
+    },
+    {
+      "album": "Trench",
+      "artist": "Twenty One Pilots",
+      "source": "hash",
+      "palette": [
+        "#DCD92C"
+      ],
+      "hash_color": "#DCD92C",
+      "cover": null,
+      "days": 1
+    },
+    {
+      "album": "Hail To the Thief",
+      "artist": "Radiohead",
+      "source": "itunes",
+      "palette": [
+        "#3A5D9A",
+        "#A65D57",
+        "#343750",
+        "#CDCFDD"
+      ],
+      "hash_color": "#93DC2C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/4453935e1a.jpg",
+      "days": 1
+    },
+    {
+      "album": "OMG",
+      "artist": "Suki Waterhouse",
+      "source": "itunes",
+      "palette": [
+        "#071D39",
+        "#E1C89A",
+        "#432B2E",
+        "#A28D4E"
+      ],
+      "hash_color": "#B92CDC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/b5f3b8724c.jpg",
+      "days": 1
+    },
+    {
+      "album": "Favourite Worst Nightmare",
+      "artist": "Arctic Monkeys",
+      "source": "hash",
+      "palette": [
+        "#7B2CDC"
+      ],
+      "hash_color": "#7B2CDC",
+      "cover": null,
+      "days": 1
+    },
+    {
+      "album": "Dirty",
+      "artist": "Sonic Youth",
+      "source": "itunes",
+      "palette": [
+        "#023422",
+        "#5BA8C1",
+        "#ECF5F7",
+        "#B3D8E6"
+      ],
+      "hash_color": "#DC2CA7",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/9a1369f817.jpg",
+      "days": 1
+    },
+    {
+      "album": "In Rainbows",
+      "artist": "Radiohead",
+      "source": "itunes",
+      "palette": [
+        "#0C0F1C",
+        "#5D1518",
+        "#E27535",
+        "#EA9346"
+      ],
+      "hash_color": "#DC992C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/ffc0d64f2c.jpg",
+      "days": 1
+    },
+    {
+      "album": "Группа крови",
+      "artist": "Kino",
+      "source": "itunes",
+      "palette": [
+        "#CEAD87",
+        "#2D1C14",
+        "#0A0607",
+        "#6D4430"
+      ],
+      "hash_color": "#DC642C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/0087901056.jpg",
+      "days": 1
+    },
+    {
+      "album": "200 KM/H In The Wrong Lane",
+      "artist": "t.A.T.u.",
+      "source": "itunes",
+      "palette": [
+        "#141813",
+        "#FBFAE3",
+        "#2D4320",
+        "#505D30"
+      ],
+      "hash_color": "#DC9C2C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/e1a754f022.jpg",
+      "days": 1
+    },
+    {
+      "album": "Loose",
+      "artist": "Nelly Furtado",
+      "source": "itunes",
+      "palette": [
+        "#030204",
+        "#F6F4F6",
+        "#C1885B",
+        "#ED2326"
+      ],
+      "hash_color": "#A72CDC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/6ac2516979.jpg",
+      "days": 1
+    },
+    {
+      "album": "We're Just Making It Worse",
+      "artist": "Cameron Avery",
+      "source": "itunes",
+      "palette": [
+        "#FFFFFF",
+        "#020001",
+        "#757475",
+        "#373738"
+      ],
+      "hash_color": "#87DC2C",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/a00e46c2f7.jpg",
+      "days": 1
+    },
+    {
+      "album": "Для никого",
+      "artist": "Agatha Christie",
+      "source": "itunes",
+      "palette": [
+        "#645043",
+        "#2C2725",
+        "#A97868",
+        "#542E2E"
+      ],
+      "hash_color": "#2C93DC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/e96adaf7dd.jpg",
+      "days": 1
+    },
+    {
+      "album": "Git",
+      "artist": "Sezen Aksu",
+      "source": "itunes",
+      "palette": [
+        "#F4F3EF",
+        "#FAD5A4",
+        "#F9BE83",
+        "#49393C"
+      ],
+      "hash_color": "#2C67DC",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/322fd20e03.jpg",
+      "days": 1
+    },
+    {
+      "album": "The Queen Is Dead",
+      "artist": "The Smiths",
+      "source": "itunes",
+      "palette": [
+        "#4A594D",
+        "#A5ACA2",
+        "#314236"
+      ],
+      "hash_color": "#2CDCC2",
+      "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/b8b2449796.jpg",
+      "days": 1
+    }
+  ],
+  "unresolved": [
+    "The Lumineers"
+  ],
+  "empty_days": 2
+}

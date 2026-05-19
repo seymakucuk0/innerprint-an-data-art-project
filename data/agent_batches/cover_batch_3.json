@@ -1,0 +1,305 @@
+[
+  {
+    "album": "Dummy",
+    "artist": "Portishead",
+    "source": "itunes",
+    "palette": [
+      "#022565",
+      "#081120",
+      "#3A4D88",
+      "#2A3157"
+    ],
+    "hash_color": "#2CDC55",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/4ee850eca3.jpg",
+    "days": 8
+  },
+  {
+    "album": "Random Access Memories",
+    "artist": "Daft Punk",
+    "source": "itunes",
+    "palette": [
+      "#090D0E",
+      "#8999B4",
+      "#82726E",
+      "#C8CCC5"
+    ],
+    "hash_color": "#DC8D2C",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/50788411e3.jpg",
+    "days": 5
+  },
+  {
+    "album": "Птица",
+    "artist": "Auktyon",
+    "source": "itunes",
+    "palette": [
+      "#BCC2B3",
+      "#807771",
+      "#F3DA8A",
+      "#97A89F"
+    ],
+    "hash_color": "#DC2CD0",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/753e247729.jpg",
+    "days": 3
+  },
+  {
+    "album": "Prelude to Ecstasy",
+    "artist": "The Last Dinner Party",
+    "source": "itunes",
+    "palette": [
+      "#5C4337",
+      "#AE9779",
+      "#F3E7D4",
+      "#A06D47"
+    ],
+    "hash_color": "#DC2C7E",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/bd30012ea1.jpg",
+    "days": 3
+  },
+  {
+    "album": "La La Land",
+    "artist": "Justin Hurwitz",
+    "source": "itunes",
+    "palette": [
+      "#EEE4C9",
+      "#49ABAA",
+      "#000000",
+      "#3C8B89"
+    ],
+    "hash_color": "#96DC2C",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/2a83c49638.jpg",
+    "days": 2
+  },
+  {
+    "album": "Phoenix",
+    "artist": "Charlotte Cardin",
+    "source": "itunes",
+    "palette": [
+      "#F1F2EC",
+      "#F75B2B",
+      "#F8DFC0",
+      "#FA7D45"
+    ],
+    "hash_color": "#C5DC2C",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/6b3438a1f4.jpg",
+    "days": 2
+  },
+  {
+    "album": "Girl, so confusing featuring lorde",
+    "artist": "Charli xcx",
+    "source": "itunes",
+    "palette": [
+      "#444444",
+      "#232323",
+      "#D3D3CF",
+      "#7A7A79"
+    ],
+    "hash_color": "#49DC2C",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/26799ee36e.jpg",
+    "days": 2
+  },
+  {
+    "album": "Atlantis",
+    "artist": "Güneş",
+    "source": "itunes",
+    "palette": [
+      "#32435E",
+      "#798FC9",
+      "#133F77",
+      "#355A99"
+    ],
+    "hash_color": "#2C3EDC",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/eeffac5d8b.jpg",
+    "days": 2
+  },
+  {
+    "album": "Teen Dream",
+    "artist": "Beach House",
+    "source": "itunes",
+    "palette": [
+      "#FFFFFF"
+    ],
+    "hash_color": "#672CDC",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/f88b81af95.jpg",
+    "days": 2
+  },
+  {
+    "album": "I Could Live In Hope",
+    "artist": "Low",
+    "source": "itunes",
+    "palette": [
+      "#C88D40",
+      "#E5AF5A",
+      "#202525",
+      "#A6733B"
+    ],
+    "hash_color": "#2CDC99",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/5b6be442d0.jpg",
+    "days": 1
+  },
+  {
+    "album": "Heligoland",
+    "artist": "Massive Attack",
+    "source": "itunes",
+    "palette": [
+      "#F3961D",
+      "#D4CDD8",
+      "#887B8A",
+      "#1E161E"
+    ],
+    "hash_color": "#DC752C",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/6d9e87e317.jpg",
+    "days": 1
+  },
+  {
+    "album": "Begin to Hope",
+    "artist": "Regina Spektor",
+    "source": "itunes",
+    "palette": [
+      "#FFFEFC",
+      "#120C0C",
+      "#E7E4E3",
+      "#A59D9A"
+    ],
+    "hash_color": "#7EDC2C",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/2a93a38f07.jpg",
+    "days": 1
+  },
+  {
+    "album": "England Made Me [25th Anniversary Edition]",
+    "artist": "Black Box Recorder",
+    "source": "itunes",
+    "palette": [
+      "#FFFFFF",
+      "#000000",
+      "#636263",
+      "#343434"
+    ],
+    "hash_color": "#2CDC75",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/727446c525.jpg",
+    "days": 1
+  },
+  {
+    "album": "Sen Aglama",
+    "artist": "Sezen Aksu",
+    "source": "itunes",
+    "palette": [
+      "#0F0F0F",
+      "#AD8447",
+      "#454036",
+      "#3A2319"
+    ],
+    "hash_color": "#2CDCBF",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/3279c0b567.jpg",
+    "days": 1
+  },
+  {
+    "album": "Le Tigre",
+    "artist": "Le Tigre",
+    "source": "itunes",
+    "palette": [
+      "#F8F5F4",
+      "#E1C7A2",
+      "#9A0106",
+      "#110103"
+    ],
+    "hash_color": "#DCB62C",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/77d2f17827.jpg",
+    "days": 1
+  },
+  {
+    "album": "The Black Parade",
+    "artist": "My Chemical Romance",
+    "source": "itunes",
+    "palette": [
+      "#140E0E",
+      "#E5E3E0",
+      "#C1BDBA",
+      "#9A9693"
+    ],
+    "hash_color": "#DCB02C",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/cc3094d4fd.jpg",
+    "days": 1
+  },
+  {
+    "album": "You Could Have It So Much Better",
+    "artist": "Franz Ferdinand",
+    "source": "itunes",
+    "palette": [
+      "#060E10",
+      "#FFFFFF",
+      "#EF9107",
+      "#F8ECD7"
+    ],
+    "hash_color": "#2CDCA4",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/f96b4a52b6.jpg",
+    "days": 1
+  },
+  {
+    "album": "Z",
+    "artist": "My Morning Jacket",
+    "source": "itunes",
+    "palette": [
+      "#7FAAA2",
+      "#1A1A1A",
+      "#40463C",
+      "#4F6D65"
+    ],
+    "hash_color": "#2CB6DC",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/3cb3b66076.jpg",
+    "days": 1
+  },
+  {
+    "album": "I Love You.",
+    "artist": "The Neighbourhood",
+    "source": "itunes",
+    "palette": [
+      "#AB1514",
+      "#030005",
+      "#4D0B0D"
+    ],
+    "hash_color": "#DC2C5B",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/44b885b864.jpg",
+    "days": 1
+  },
+  {
+    "album": "Dirty",
+    "artist": "Sonic Youth",
+    "source": "itunes",
+    "palette": [
+      "#023422",
+      "#5BA8C1",
+      "#ECF5F7",
+      "#B3D8E6"
+    ],
+    "hash_color": "#DC2CA7",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/9a1369f817.jpg",
+    "days": 1
+  },
+  {
+    "album": "Loose",
+    "artist": "Nelly Furtado",
+    "source": "itunes",
+    "palette": [
+      "#030204",
+      "#F6F4F6",
+      "#C1885B",
+      "#ED2326"
+    ],
+    "hash_color": "#A72CDC",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/6ac2516979.jpg",
+    "days": 1
+  },
+  {
+    "album": "The Queen Is Dead",
+    "artist": "The Smiths",
+    "source": "itunes",
+    "palette": [
+      "#4A594D",
+      "#A5ACA2",
+      "#314236"
+    ],
+    "hash_color": "#2CDCC2",
+    "cover": "/Users/seymakucuk/Desktop/apple_health_export/album_covers/b8b2449796.jpg",
+    "days": 1
+  }
+]

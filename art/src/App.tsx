@@ -1,33 +1,59 @@
+import { useCallback, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Scene } from "./scene/Scene";
+import { HUD } from "./hud/HUD";
+import type { Day } from "./types";
+
+type Mode = "orbit" | "walk";
 
 export function App() {
+  const [mode, setMode] = useState<Mode>("orbit");
+  const [days, setDays] = useState<Day[] | null>(null);
+  const [dayIndex, setDayIndex] = useState(0);
+  const [dayCount, setDayCount] = useState(0);
+
+  // load data once at top level so the HUD has access too
+  useEffect(() => {
+    fetch("/data/innerprint_daily.json")
+      .then((r) => r.json())
+      .then((j) => setDays(j.days));
+  }, []);
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key.toLowerCase() === "v") {
+        setMode((m) => (m === "orbit" ? "walk" : "orbit"));
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
+  const onDayChange = useCallback((i: number) => setDayIndex(i), []);
+
+  const cameraInitial: [number, number, number] =
+    mode === "walk" ? [18, 1.62, 0] : [0, 28, 32];
+
   return (
     <div style={{ position: "fixed", inset: 0 }}>
       <Canvas
-        camera={{ position: [0, 14, 22], fov: 45 }}
+        camera={{ position: cameraInitial, fov: mode === "walk" ? 72 : 45 }}
         gl={{ antialias: true, alpha: false }}
         dpr={[1, 2]}
       >
-        <Scene />
+        <Scene
+          mode={mode}
+          onDayChange={onDayChange}
+          setReady={() => {}}
+          setDayCount={setDayCount}
+        />
       </Canvas>
-      <header
-        style={{
-          position: "absolute",
-          left: 24,
-          top: 20,
-          letterSpacing: 1.3,
-          fontSize: 12,
-          opacity: 0.6,
-          textTransform: "uppercase",
-          pointerEvents: "none",
-        }}
-      >
-        innerprint — the spiral within
-        <div style={{ fontSize: 10, opacity: 0.7, marginTop: 4, letterSpacing: 0.6 }}>
-          2025-08-26 → 2026-05-18 · 266 days
-        </div>
-      </header>
+      <HUD
+        mode={mode}
+        currentDay={days && dayCount > 0 ? days[dayIndex] : null}
+        dayIndex={dayIndex}
+        totalDays={dayCount}
+      />
     </div>
   );
 }

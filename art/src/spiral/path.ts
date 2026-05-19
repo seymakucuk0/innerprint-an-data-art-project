@@ -9,12 +9,16 @@ export type SpiralOptions = {
 };
 
 export const DEFAULT_SPIRAL: SpiralOptions = {
-  turns: 5.5,
-  outerRadius: 9.0,
-  innerRadius: 1.2,
-  organicAmp: 0.08,
+  turns: 5,
+  outerRadius: 18,
+  innerRadius: 2.5,
+  organicAmp: 0.18,
   organicFreq: 7.0,
 };
+
+export const CORRIDOR_WIDTH = 2.0;   // base; later modulated by screen time
+export const WALL_HEIGHT = 3.5;
+export const FLOOR_INSET = 0.02;     // slight gap so floor doesn't z-fight
 
 /**
  * For a normalized parameter t ∈ [0, 1], return the 2D center point on the

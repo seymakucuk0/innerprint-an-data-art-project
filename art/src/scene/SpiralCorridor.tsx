@@ -271,48 +271,43 @@ function buildCorridor(days: Day[]) {
       }
 
       void main() {
-        // Per-segment phase seed
         float seed = vWorld.x * 0.18 + vWorld.z * 0.14;
         float freedom = 1.0 - vScreen;
 
-        // Gentle breathing on the gradient transition (kept from before
-        // but at low amplitude so the stroke layer reads cleanly).
-        float breathe = sin(uTime * 0.45 + seed * 1.3) * 0.06 * freedom;
+        // Gradient with gentle breathing on light-screen days.
+        float breathe = sin(uTime * 0.45 + seed * 1.3) * 0.08 * freedom;
         float tt = smoothstep(0.0, 1.0, clamp(vY + breathe, 0.0, 1.0));
         vec3 col = mix(vBottom, vTop, tt);
+
+        // Static lift across the wall middle.
         float lift = 1.0 + 0.05 * (1.0 - 4.0 * vY * (1.0 - vY));
-        col *= lift;
 
-        // ── Stroke layer ────────────────────────────────────────────────
-        // Very fine VERTICAL lines on the wall. Coordinate is horizontal
-        // along the spiral (atan2 from centre + a small radius offset so
-        // adjacent turns aren't synced). vY does NOT enter — lines run
-        // top-to-bottom unbroken.
-        float horiz = atan(vWorld.z, vWorld.x) + length(vWorld.xz) * 0.25;
-        float strokeDrift = sin(uTime * 0.12 + seed) * 0.015;
-        float strokeCoord = horiz * 95.0 + strokeDrift;
-        float stroke = abs(fract(strokeCoord) - 0.5);
-        // tighter line: thin sharp peaks instead of wide bands
-        stroke = 1.0 - smoothstep(0.0, 0.05, stroke);
+        // Soft luminance flow on light days, dies on heavy ones.
+        float w1 = sin(uTime * 0.85 + seed * 1.7 + vY * 3.0);
+        float w2 = sin(uTime * 0.42 + seed * 0.7 - vY * 1.4);
+        float flow = 1.0 + (w1 + w2) * 0.5 * (0.03 + 0.10 * freedom);
 
-        // Colour ramps red ↔ purple ↔ light-blue with screen intensity.
-        vec3 cRed    = vec3(0.95, 0.22, 0.26);
-        vec3 cPurple = vec3(0.58, 0.22, 0.78);
-        vec3 cBlue   = vec3(0.52, 0.80, 0.96);
-        vec3 strokeColor = (vScreen < 0.5)
-          ? mix(cBlue,   cPurple, vScreen * 2.0)
-          : mix(cPurple, cRed,    (vScreen - 0.5) * 2.0);
+        col *= lift * flow;
 
-        // Flicker — off on quiet days, twitchy on heavy. Two random bands.
-        float hSeed = floor(vWorld.x * 1.4) + floor(vWorld.z * 1.4) * 17.0;
-        float hi = hash(vec2(hSeed, floor(uTime * 30.0)));
-        float lo = hash(vec2(hSeed * 0.31, floor(uTime * 9.0)));
-        float twitch = mix(1.0, mix(hi, lo, 0.5), vScreen * 0.85);
+        // ── Heavy-screen darkening + glitch ─────────────────────────────
+        // 'heavy' kicks in past mid-intensity and ramps to 1 at peak.
+        float heavy = smoothstep(0.50, 1.00, vScreen);
 
-        // Strength: a whisper on quiet days, present (not dominant) on peak.
-        float strokeStrength = (0.04 + 0.22 * vScreen) * twitch;
+        // Two-band hash desync — anxious, electrical.
+        float hSeed = floor(vWorld.x * 1.6) + floor(vWorld.z * 1.6) * 19.0;
+        float gFast = hash(vec2(hSeed,           floor(uTime * 28.0)));
+        float gSlow = hash(vec2(hSeed * 0.4,     floor(uTime * 7.0)));
+        float glitch = mix(gFast, gSlow, 0.6);
 
-        col = mix(col, strokeColor, stroke * strokeStrength);
+        // Constant dimming + jittery dimming on heavy days.
+        float dim    = 1.0 - heavy * 0.55;
+        float jitter = 1.0 + heavy * 0.40 * (glitch - 0.5) * 2.0;
+        col *= dim * jitter;
+
+        // Occasional darker bursts — random patches drop further.
+        float burst = hash(vec2(hSeed * 0.18, floor(uTime * 2.3)));
+        float blackout = smoothstep(0.92, 1.00, burst) * heavy;
+        col *= 1.0 - blackout * 0.70;
 
         gl_FragColor = vec4(col, 1.0);
       }

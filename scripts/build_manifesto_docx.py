@@ -1,11 +1,14 @@
-"""Generate `innerprint_manifesto.docx` — the project's manifesto,
-data-annotation table, mechanics notes, and repo link in one document.
+"""Generate innerprint_manifesto.docx — compact English data-art brief.
+
+Sections: overview, data inventory, annotation table, decision notes,
+structure + mechanics, controls, repo link. Functional language; no
+manifesto theatrics.
 """
 from __future__ import annotations
 
 from pathlib import Path
 from docx import Document
-from docx.shared import Pt, RGBColor, Cm, Inches
+from docx.shared import Pt, RGBColor, Cm
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.oxml.ns import qn
@@ -14,8 +17,9 @@ from docx.oxml import OxmlElement
 
 REPO = Path(__file__).resolve().parents[1]
 OUT = REPO / "innerprint_manifesto.docx"
-
 REPO_URL = "https://github.com/seymakucuk0/innerprint-an-data-art-project"
+
+BODY_FONT = "Iowan Old Style"
 
 
 def _shade(cell, hex_color: str) -> None:
@@ -27,349 +31,264 @@ def _shade(cell, hex_color: str) -> None:
     tcPr.append(shd)
 
 
-def add_heading(doc: Document, text: str, level: int = 1) -> None:
+def heading(doc, text, level=1):
     h = doc.add_heading(text, level=level)
     for run in h.runs:
-        run.font.name = "Iowan Old Style"
+        run.font.name = BODY_FONT
         run.font.color.rgb = RGBColor(0x14, 0x10, 0x1A)
-        run.font.size = Pt(20 if level == 0 else 16 if level == 1 else 13)
+        run.font.size = Pt(18 if level == 0 else 13 if level == 1 else 11)
 
 
-def add_para(doc: Document, text: str, italic: bool = False, size: int = 11) -> None:
+def para(doc, text, size=10.5, after=4):
     p = doc.add_paragraph()
     run = p.add_run(text)
-    run.font.name = "Iowan Old Style"
+    run.font.name = BODY_FONT
     run.font.size = Pt(size)
-    if italic:
-        run.italic = True
-    p.paragraph_format.space_after = Pt(6)
+    p.paragraph_format.space_after = Pt(after)
+    return p
 
 
-def add_quote(doc: Document, text: str) -> None:
-    p = doc.add_paragraph()
-    p.paragraph_format.left_indent = Cm(1)
-    p.paragraph_format.space_before = Pt(4)
-    p.paragraph_format.space_after = Pt(4)
+def bullet(doc, text, size=10):
+    p = doc.add_paragraph(style="List Bullet")
     run = p.add_run(text)
-    run.font.name = "Iowan Old Style"
-    run.font.size = Pt(12)
-    run.italic = True
-    run.font.color.rgb = RGBColor(0x3A, 0x22, 0x40)
+    run.font.name = BODY_FONT
+    run.font.size = Pt(size)
+    p.paragraph_format.space_after = Pt(2)
 
 
-def add_table(doc: Document, headers: list[str], rows: list[list[str]]) -> None:
+def table(doc, headers, rows, col_widths=None):
     t = doc.add_table(rows=1 + len(rows), cols=len(headers))
     t.alignment = WD_TABLE_ALIGNMENT.LEFT
     t.style = "Light Grid Accent 1"
 
-    # header row
+    if col_widths:
+        for i, w in enumerate(col_widths):
+            for cell in t.columns[i].cells:
+                cell.width = Cm(w)
+
     for i, h in enumerate(headers):
         cell = t.rows[0].cells[i]
         _shade(cell, "1A1020")
         cell.text = ""
         p = cell.paragraphs[0]
         run = p.add_run(h.upper())
-        run.font.name = "Iowan Old Style"
-        run.font.size = Pt(9)
+        run.font.name = BODY_FONT
+        run.font.size = Pt(8.5)
         run.font.bold = True
         run.font.color.rgb = RGBColor(0xF5, 0xE9, 0xD8)
         p.paragraph_format.space_before = Pt(2)
         p.paragraph_format.space_after = Pt(2)
 
-    # body rows
     for r, row in enumerate(rows, start=1):
         for c, txt in enumerate(row):
             cell = t.rows[r].cells[c]
             cell.text = ""
             p = cell.paragraphs[0]
             run = p.add_run(txt)
-            run.font.name = "Iowan Old Style"
-            run.font.size = Pt(10)
+            run.font.name = BODY_FONT
+            run.font.size = Pt(9)
             p.paragraph_format.space_before = Pt(2)
             p.paragraph_format.space_after = Pt(2)
 
 
-def add_hyperlink(paragraph, url: str, text: str) -> None:
+def hyperlink(paragraph, url, text):
     part = paragraph.part
     r_id = part.relate_to(
         url,
         "http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink",
         is_external=True,
     )
-    hyperlink = OxmlElement("w:hyperlink")
-    hyperlink.set(qn("r:id"), r_id)
-
+    h = OxmlElement("w:hyperlink")
+    h.set(qn("r:id"), r_id)
     run = OxmlElement("w:r")
     rPr = OxmlElement("w:rPr")
     color = OxmlElement("w:color")
     color.set(qn("w:val"), "3A4FB8")
     rPr.append(color)
-    under = OxmlElement("w:u")
-    under.set(qn("w:val"), "single")
-    rPr.append(under)
-    rFonts = OxmlElement("w:rFonts")
-    rFonts.set(qn("w:ascii"), "Iowan Old Style")
-    rPr.append(rFonts)
+    u = OxmlElement("w:u")
+    u.set(qn("w:val"), "single")
+    rPr.append(u)
+    rf = OxmlElement("w:rFonts")
+    rf.set(qn("w:ascii"), BODY_FONT)
+    rPr.append(rf)
+    sz = OxmlElement("w:sz")
+    sz.set(qn("w:val"), "21")
+    rPr.append(sz)
     run.append(rPr)
-
     t = OxmlElement("w:t")
     t.text = text
     run.append(t)
-    hyperlink.append(run)
-    paragraph._p.append(hyperlink)
+    h.append(run)
+    paragraph._p.append(h)
 
 
-def build() -> None:
+def build():
     doc = Document()
 
-    # margins
-    section = doc.sections[0]
-    section.left_margin = Cm(2.5)
-    section.right_margin = Cm(2.5)
-    section.top_margin = Cm(2.0)
-    section.bottom_margin = Cm(2.0)
+    sec = doc.sections[0]
+    sec.left_margin = Cm(2.2)
+    sec.right_margin = Cm(2.2)
+    sec.top_margin = Cm(1.8)
+    sec.bottom_margin = Cm(1.8)
 
-    # ── Title ─────────────────────────────────────────────────────────
-    title_p = doc.add_paragraph()
-    title_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    title = title_p.add_run("innerprint")
-    title.font.name = "Iowan Old Style"
-    title.font.size = Pt(38)
-    title.font.color.rgb = RGBColor(0x14, 0x10, 0x1A)
-    title.bold = False
+    # title
+    tp = doc.add_paragraph()
+    tp.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    t = tp.add_run("innerprint — the spiral within")
+    t.font.name = BODY_FONT
+    t.font.size = Pt(22)
+    t.font.color.rgb = RGBColor(0x14, 0x10, 0x1A)
 
-    sub_p = doc.add_paragraph()
-    sub_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    sub = sub_p.add_run("— the spiral within —")
-    sub.font.name = "Iowan Old Style"
-    sub.font.size = Pt(15)
-    sub.italic = True
-    sub.font.color.rgb = RGBColor(0x3A, 0x22, 0x40)
+    sp = doc.add_paragraph()
+    s = sp.add_run("Şeymanur Küçük  ·  2026  ·  data art installation")
+    s.font.name = BODY_FONT
+    s.font.size = Pt(10)
+    s.font.color.rgb = RGBColor(0x70, 0x60, 0x70)
+    sp.paragraph_format.space_after = Pt(10)
 
-    meta_p = doc.add_paragraph()
-    meta_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    meta = meta_p.add_run("Şeymanur Küçük  ·  2026  ·  data art installation")
-    meta.font.name = "Iowan Old Style"
-    meta.font.size = Pt(10)
-    meta.font.color.rgb = RGBColor(0x70, 0x60, 0x70)
-
-    doc.add_paragraph()  # spacer
-
-    # ── Manifesto ─────────────────────────────────────────────────────
-    add_heading(doc, "Manifesto", 1)
-
-    add_quote(doc,
-        "Bu bir gösterge paneli değil. İçinde yürünebilecek bir mekân."
+    # overview
+    heading(doc, "Overview", 1)
+    para(doc,
+        "266 days of personal data — Spotify listening, Istanbul weather, "
+        "Apple Health steps, iOS Screen Time — rendered as a walkable "
+        "fingerprint spiral. One entry on the outer edge, one path to the "
+        "centre. Each day is one segment of the wall. Time runs from "
+        "outside (2025-08-26) inward to the centre (today). "
+        "Aesthetic reference: Damon Xart's gradient corridors."
     )
 
-    add_para(doc,
-        "innerprint, sekiz aylık bir hayatın izlerini — dinlenen müziği, "
-        "atılan adımları, İstanbul'un gökyüzünü, telefona harcanan saatleri "
-        "— gerçek bir parmak izinin spiral desenine dönüştürür. Tek bir "
-        "giriş, tek bir çıkış. Merkez bugündür; dış kenar 2025 Ağustos'unda "
-        "başlar."
-    )
+    # data inventory
+    heading(doc, "Data inventory (2025-08-26 → 2026-05-18, 266 days)", 1)
+    bullet(doc, "Spotify — 16,874 streams in window; daily aggregates + per-day top track and its album.")
+    bullet(doc, "Weather — Istanbul daily archive (temperature, rain, snow, sunshine) from Open-Meteo.")
+    bullet(doc, "Steps — daily totals from Apple Health export.")
+    bullet(doc, "Screen Time — iOS Screen Time real values 2026-04-19 → 2026-05-18 (30 days), narrative mock for the earlier 236 days; provenance recorded in data/mock_metadata.json.")
 
-    add_para(doc,
-        "Her parmak izi tek ve tekrar edilemez. Hayatın her sekiz ayı da "
-        "öyle. Spiralin kıvrımları sıradan bir Arşimet eğrisi değildir; "
-        "organik ufak salınımlarla biraz parmak izi, biraz nehir yatağı, "
-        "biraz bir günün anısı olur. Yürüdükçe duvarın altında o günün "
-        "müziği ısınır, üstünde o günün gökyüzü değişir, koridor o günün "
-        "ekran süresine göre genişler ya da sıkıştırır. Ayağının altındaki "
-        "ışık o gün ne kadar adım atıldığını söyler."
-    )
-
-    add_para(doc,
-        "Sakin günler nefes alır. Sıkışmış günler donar, kararır, ara sıra "
-        "siyah parıltılarla ürperir. Eser duvarlardan veri akıtmaz — "
-        "veriyi mekânlaştırır."
-    )
-
-    add_quote(doc,
-        "Veriyi görselleştirmiyoruz; üzerinde yürünebilir hale getiriyoruz."
-    )
-
-    # ── Conceptual frame ──────────────────────────────────────────────
-    add_heading(doc, "Kavramsal Çerçeve", 1)
-
-    add_para(doc,
-        "Form, biyometrik bir parmak izinden ödünç alındı: tek girişli, "
-        "merkezde sonlanan, organik salınımlı bir spiral. Her insan "
-        "parmak izi kendine özgüdür; her insanın da bir dönemine ait "
-        "verisi öyle. Form bu eşsizliği taşır."
-    )
-
-    add_para(doc,
-        "Aesthetic referans olarak Tayvanlı dijital sanatçı Damon Xart'ın "
-        "(Hsieh Chen Lin) \"gradient corridor\" çalışmaları benimsendi: "
-        "sert sınırlar değil, nefes alan dikey gradyanlar; geometri "
-        "üzerine dökülmüş donmuş ışık. Bu his hem heykel görünümünde "
-        "(orbit modu) hem koridor içinde (walk modu) korunur."
-    )
-
-    add_para(doc,
-        "Spiralin merkezi bugündür: \"bugün\" kelimesi merkez koordinatın "
-        "kendisidir. Dışa doğru yürüdükçe geçmişe gidersin; içe doğru, "
-        "yaşadığın güne yaklaşırsın. Bu yön kasıtlıdır: dışarısı tarih, "
-        "merkez şimdidir."
-    )
-
-    # ── Data annotation table ─────────────────────────────────────────
-    doc.add_page_break()
-    add_heading(doc, "Veri Eşleme Tablosu", 1)
-
-    add_para(doc,
-        "Aşağıdaki tablo her veri akışının fiziksel/görsel karşılığını "
-        "ve karar gerekçesini gösterir. 266 günün her biri için, bu "
-        "kuralların kesişimi o günün duvarını üretir."
+    # annotation table
+    heading(doc, "Data annotation", 1)
+    para(doc,
+        "Each daily row produces one segment of the spiral. The wall is a "
+        "vertical gradient between two anchors (bottom = album; top = sky). "
+        "The corridor's shape, the floor's luminosity, and the heavy-screen "
+        "darkening / glitch layer all key off other fields."
     )
 
     rows = [
         [
-            "Spotify – günün en çok dinlenen şarkısının albümü",
-            "spotify_history.csv → en yüksek play sayılı (artist, track) → albüm → signature renk",
-            "Duvarın alt anchor rengi (gradyanın dibi)",
-            "Müzik kişisel kimliktir; gün gün değişir. Albümün signature rengi 5 paralel AI ajan tarafından kapak görseline bakılarak seçildi — sayıca baskın değil, hatırlanan renk (Daft Punk altın, OK Computer buz-mavi, Strokes magenta).",
+            "Top song's album signature colour",
+            "spotify_history.csv → most-played track of the day → album → curated hex",
+            "Bottom anchor (warm)",
+            "The day's musical identity",
         ],
         [
-            "Hava (sıcaklık, güneş, yağış, kar)",
-            "Open-Meteo Istanbul archive — 266 gün boyunca",
-            "Duvarın üst anchor rengi + tavan",
-            "Sıcak güneşli gün altın amber, soğuk güneşli gün gök mavisi, kapalı gün gri-mavi, yağmurlu gri, ağır yağmurlu siyaha yakın storm, karlı buz mavisi. RGB lerp ile yumuşak geçişler.",
+            "Temperature, sun, rain, snow",
+            "Open-Meteo Istanbul archive",
+            "Top anchor + ceiling",
+            "What the sky looked like",
         ],
         [
             "Sunshine hours",
             "Open-Meteo",
-            "Üst anchor parlaklığı",
-            "Çok güneşli → tavan dolu ışık, az güneşli → mat. Smoothstep gating ile geçiş ne kadar açık olduğunu duvarın üstünde okutur.",
+            "Top anchor brightness",
+            "How much light reached the corridor",
         ],
         [
-            "Ekran süresi (toplam)",
-            "iOS Screen Time (2026-04-13 → 2026-05-18 gerçek + öncesi 8-aylık narratif mock)",
-            "Koridor genişliği + duvar yüksekliği + karanlıklaşma + glitch + siyah parlamalar",
-            "Yoğun gün dar (0.92 m) + yüksek (4.9 m) + −%44 karanlık + ±%32 jitter; sakin gün ferah (3.20 m), kısa (2.8 m), nefes alan. Ekran süresi tek başına dört kanalı tetikler — bedensel sıkışma + atmosferik kararma.",
+            "Screen time, total minutes",
+            "iOS Screen Time + mock for prior months",
+            "Corridor width + wall height + darkening + glitch",
+            "Pressure and agitation from devices",
         ],
         [
-            "Ekran süresi alt kategorileri (productivity / social / entertainment / other)",
-            "iOS Screen Time",
-            "HUD'da sol üstte mini bar chart",
-            "Görsel olarak duvara binmez; bilgi katmanı olarak walking esnasında okunur. Her günün dakikalık dağılımı renkli bar olarak görünür (mavi: prod, pembe: social, amber: ent, gri: other).",
+            "Screen time, sub-categories",
+            "iOS Screen Time (productivity / social / entertainment / other)",
+            "HUD bar chart (top-left)",
+            "How the day's screen time was spent",
         ],
         [
-            "Adım sayısı",
+            "Daily steps",
             "Apple Health export",
-            "Zemindeki albüm rengi parlaklığı + koridor genişliğine ±%10 ek modülasyon",
-            "Çok yürünen gün → yerde o günün albüm rengi ışık havuzu olarak parlar + koridor +%10 ferahlar (beden dünyada hareketliydi). Az yürünen gün → zemin neredeyse siyah + koridor −%10 sıkışır.",
+            "Floor luminosity + ±10% corridor width",
+            "Bodily presence in the world",
         ],
         [
-            "Late-night streams (gece dinlemeleri)",
-            "spotify_history.csv saat bazlı",
-            "(Şu an aktif değil — sonraki iterasyonda tavan karanlık derinliği)",
-            "Gece dinlemeleri tavanı koyulaştıracak: \"gece çalışılmış gün\" tavandan da hissedilir. Sonraki sprintin parçası.",
+            "Late-night streams",
+            "spotify_history.csv (hour of day)",
+            "Reserved — ceiling darkness, next iteration",
+            "Nocturnal listening",
         ],
     ]
-
-    add_table(
+    table(
         doc,
-        headers=["Veri", "Kaynak", "Görsel Karşılığı", "Karar Gerekçesi"],
+        headers=["Data", "Source", "Applied as", "Expresses"],
         rows=rows,
+        col_widths=[4.0, 5.0, 4.0, 4.0],
     )
 
-    # ── Mock data note ────────────────────────────────────────────────
-    add_heading(doc, "Mock Veri Politikası", 2)
-    add_para(doc,
-        "iOS Screen Time, takip cihazına 2026-04-13 tarihinde ilk kez "
-        "eklendiğinden, öncesi 7.5 ay için gerçek veri mevcut değildi. "
-        "Boş bırakmak yerine deliberate bir narratif mock üretildi: "
-        "Ağustos başlangıçtan Aralık başına kadar yüksek plato (final "
-        "yıl projesi yoğunluğu), Aralık-Şubat arası vadi (yarıyıl tatili, "
-        "Ocak dipi), Mart-Nisan rampası (yeniden ısınma). Mock günler "
-        "sanat eserine eşit ağırlıkta katılır — provenance ayrımı "
-        "`data/mock_metadata.json`'da tutulur, izleyiciye gösterilmez."
+    # decision notes
+    heading(doc, "Decision notes", 1)
+    bullet(doc,
+        "Album signature colour. Not the cover's dominant pixel — the colour a fan "
+        "associates with the album. 134 unique albums; signatures picked by 5 parallel "
+        "AI agents inspecting cover art + music knowledge (RAM → metallic gold, "
+        "OK Computer → ice-blue, The Strokes' New Abnormal → magenta)."
+    )
+    bullet(doc,
+        "Weather colour map. Literal: hot sunny → amber, cool sunny → sky-blue, "
+        "overcast → grey-blue, rainy → grey, heavy rain → near-black, snow → ice-blue. "
+        "All transitions RGB-lerped so hues never pass through green."
+    )
+    bullet(doc,
+        "Screen-time mapping. The dominant driver. Drives geometry (corridor width "
+        "1.24 m → 3.20 m, wall height 2.8 m → 4.9 m), brightness (up to −44% on peak "
+        "days), and motion (±32% jitter + occasional black-out bursts). Quiet days "
+        "the wall breathes; heavy days it darkens and twitches."
+    )
+    bullet(doc,
+        "Step mapping. Floor-only effect. Active days pool light beneath you in the "
+        "album's colour; sedentary days leave the floor near-black. A ±10% width "
+        "modifier reinforces the bodily reading without competing with screen time."
+    )
+    bullet(doc,
+        "Mock screen time. Only because iOS Screen Time didn't track the earlier 7.5 "
+        "months. Shape follows the lived arc — high Aug–Dec (project crunch), valley "
+        "Dec–Feb (winter break), rising ramp Feb–Apr. Deterministic, seeded, reproducible."
     )
 
-    # ── Mechanics ─────────────────────────────────────────────────────
-    doc.add_page_break()
-    add_heading(doc, "Yapı ve Mekanik", 1)
+    # structure
+    heading(doc, "Structure and mechanics", 1)
+    bullet(doc, "Archimedean spiral: 5 turns, outer radius 18 m, inner radius 2.5 m, 0.18 m organic wobble for fingerprint-like irregularity.")
+    bullet(doc, "Two walls (2 m corridor base width), floor, ceiling. Per-day vertex attributes feed all visual layers.")
+    bullet(doc, "Walk camera at 1.62 m eye height; orbit camera for sculptural view. V key toggles.")
+    bullet(doc, "Stack: React 18 + react-three-fiber + Three.js + Vite. Custom GLSL shaders for the wall layers.")
+    bullet(doc, "Audio: Spotify Web Playback SDK (PKCE flow). The current day's top track is searched, then started at its loudest section via audio-analysis (defaults to chorus).")
 
-    add_para(doc,
-        "Spiral: 5 tur, dış yarıçap 18 m, iç yarıçap 2.5 m. Çift duvarlı "
-        "koridor (2 m taban genişliği) + zemin + tavan. Walking modunda "
-        "1.62 m göz yüksekliği. Heykel modunda kamera yörüngede yavaşça "
-        "döner."
+    # controls
+    heading(doc, "Controls", 2)
+    table(
+        doc,
+        headers=["Key", "Action"],
+        rows=[
+            ["V", "toggle orbit / walk"],
+            ["↑ ↓  /  W  S", "walk forward / back along time"],
+            ["← →  /  A  D", "glance sideways"],
+            ["J", "jump to a specific date"],
+            ["P", "play current day's song from chorus"],
+            ["Shift + P", "play from the start"],
+        ],
+        col_widths=[3.5, 12.0],
     )
 
-    add_para(doc,
-        "Her gün spiralin bir segmentini oluşturur; ardışık günler kesin "
-        "kenarlarla değil yumuşak renk lerp'i ile birbirine bağlanır. "
-        "Hiçbir veri sıçramasında sert sınır yoktur — komşu günler renk "
-        "renge erir."
-    )
+    # repo
+    heading(doc, "Repository", 1)
+    lp = doc.add_paragraph()
+    hyperlink(lp, REPO_URL, REPO_URL)
+    lp.paragraph_format.space_after = Pt(4)
 
-    add_para(doc,
-        "Teknik altyapı: React 18 + react-three-fiber + Three.js + drei + "
-        "postprocessing (bloom). Custom GLSL shader'lar her duvarı dikey "
-        "gradyan + sakin günlerde nefes/akış + yoğun günlerde karanlık + "
-        "glitch katmanı olarak çizer. Spotify Web Playback SDK (PKCE auth) "
-        "yürüyüş esnasında o günün şarkısını çalar — varsayılan olarak "
-        "audio-analysis ile nakarat bölümünden başlar."
-    )
-
-    add_heading(doc, "Kontroller", 2)
-
-    ctl_rows = [
-        ["V", "orbit ↔ walk modunu değiştir"],
-        ["↑ / W", "spiralin içine doğru zamanda ileri yürü"],
-        ["↓ / S", "geriye doğru yürü"],
-        ["← → / A D", "yana göz at"],
-        ["J", "tarih seçici aç, doğrudan o güne atla"],
-        ["P", "bulunduğun günün şarkısını nakarat'tan çal"],
-        ["Shift + P", "şarkıyı en baştan çal"],
-    ]
-    add_table(doc, headers=["Tuş", "İşlev"], rows=ctl_rows)
-
-    # ── Repo link ─────────────────────────────────────────────────────
-    add_heading(doc, "Kaynak Kod", 1)
-    add_para(doc,
-        "Tüm pipeline kodu, mock üretim scriptleri, palette ajan "
-        "çıktıları ve görsel katman public bir GitHub repository'sinde "
-        "yayınlanır. Veri katmanı `data/processed/` altında CSV ve JSON "
-        "olarak; sanat katmanı `art/` altında Vite tabanlı bir React + "
-        "Three.js uygulaması olarak yer alır."
-    )
-
-    link_p = doc.add_paragraph()
-    add_hyperlink(link_p, REPO_URL, REPO_URL)
-
-    add_para(doc, "")
-
-    add_para(doc,
-        "Repository içeriği aşağıdaki bölümlere ayrılır:",
-        size=11,
-    )
-    structure = [
-        "data/processed/ — günlük birleşik tablo (innerprint_daily.csv / .json), kaynak CSV'ler, signature palet",
-        "data/agent_batches/ — 5 paralel AI ajanın albüm signature renklerini seçtiği batch input ve çıktıları",
-        "scripts/ — backfill_weather.py, generate_screentime.py, top_song_per_day.py, merge_innerprint.py, build_manifesto_docx.py",
-        "art/ — Vite + React + Three.js prototip (canlı izlenebilir uygulama)",
-        ".github/workflows/deploy.yml — GitHub Pages üzerinde otomatik dağıtım",
-    ]
-    for s in structure:
-        bp = doc.add_paragraph(s, style="List Bullet")
-        for run in bp.runs:
-            run.font.name = "Iowan Old Style"
-            run.font.size = Pt(10)
-
-    # ── Footer ────────────────────────────────────────────────────────
-    doc.add_paragraph()
-    footer = doc.add_paragraph()
-    footer.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    fr = footer.add_run("the spiral remembers what the body did,\nwhat the ears heard, what the sky said.")
-    fr.font.name = "Iowan Old Style"
-    fr.font.size = Pt(11)
-    fr.italic = True
-    fr.font.color.rgb = RGBColor(0x3A, 0x22, 0x40)
+    bullet(doc, "data/processed/ — daily joined table (innerprint_daily.csv / .json), per-source CSVs, album signature palette")
+    bullet(doc, "data/agent_batches/ — AI agent inputs and outputs for the album signature colour pass")
+    bullet(doc, "scripts/ — weather backfill, screen-time mock, top-song aggregation, merge, this manifesto generator")
+    bullet(doc, "art/ — Vite + React + Three.js application")
+    bullet(doc, ".github/workflows/deploy.yml — GitHub Pages auto-deploy")
 
     doc.save(OUT)
     print(f"wrote {OUT}")

@@ -22,6 +22,64 @@ type Props = {
   spotify: SpotifyHud;
 };
 
+function fmtScreen(min: number | null): string {
+  if (min === null || min === undefined) return "—";
+  const h = Math.floor(min / 60);
+  const m = min % 60;
+  if (h === 0) return `${m}m`;
+  return `${h}h ${String(m).padStart(2, "0")}m`;
+}
+
+function CategoryBar({
+  label,
+  minutes,
+  total,
+  color,
+}: {
+  label: string;
+  minutes: number | null;
+  total: number | null;
+  color: string;
+}) {
+  if (!minutes || !total) return null;
+  const pct = Math.min(100, Math.round((minutes / total) * 100));
+  return (
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "44px 1fr 56px",
+        gap: 8,
+        alignItems: "center",
+        marginTop: 4,
+      }}
+    >
+      <span style={{ opacity: 0.6, fontSize: 9, letterSpacing: 1 }}>{label}</span>
+      <span
+        style={{
+          height: 5,
+          background: "rgba(245, 233, 216, 0.10)",
+          borderRadius: 1,
+          overflow: "hidden",
+          position: "relative",
+        }}
+      >
+        <span
+          style={{
+            position: "absolute",
+            inset: 0,
+            width: `${pct}%`,
+            background: color,
+            opacity: 0.85,
+          }}
+        />
+      </span>
+      <span style={{ opacity: 0.75, fontSize: 9, letterSpacing: 0.8, textAlign: "right" }}>
+        {fmtScreen(minutes)}
+      </span>
+    </div>
+  );
+}
+
 export function HUD({ mode, currentDay, dayIndex, totalDays, days, onJump, spotify }: Props) {
   const dateRef = useRef<HTMLInputElement>(null);
   const firstDate = days?.[0]?.date ?? "2025-08-26";
@@ -64,6 +122,76 @@ export function HUD({ mode, currentDay, dayIndex, totalDays, days, onJump, spoti
           2025-08-26 → 2026-05-18 · 266 days
         </div>
       </header>
+
+      {currentDay && (
+        <div
+          style={{
+            position: "absolute",
+            left: 24,
+            top: 86,
+            color: "#f5e9d8",
+            opacity: 0.82,
+            pointerEvents: "none",
+            fontSize: 11,
+            letterSpacing: 1.1,
+            textTransform: "uppercase",
+            maxWidth: 240,
+            lineHeight: 1.5,
+          }}
+        >
+          <div style={{ opacity: 0.55, fontSize: 10 }}>screen time</div>
+          <div
+            style={{
+              fontSize: 22,
+              letterSpacing: 1.6,
+              marginTop: 2,
+              fontWeight: 600,
+              opacity: 0.95,
+            }}
+          >
+            {fmtScreen(currentDay.screen_total_min)}
+            {currentDay.screen_source === "mock" && (
+              <span
+                style={{
+                  fontSize: 9,
+                  marginLeft: 8,
+                  opacity: 0.45,
+                  letterSpacing: 1.2,
+                  fontWeight: 400,
+                }}
+              >
+                · mock
+              </span>
+            )}
+          </div>
+          <div style={{ marginTop: 10, opacity: 0.7, fontSize: 10 }}>
+            <CategoryBar
+              label="prod"
+              minutes={currentDay.screen_productivity_min}
+              total={currentDay.screen_total_min}
+              color="#5FB0E5"
+            />
+            <CategoryBar
+              label="social"
+              minutes={currentDay.screen_social_min}
+              total={currentDay.screen_total_min}
+              color="#E8A2C8"
+            />
+            <CategoryBar
+              label="ent"
+              minutes={currentDay.screen_entertainment_min}
+              total={currentDay.screen_total_min}
+              color="#F2B85A"
+            />
+            <CategoryBar
+              label="other"
+              minutes={currentDay.screen_other_min}
+              total={currentDay.screen_total_min}
+              color="#8A98A6"
+            />
+          </div>
+        </div>
+      )}
 
       <div
         style={{

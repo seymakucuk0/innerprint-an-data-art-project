@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Scene } from "./scene/Scene";
 import { HUD } from "./hud/HUD";
@@ -12,6 +12,10 @@ export function App() {
   const [dayIndex, setDayIndex] = useState(0);
   const [dayCount, setDayCount] = useState(0);
 
+  // Shared with WalkController. When a number, the walker eases s toward
+  // it and then clears it. Null = no pending jump.
+  const gotoRef = useRef<number | null>(null);
+
   // load data once at top level so the HUD has access too
   useEffect(() => {
     fetch("/data/innerprint_daily.json")
@@ -21,7 +25,8 @@ export function App() {
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key.toLowerCase() === "v") {
+      const inField = (document.activeElement as HTMLElement | null)?.tagName === "INPUT";
+      if (e.key.toLowerCase() === "v" && !inField) {
         setMode((m) => (m === "orbit" ? "walk" : "orbit"));
       }
     };
@@ -30,6 +35,18 @@ export function App() {
   }, []);
 
   const onDayChange = useCallback((i: number) => setDayIndex(i), []);
+
+  const onJump = useCallback(
+    (iso: string) => {
+      if (!days || days.length === 0) return;
+      const idx = days.findIndex((d) => d.date === iso);
+      if (idx < 0) return;
+      gotoRef.current = idx / (days.length - 1);
+      // jumps are most expressive from inside the spiral
+      setMode("walk");
+    },
+    [days],
+  );
 
   const cameraInitial: [number, number, number] =
     mode === "walk" ? [18, 1.62, 0] : [0, 28, 32];
@@ -46,6 +63,7 @@ export function App() {
           onDayChange={onDayChange}
           setReady={() => {}}
           setDayCount={setDayCount}
+          gotoRef={gotoRef}
         />
       </Canvas>
       <HUD
@@ -53,6 +71,8 @@ export function App() {
         currentDay={days && dayCount > 0 ? days[dayIndex] : null}
         dayIndex={dayIndex}
         totalDays={dayCount}
+        days={days}
+        onJump={onJump}
       />
     </div>
   );

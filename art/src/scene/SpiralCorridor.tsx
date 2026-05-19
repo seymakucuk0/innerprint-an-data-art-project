@@ -80,12 +80,21 @@ function buildCorridor(days: Day[]) {
   const intensityRaw = days.map((d) => screenIntensity(d.screen_total_min));
   const intensity = smoothSeries(intensityRaw, 1);
 
-  const halfWidths = intensity.map((x) =>
-    lerp(HALF_WIDTH_OPEN, HALF_WIDTH_TIGHT, x),
+  // Step modifier: ±10% on top of the screen-time-driven width. High-step
+  // days widen slightly (the body was out in the world); low-step days
+  // narrow slightly (the body stayed put). Smoothed the same way.
+  const STEP_NORM = 12000; // ~12k = active student day
+  const stepRaw = days.map((d) =>
+    clamp01((d.steps ?? 0) / STEP_NORM),
   );
-  const wallHeights = intensity.map((x) =>
-    lerp(WALL_H_OPEN, WALL_H_TIGHT, x),
-  );
+  const stepNorm = smoothSeries(stepRaw, 1);
+
+  const halfWidths = intensity.map((x, i) => {
+    const base = lerp(HALF_WIDTH_OPEN, HALF_WIDTH_TIGHT, x);
+    const stepMod = lerp(0.90, 1.10, stepNorm[i]);
+    return Math.max(0.42, base * stepMod);
+  });
+  const wallHeights = intensity.map((x) => lerp(WALL_H_OPEN, WALL_H_TIGHT, x));
 
   const bottomHex = fillSignatureGaps(days);
   const topHex = days.map((d) => weatherAnchor(d));

@@ -10,9 +10,10 @@ type Props = {
   onDayChange: (dayIndex: number) => void;
   setReady: (ready: boolean) => void;
   setDayCount: (n: number) => void;
+  gotoRef: React.MutableRefObject<number | null>;
 };
 
-export function Scene({ mode, onDayChange, setReady, setDayCount }: Props) {
+export function Scene({ mode, onDayChange, setReady, setDayCount, gotoRef }: Props) {
   const { data } = useInnerprintData();
 
   if (!data) return null;
@@ -37,6 +38,7 @@ export function Scene({ mode, onDayChange, setReady, setDayCount }: Props) {
         active={mode === "walk"}
         dayCount={data.days.length}
         onDayChange={onDayChange}
+        gotoRef={gotoRef}
       />
 
       <EffectComposer>

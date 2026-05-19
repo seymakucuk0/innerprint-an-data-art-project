@@ -7,6 +7,7 @@ type Props = {
   active: boolean;
   dayCount: number;
   onDayChange: (dayIndex: number) => void;
+  gotoRef: React.MutableRefObject<number | null>;
 };
 
 /**
@@ -21,7 +22,7 @@ type Props = {
  * (2025-08-26); s = 1 is the centre (yesterday). One press of Up moves
  * you a fraction further into your own year.
  */
-export function WalkController({ active, dayCount, onDayChange }: Props) {
+export function WalkController({ active, dayCount, onDayChange, gotoRef }: Props) {
   const { camera } = useThree();
   const keys = useRef<Record<string, boolean>>({});
   const s = useRef(0.0);
@@ -71,6 +72,28 @@ export function WalkController({ active, dayCount, onDayChange }: Props) {
   useFrame((_, delta) => {
     if (!active) return;
     const k = keys.current;
+
+    // If a jump target is pending, ease toward it and ignore manual input
+    // until we arrive. ~1.4 s of half-life so even long jumps feel calm.
+    const target = gotoRef.current;
+    if (target !== null) {
+      const diff = target - s.current;
+      if (Math.abs(diff) < 0.0005) {
+        s.current = target;
+        gotoRef.current = null;
+        velocity.current = 0;
+      } else {
+        s.current += diff * (1 - Math.pow(0.18, delta));
+      }
+      placeCamera();
+      const dayIdx = Math.min(dayCount - 1, Math.floor(s.current * (dayCount - 1)));
+      if (dayIdx !== lastDay.current) {
+        lastDay.current = dayIdx;
+        onDayChange(dayIdx);
+      }
+      return;
+    }
+
     const fwd = (k["arrowup"] ? 1 : 0) + (k["w"] ? 1 : 0);
     const back = (k["arrowdown"] ? 1 : 0) + (k["s"] ? 1 : 0);
     const left = (k["arrowleft"] ? 1 : 0) + (k["a"] ? 1 : 0);

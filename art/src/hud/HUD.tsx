@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import type { Day } from "../types";
 
 type Props = {
@@ -5,9 +6,33 @@ type Props = {
   currentDay: Day | null;
   dayIndex: number;
   totalDays: number;
+  days: Day[] | null;
+  onJump: (dateIso: string) => void;
 };
 
-export function HUD({ mode, currentDay, dayIndex, totalDays }: Props) {
+export function HUD({ mode, currentDay, dayIndex, totalDays, days, onJump }: Props) {
+  const dateRef = useRef<HTMLInputElement>(null);
+  const firstDate = days?.[0]?.date ?? "2025-08-26";
+  const lastDate = days?.[days.length - 1]?.date ?? "2026-05-18";
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      // 'J' = focus the jump field. If typing in the field, ignore other hotkeys.
+      const active = document.activeElement as HTMLElement | null;
+      const inField = active?.tagName === "INPUT";
+      if (e.key.toLowerCase() === "j" && !inField) {
+        e.preventDefault();
+        dateRef.current?.focus();
+        dateRef.current?.showPicker?.();
+      }
+      if (e.key === "Escape" && inField) {
+        (active as HTMLInputElement).blur();
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
   return (
     <>
       <header
@@ -53,6 +78,50 @@ export function HUD({ mode, currentDay, dayIndex, totalDays }: Props) {
             ↑ / ↓ &nbsp;walk &nbsp;·&nbsp; ← / → &nbsp;glance
           </div>
         )}
+        <div style={{ opacity: 0.5, marginTop: 6 }}>
+          <b style={{ opacity: 0.9 }}>j</b> &nbsp;jump to date
+        </div>
+      </div>
+
+      <div
+        style={{
+          position: "absolute",
+          right: 24,
+          bottom: 24,
+          display: "flex",
+          alignItems: "center",
+          gap: 10,
+          pointerEvents: "auto",
+          fontSize: 11,
+          letterSpacing: 1.2,
+          textTransform: "uppercase",
+          opacity: 0.78,
+          color: "#f5e9d8",
+        }}
+      >
+        <span style={{ opacity: 0.55 }}>jump →</span>
+        <input
+          ref={dateRef}
+          type="date"
+          min={firstDate}
+          max={lastDate}
+          defaultValue={currentDay?.date ?? firstDate}
+          onChange={(e) => {
+            if (e.target.value) onJump(e.target.value);
+          }}
+          style={{
+            background: "transparent",
+            color: "#f5e9d8",
+            border: "1px solid rgba(245, 233, 216, 0.25)",
+            borderRadius: 2,
+            padding: "4px 8px",
+            fontFamily: "inherit",
+            fontSize: 11,
+            letterSpacing: 1.2,
+            colorScheme: "dark",
+            outline: "none",
+          }}
+        />
       </div>
 
       {mode === "walk" && currentDay && (

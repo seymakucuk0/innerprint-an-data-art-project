@@ -36,14 +36,16 @@ function smoothstep(x: number): number {
  * All mixes are RGB lerp (Color.lerp) so we don't pass through green on
  * the way between cool-sky and warm-gold.
  */
+// Vivid anchors. Sunny days punch yellow / sky-blue, overcast holds grey,
+// heavy rain collapses to near-black storm, snow is bright ice.
 const ANCHOR = {
-  sunnyHot: "#E8C257",   // golden amber (hot clear day)
-  sunnyCool: "#B5D2E8",  // pale sky blue (cool clear day)
-  overcast: "#8E9BA8",   // cool pale grey-blue (no sun, no rain)
-  rainLight: "#9A9CA1",  // mid grey
-  rainHeavy: "#454648",  // storm grey
-  snowLight: "#D8E8F0",  // bright ice
-  snowHeavy: "#A5C8D8",  // denser ice
+  sunnyHot: "#F4C022",   // vivid saturated gold
+  sunnyCool: "#5FB0E5",  // proper bright sky blue
+  overcast: "#8A98A6",   // unsaturated cool grey
+  rainLight: "#6E7177",  // mid stone grey
+  rainHeavy: "#0E0F12",  // storm: near-black
+  snowLight: "#E5F0F5",  // bright ice
+  snowHeavy: "#7AB0CC",  // denser ice
 } as const;
 
 export function weatherAnchor(d: Day): string {

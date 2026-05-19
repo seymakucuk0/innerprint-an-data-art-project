@@ -68,6 +68,7 @@ export function SpiralCorridor({ days }: Props) {
       <mesh geometry={built.outerWall} material={built.wallMaterial} />
       <mesh geometry={built.innerWall} material={built.wallMaterial} />
       <mesh geometry={built.floor} material={built.floorMaterial} />
+      <mesh geometry={built.ceiling} material={built.ceilingMaterial} />
     </group>
   );
 }
@@ -102,6 +103,7 @@ function buildCorridor(days: Day[]) {
   const outerPos = new Float32Array(N * 2 * 3);
   const innerPos = new Float32Array(N * 2 * 3);
   const floorPos = new Float32Array(N * 2 * 3);
+  const ceilingPos = new Float32Array(N * 2 * 3);
 
   const bottomColors = new Float32Array(N * 2 * 3);
   const topColors = new Float32Array(N * 2 * 3);
@@ -110,6 +112,9 @@ function buildCorridor(days: Day[]) {
   // floor attributes (only one vertical, so just bottom anchor reused for "color")
   const floorColors = new Float32Array(N * 2 * 3);
   const floorBright = new Float32Array(N * 2); // 0..1, set by step count
+
+  // ceiling carries the top anchor (weather) — looking up is looking at sky
+  const ceilingColors = new Float32Array(N * 2 * 3);
 
   const stepsArr = days.map((d) => d.steps ?? 0);
   const stepsMax = Math.max(1, ...stepsArr);
@@ -151,6 +156,14 @@ function buildCorridor(days: Day[]) {
     floorPos[i * 6 + 4] = 0.001;
     floorPos[i * 6 + 5] = iz;
 
+    // ceiling: same XZ but at the wall top (slightly under to avoid z-fight)
+    ceilingPos[i * 6 + 0] = ox;
+    ceilingPos[i * 6 + 1] = wallH - 0.001;
+    ceilingPos[i * 6 + 2] = oz;
+    ceilingPos[i * 6 + 3] = ix;
+    ceilingPos[i * 6 + 4] = wallH - 0.001;
+    ceilingPos[i * 6 + 5] = iz;
+
     const bot = new Color(bottomHex[i]);
     const top = new Color(topHex[i]);
     const stepNorm = Math.pow(stepsArr[i] / stepsMax, 0.7); // ease emphasis
@@ -168,6 +181,9 @@ function buildCorridor(days: Day[]) {
       floorColors[idx + 1] = bot.g;
       floorColors[idx + 2] = bot.b;
       floorBright[i * 2 + v] = stepNorm;
+      ceilingColors[idx + 0] = top.r;
+      ceilingColors[idx + 1] = top.g;
+      ceilingColors[idx + 2] = top.b;
     }
   }
 
@@ -198,6 +214,12 @@ function buildCorridor(days: Day[]) {
   floorGeom.setAttribute("aBright", new BufferAttribute(floorBright, 1));
   floorGeom.setIndex(indices);
   floorGeom.computeVertexNormals();
+
+  const ceilingGeom = new BufferGeometry();
+  ceilingGeom.setAttribute("position", new BufferAttribute(ceilingPos, 3));
+  ceilingGeom.setAttribute("aColor", new BufferAttribute(ceilingColors, 3));
+  ceilingGeom.setIndex(indices);
+  ceilingGeom.computeVertexNormals();
 
   const wallMaterial = new ShaderMaterial({
     side: DoubleSide,
@@ -261,11 +283,35 @@ function buildCorridor(days: Day[]) {
     `,
   });
 
+  const ceilingMaterial = new ShaderMaterial({
+    side: DoubleSide,
+    transparent: false,
+    vertexShader: /* glsl */ `
+      attribute vec3 aColor;
+      varying vec3 vColor;
+      void main() {
+        vColor = aColor;
+        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+      }
+    `,
+    fragmentShader: /* glsl */ `
+      precision highp float;
+      varying vec3 vColor;
+      void main() {
+        // Ceiling = sky. Emit the top anchor a touch brighter so it reads
+        // as a glowing canopy rather than a flat panel.
+        gl_FragColor = vec4(vColor * 1.12, 1.0);
+      }
+    `,
+  });
+
   return {
     outerWall: makeWall(outerPos),
     innerWall: makeWall(innerPos),
     floor: floorGeom,
+    ceiling: ceilingGeom,
     wallMaterial,
     floorMaterial,
+    ceilingMaterial,
   };
 }

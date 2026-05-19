@@ -124,7 +124,7 @@ export function HUD({ mode, currentDay, dayIndex, totalDays, days, onJump }: Pro
         />
       </div>
 
-      {mode === "walk" && currentDay && (
+      {currentDay && (
         <div
           style={{
             position: "absolute",
@@ -134,27 +134,44 @@ export function HUD({ mode, currentDay, dayIndex, totalDays, days, onJump }: Pro
             textAlign: "center",
             pointerEvents: "none",
             color: "#f5e9d8",
-            opacity: 0.78,
+            opacity: 0.82,
             letterSpacing: 1.4,
             textTransform: "uppercase",
+            maxWidth: "70vw",
           }}
         >
           <div style={{ fontSize: 11, opacity: 0.6 }}>{currentDay.weekday}</div>
           <div style={{ fontSize: 22, letterSpacing: 3, marginTop: 4 }}>
             {currentDay.date}
           </div>
-          {currentDay.top_song && (
+          {currentDay.top_song ? (
             <div
               style={{
                 fontSize: 13,
                 marginTop: 10,
-                opacity: 0.78,
+                opacity: 0.85,
                 letterSpacing: 0.4,
                 textTransform: "none",
               }}
             >
               {currentDay.top_song}
-              <span style={{ opacity: 0.55 }}> · {currentDay.top_song_artist ?? "—"}</span>
+              <span style={{ opacity: 0.55 }}>
+                {" · "}
+                {currentDay.top_song_artist ?? "—"}
+              </span>
+            </div>
+          ) : (
+            <div
+              style={{
+                fontSize: 11,
+                marginTop: 10,
+                opacity: 0.4,
+                letterSpacing: 0.6,
+                textTransform: "none",
+                fontStyle: "italic",
+              }}
+            >
+              no streams this day
             </div>
           )}
           {(currentDay.top_song_album || currentDay.top_album) && (

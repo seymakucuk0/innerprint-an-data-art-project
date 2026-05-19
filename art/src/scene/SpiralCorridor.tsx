@@ -266,28 +266,36 @@ function buildCorridor(days: Day[]) {
       varying float vScreen;
       varying vec3 vWorld;
 
-      // small pseudo-noise so the flicker isn't a clean sine
-      float hash(vec2 p) {
-        return fract(sin(dot(p, vec2(12.9898, 78.233))) * 43758.5453);
-      }
-
       void main() {
-        float t = smoothstep(0.0, 1.0, vY);
+        // World-space phase seed so neighbouring segments breathe out
+        // of sync — no two days flow in lockstep.
+        float seed = vWorld.x * 0.18 + vWorld.z * 0.14;
+
+        // 'Freedom' is the inverse of screen intensity. Light-screen
+        // days breathe and shimmer; heavy-screen days hold almost
+        // still (frozen by the phone).
+        float freedom = 1.0 - vScreen;
+
+        // Slow vertical breathing of the gradient transition point —
+        // the boundary between bottom and top anchors gently rises
+        // and falls. Pure smooth sine, no noise.
+        float breathe = sin(uTime * 0.45 + seed * 1.3) * 0.09 * freedom;
+        float tt = smoothstep(0.0, 1.0, clamp(vY + breathe, 0.0, 1.0));
+
+        vec3 col = mix(vBottom, vTop, tt);
+
+        // Static bow so flat unbroken walls still feel hand-lit.
         float lift = 1.0 + 0.05 * (1.0 - 4.0 * vY * (1.0 - vY));
-        vec3 col = mix(vBottom, vTop, t) * lift;
 
-        // Screen-time flicker — high-freq shimmer whose amplitude scales
-        // with the day's screen intensity. World-space coords seed the
-        // hash so adjacent segments don't pulse in lockstep.
-        float seed = floor(vWorld.x * 0.7) + floor(vWorld.z * 0.7) * 13.0;
-        float n = hash(vec2(seed, floor(uTime * 22.0)));
-        float slowWave = 0.5 + 0.5 * sin(uTime * 4.0 + seed);
-        float flicker = 1.0
-          + vScreen * 0.07 * (n - 0.5) * 2.0          // high-freq shimmer
-          + vScreen * 0.05 * (slowWave - 0.5);        // slower breathing
-        col *= flicker;
+        // Two overlapping slow sines for a soft luminance flow.
+        // Amplitude bottoms out at ~3% even at full compression so the
+        // wall is never completely dead — but is unmistakably calmer.
+        float w1 = sin(uTime * 0.85 + seed * 1.7 + vY * 3.0);
+        float w2 = sin(uTime * 0.42 + seed * 0.7 - vY * 1.4);
+        float flow = (w1 + w2) * 0.5;
+        float modulation = 1.0 + flow * (0.03 + 0.12 * freedom);
 
-        gl_FragColor = vec4(col, 1.0);
+        gl_FragColor = vec4(col * lift * modulation, 1.0);
       }
     `,
   });

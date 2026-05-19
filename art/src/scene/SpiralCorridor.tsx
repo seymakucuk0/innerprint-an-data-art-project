@@ -16,11 +16,11 @@ import { fillSignatureGaps, weatherAnchor } from "../spiral/colors";
 // you — narrow corridor, tall walls. Light-screen days open up. Below
 // HALF_WIDTH_MIN the corridor would stop being walkable, so we clamp.
 const SCREEN_NORM_MIN = 90;     // ≈ 1.5 h  → fully open
-const SCREEN_NORM_MAX = 960;    // ≈ 16 h   → fully compressed
-const HALF_WIDTH_OPEN = 1.55;   // 3.1 m corridor (open day)
-const HALF_WIDTH_TIGHT = 0.62;  // 1.24 m corridor (compressed day)
-const WALL_H_OPEN = 2.9;
-const WALL_H_TIGHT = 4.4;
+const SCREEN_NORM_MAX = 840;    // ≈ 14 h   → fully compressed
+const HALF_WIDTH_OPEN = 1.60;   // 3.20 m corridor (open day)
+const HALF_WIDTH_TIGHT = 0.46;  // 0.92 m corridor (single-file, claustrophobic)
+const WALL_H_OPEN = 2.8;
+const WALL_H_TIGHT = 4.9;
 
 function clamp01(x: number): number {
   return Math.min(1, Math.max(0, x));

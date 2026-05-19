@@ -6,6 +6,8 @@ import type { Day } from "./types";
 import { hasClientId, login, logout, resolveToken } from "./spotify/auth";
 import {
   ensurePlayer,
+  formatMs,
+  getChorusStartMs,
   playUri,
   searchTrackUri,
   togglePlayPause,
@@ -31,7 +33,7 @@ export function App() {
 
   // load data once at top level so the HUD has access too
   useEffect(() => {
-    fetch("/data/innerprint_daily.json")
+    fetch(`${import.meta.env.BASE_URL}data/innerprint_daily.json`)
       .then((r) => r.json())
       .then((j) => setDays(j.days));
   }, []);
@@ -50,7 +52,8 @@ export function App() {
       }
       if (e.key.toLowerCase() === "p") {
         e.preventDefault();
-        void playCurrentDay();
+        // Shift+P → from the very start; bare P → smart chorus start
+        void playCurrentDay({ fromStart: e.shiftKey });
       }
     };
     window.addEventListener("keydown", onKey);
@@ -72,7 +75,7 @@ export function App() {
     [days],
   );
 
-  async function playCurrentDay() {
+  async function playCurrentDay(opts: { fromStart?: boolean } = {}) {
     if (!spotifyToken) {
       setSpotifyStatus("login required");
       return;
@@ -92,8 +95,14 @@ export function App() {
         setSpotifyStatus(`couldn't find "${track}"`);
         return;
       }
-      const ok = await playUri(spotifyToken, uri);
-      setSpotifyStatus(ok ? `▶ ${track}` : "play failed");
+      let position = 0;
+      let label = `▶ ${track}`;
+      if (!opts.fromStart) {
+        position = await getChorusStartMs(spotifyToken, uri);
+        if (position > 0) label = `▶ ${track} (from ${formatMs(position)})`;
+      }
+      const ok = await playUri(spotifyToken, uri, position);
+      setSpotifyStatus(ok ? label : "play failed");
     } catch (e) {
       setSpotifyStatus(String((e as Error).message ?? e));
     }
@@ -137,6 +146,7 @@ export function App() {
           onLogin: () => void login(),
           onLogout: disconnectSpotify,
           onPlay: () => void playCurrentDay(),
+          onPlayFromStart: () => void playCurrentDay({ fromStart: true }),
           onToggle: () => void togglePlayPause(),
         }}
       />

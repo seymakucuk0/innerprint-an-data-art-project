@@ -7,7 +7,8 @@ type SpotifyHud = {
   status: string | null;
   onLogin: () => void;
   onLogout: () => void;
-  onPlay: () => void;
+  onPlay: () => void;             // play from chorus (smart)
+  onPlayFromStart: () => void;    // play from start
   onToggle: () => void;
 };
 
@@ -93,9 +94,14 @@ export function HUD({ mode, currentDay, dayIndex, totalDays, days, onJump, spoti
           <b style={{ opacity: 0.9 }}>j</b> &nbsp;jump to date
         </div>
         {spotify.authed && (
-          <div style={{ opacity: 0.5, marginTop: 2 }}>
-            <b style={{ opacity: 0.9 }}>p</b> &nbsp;play current song
-          </div>
+          <>
+            <div style={{ opacity: 0.5, marginTop: 2 }}>
+              <b style={{ opacity: 0.9 }}>p</b> &nbsp;play from chorus
+            </div>
+            <div style={{ opacity: 0.5 }}>
+              <b style={{ opacity: 0.9 }}>shift + p</b> &nbsp;from start
+            </div>
+          </>
         )}
       </div>
 
@@ -138,7 +144,10 @@ export function HUD({ mode, currentDay, dayIndex, totalDays, days, onJump, spoti
         ) : (
           <>
             <button
-              onClick={spotify.onPlay}
+              onClick={(e) =>
+                e.shiftKey ? spotify.onPlayFromStart() : spotify.onPlay()
+              }
+              title="click → play from chorus · shift+click → from start"
               style={{
                 background: "rgba(245, 233, 216, 0.08)",
                 border: "1px solid rgba(245, 233, 216, 0.35)",
@@ -242,43 +251,54 @@ export function HUD({ mode, currentDay, dayIndex, totalDays, days, onJump, spoti
           style={{
             position: "absolute",
             left: "50%",
-            bottom: 28,
+            bottom: 36,
             transform: "translateX(-50%)",
             textAlign: "center",
             pointerEvents: "none",
-            color: "#f5e9d8",
-            opacity: 0.82,
+            color: "#f8eedb",
             letterSpacing: 1.4,
             textTransform: "uppercase",
             maxWidth: "70vw",
+            textShadow: "0 0 18px rgba(0, 0, 0, 0.55)",
           }}
         >
-          <div style={{ fontSize: 11, opacity: 0.6 }}>{currentDay.weekday}</div>
-          <div style={{ fontSize: 22, letterSpacing: 3, marginTop: 4 }}>
+          <div style={{ fontSize: 12, opacity: 0.7, fontWeight: 500 }}>
+            {currentDay.weekday}
+          </div>
+          <div
+            style={{
+              fontSize: 34,
+              letterSpacing: 5,
+              marginTop: 6,
+              fontWeight: 600,
+              opacity: 0.96,
+            }}
+          >
             {currentDay.date}
           </div>
           {currentDay.top_song ? (
             <div
               style={{
-                fontSize: 13,
-                marginTop: 10,
-                opacity: 0.85,
-                letterSpacing: 0.4,
+                fontSize: 18,
+                marginTop: 14,
+                opacity: 0.95,
+                letterSpacing: 0.5,
                 textTransform: "none",
+                fontWeight: 500,
               }}
             >
               {currentDay.top_song}
-              <span style={{ opacity: 0.55 }}>
-                {" · "}
+              <span style={{ opacity: 0.65, fontWeight: 400 }}>
+                {"  ·  "}
                 {currentDay.top_song_artist ?? "—"}
               </span>
             </div>
           ) : (
             <div
               style={{
-                fontSize: 11,
-                marginTop: 10,
-                opacity: 0.4,
+                fontSize: 13,
+                marginTop: 14,
+                opacity: 0.45,
                 letterSpacing: 0.6,
                 textTransform: "none",
                 fontStyle: "italic",
@@ -290,10 +310,10 @@ export function HUD({ mode, currentDay, dayIndex, totalDays, days, onJump, spoti
           {(currentDay.top_song_album || currentDay.top_album) && (
             <div
               style={{
-                fontSize: 10,
-                marginTop: 4,
+                fontSize: 12,
+                marginTop: 6,
                 fontStyle: "italic",
-                opacity: 0.55,
+                opacity: 0.7,
                 letterSpacing: 0.6,
                 textTransform: "none",
               }}
@@ -310,9 +330,9 @@ export function HUD({ mode, currentDay, dayIndex, totalDays, days, onJump, spoti
           <div
             style={{
               fontSize: 10,
-              marginTop: 6,
-              opacity: 0.45,
-              letterSpacing: 1.0,
+              marginTop: 10,
+              opacity: 0.5,
+              letterSpacing: 1.2,
             }}
           >
             day {dayIndex + 1} / {totalDays}

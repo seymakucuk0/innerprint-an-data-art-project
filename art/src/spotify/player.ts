@@ -106,8 +106,14 @@ export async function searchTrackUri(
   return null;
 }
 
-export async function playUri(token: string, uri: string): Promise<boolean> {
+export async function playUri(
+  token: string,
+  uri: string,
+  positionMs = 0,
+): Promise<boolean> {
   if (!deviceId) return false;
+  const body: { uris: string[]; position_ms?: number } = { uris: [uri] };
+  if (positionMs > 0) body.position_ms = Math.round(positionMs);
   const r = await fetch(
     `https://api.spotify.com/v1/me/player/play?device_id=${deviceId}`,
     {
@@ -116,10 +122,53 @@ export async function playUri(token: string, uri: string): Promise<boolean> {
         Authorization: `Bearer ${token}`,
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ uris: [uri] }),
+      body: JSON.stringify(body),
     },
   );
   return r.ok;
+}
+
+/**
+ * Use Spotify's own audio-analysis to estimate where the chorus / hook
+ * starts. Heuristic: among sections that are long enough to be a real
+ * passage (≥ 6 s) and aren't the very intro, take the loudest one;
+ * fall back to the loudest of any section, then to 0.
+ */
+export async function getChorusStartMs(
+  token: string,
+  uri: string,
+): Promise<number> {
+  const trackId = uri.split(":").pop();
+  if (!trackId) return 0;
+  const r = await fetch(
+    `https://api.spotify.com/v1/audio-analysis/${trackId}`,
+    { headers: { Authorization: `Bearer ${token}` } },
+  );
+  if (!r.ok) return 0;
+  const data = await r.json();
+  const sections: Array<{ start: number; duration: number; loudness: number }> =
+    data?.sections ?? [];
+  if (sections.length === 0) return 0;
+
+  const introEnd = sections[0]?.duration ?? 0;
+  const longEnough = sections.filter(
+    (s) => s.duration >= 6 && s.start >= introEnd * 0.5,
+  );
+  const pool = longEnough.length > 0 ? longEnough : sections;
+  const best = pool.reduce((a, b) =>
+    b.loudness > a.loudness ||
+    (b.loudness === a.loudness && b.duration > a.duration)
+      ? b
+      : a,
+  );
+  return Math.max(0, Math.round(best.start * 1000));
+}
+
+export function formatMs(ms: number): string {
+  const total = Math.round(ms / 1000);
+  const m = Math.floor(total / 60);
+  const s = total % 60;
+  return `${m}:${String(s).padStart(2, "0")}`;
 }
 
 export async function togglePlayPause(): Promise<void> {

@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import type { Dataset } from "../types";
 
-export function useInnerprintData(url = "/data/innerprint_daily.json") {
+export function useInnerprintData(
+  url = `${import.meta.env.BASE_URL}data/innerprint_daily.json`,
+) {
   const [data, setData] = useState<Dataset | null>(null);
   const [error, setError] = useState<string | null>(null);
 

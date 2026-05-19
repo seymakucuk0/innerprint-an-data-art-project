@@ -10,7 +10,11 @@
  */
 
 const CLIENT_ID = import.meta.env.VITE_SPOTIFY_CLIENT_ID as string | undefined;
-const REDIRECT_URI = window.location.origin + "/";
+// Must exactly match a URI registered on the Spotify app. In dev this
+// resolves to http://127.0.0.1:5173/; in production to
+// https://seymakucuk0.github.io/innerprint-an-data-art-project/.
+const REDIRECT_URI =
+  window.location.origin + (import.meta.env.BASE_URL ?? "/");
 const SCOPES = [
   "streaming",
   "user-read-email",

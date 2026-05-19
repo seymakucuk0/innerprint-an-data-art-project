@@ -21,6 +21,10 @@ dist/
 # macOS
 .DS_Store
 
+# env (per-user secrets like Spotify client id)
+.env.local
+art/.env.local
+
 # editor
 .vscode/
 .idea/

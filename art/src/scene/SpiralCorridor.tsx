@@ -1,4 +1,5 @@
-import { useMemo } from "react";
+import { useMemo, useRef } from "react";
+import { useFrame } from "@react-three/fiber";
 import {
   BufferAttribute,
   BufferGeometry,
@@ -62,6 +63,14 @@ type Props = { days: Day[] };
  */
 export function SpiralCorridor({ days }: Props) {
   const built = useMemo(() => buildCorridor(days), [days]);
+  const t0 = useRef(performance.now() / 1000);
+
+  // Drive the wall shader's uTime every frame so the screen-time flicker
+  // amplitude can do its high-freq shimmer per-segment.
+  useFrame(() => {
+    const t = performance.now() / 1000 - t0.current;
+    built.wallMaterial.uniforms.uTime.value = t;
+  });
 
   return (
     <group>
@@ -108,6 +117,7 @@ function buildCorridor(days: Day[]) {
   const bottomColors = new Float32Array(N * 2 * 3);
   const topColors = new Float32Array(N * 2 * 3);
   const ys = new Float32Array(N * 2);
+  const screenIntensities = new Float32Array(N * 2);  // per-vertex 0..1 flicker driver
 
   // floor attributes (only one vertical, so just bottom anchor reused for "color")
   const floorColors = new Float32Array(N * 2 * 3);
@@ -184,6 +194,7 @@ function buildCorridor(days: Day[]) {
       ceilingColors[idx + 0] = top.r;
       ceilingColors[idx + 1] = top.g;
       ceilingColors[idx + 2] = top.b;
+      screenIntensities[i * 2 + v] = intensity[i]; // smoothed 0..1
     }
   }
 
@@ -202,6 +213,7 @@ function buildCorridor(days: Day[]) {
     g.setAttribute("aBottom", new BufferAttribute(bottomColors, 3));
     g.setAttribute("aTop", new BufferAttribute(topColors, 3));
     g.setAttribute("aY", new BufferAttribute(ys, 1));
+    g.setAttribute("aScreen", new BufferAttribute(screenIntensities, 1));
     g.setIndex(indices);
     g.computeVertexNormals();
     return g;
@@ -224,31 +236,57 @@ function buildCorridor(days: Day[]) {
   const wallMaterial = new ShaderMaterial({
     side: DoubleSide,
     transparent: false,
+    uniforms: { uTime: { value: 0 } },
     vertexShader: /* glsl */ `
       attribute vec3 aBottom;
       attribute vec3 aTop;
       attribute float aY;
+      attribute float aScreen;
       varying vec3 vBottom;
       varying vec3 vTop;
       varying float vY;
+      varying float vScreen;
+      varying vec3 vWorld;
       void main() {
         vBottom = aBottom;
         vTop = aTop;
         vY = aY;
-        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+        vScreen = aScreen;
+        vec4 world = modelMatrix * vec4(position, 1.0);
+        vWorld = world.xyz;
+        gl_Position = projectionMatrix * viewMatrix * world;
       }
     `,
     fragmentShader: /* glsl */ `
       precision highp float;
+      uniform float uTime;
       varying vec3 vBottom;
       varying vec3 vTop;
       varying float vY;
+      varying float vScreen;
+      varying vec3 vWorld;
+
+      // small pseudo-noise so the flicker isn't a clean sine
+      float hash(vec2 p) {
+        return fract(sin(dot(p, vec2(12.9898, 78.233))) * 43758.5453);
+      }
+
       void main() {
         float t = smoothstep(0.0, 1.0, vY);
-        // slight luminance lift at the very bottom and top so the gradient feels
-        // glowy rather than flat — Damonxart "frozen light" hint
         float lift = 1.0 + 0.05 * (1.0 - 4.0 * vY * (1.0 - vY));
         vec3 col = mix(vBottom, vTop, t) * lift;
+
+        // Screen-time flicker — high-freq shimmer whose amplitude scales
+        // with the day's screen intensity. World-space coords seed the
+        // hash so adjacent segments don't pulse in lockstep.
+        float seed = floor(vWorld.x * 0.7) + floor(vWorld.z * 0.7) * 13.0;
+        float n = hash(vec2(seed, floor(uTime * 22.0)));
+        float slowWave = 0.5 + 0.5 * sin(uTime * 4.0 + seed);
+        float flicker = 1.0
+          + vScreen * 0.07 * (n - 0.5) * 2.0          // high-freq shimmer
+          + vScreen * 0.05 * (slowWave - 0.5);        // slower breathing
+        col *= flicker;
+
         gl_FragColor = vec4(col, 1.0);
       }
     `,

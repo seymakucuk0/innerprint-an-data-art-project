@@ -3,6 +3,13 @@ import { Canvas } from "@react-three/fiber";
 import { Scene } from "./scene/Scene";
 import { HUD } from "./hud/HUD";
 import type { Day } from "./types";
+import { hasClientId, login, logout, resolveToken } from "./spotify/auth";
+import {
+  ensurePlayer,
+  playUri,
+  searchTrackUri,
+  togglePlayPause,
+} from "./spotify/player";
 
 type Mode = "orbit" | "walk";
 
@@ -16,6 +23,12 @@ export function App() {
   // it and then clears it. Null = no pending jump.
   const gotoRef = useRef<number | null>(null);
 
+  // Spotify state
+  const [spotifyToken, setSpotifyToken] = useState<string | null>(null);
+  const [spotifyStatus, setSpotifyStatus] = useState<string | null>(null);
+  const tokenRef = useRef<string | null>(null);
+  tokenRef.current = spotifyToken;
+
   // load data once at top level so the HUD has access too
   useEffect(() => {
     fetch("/data/innerprint_daily.json")
@@ -23,16 +36,27 @@ export function App() {
       .then((j) => setDays(j.days));
   }, []);
 
+  // pick up an auth redirect or cached token on first paint
+  useEffect(() => {
+    resolveToken().then((t) => setSpotifyToken(t));
+  }, []);
+
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       const inField = (document.activeElement as HTMLElement | null)?.tagName === "INPUT";
-      if (e.key.toLowerCase() === "v" && !inField) {
+      if (inField) return;
+      if (e.key.toLowerCase() === "v") {
         setMode((m) => (m === "orbit" ? "walk" : "orbit"));
+      }
+      if (e.key.toLowerCase() === "p") {
+        e.preventDefault();
+        void playCurrentDay();
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [days, dayIndex, spotifyToken]);
 
   const onDayChange = useCallback((i: number) => setDayIndex(i), []);
 
@@ -47,6 +71,39 @@ export function App() {
     },
     [days],
   );
+
+  async function playCurrentDay() {
+    if (!spotifyToken) {
+      setSpotifyStatus("login required");
+      return;
+    }
+    const day = days?.[dayIndex];
+    const artist = day?.top_song_artist ?? day?.top_artist;
+    const track = day?.top_song;
+    if (!artist || !track) {
+      setSpotifyStatus("no song for this day");
+      return;
+    }
+    try {
+      setSpotifyStatus("loading…");
+      await ensurePlayer(() => tokenRef.current);
+      const uri = await searchTrackUri(spotifyToken, artist, track);
+      if (!uri) {
+        setSpotifyStatus(`couldn't find "${track}"`);
+        return;
+      }
+      const ok = await playUri(spotifyToken, uri);
+      setSpotifyStatus(ok ? `▶ ${track}` : "play failed");
+    } catch (e) {
+      setSpotifyStatus(String((e as Error).message ?? e));
+    }
+  }
+
+  function disconnectSpotify() {
+    logout();
+    setSpotifyToken(null);
+    setSpotifyStatus(null);
+  }
 
   const cameraInitial: [number, number, number] =
     mode === "walk" ? [18, 1.62, 0] : [0, 28, 32];
@@ -73,6 +130,15 @@ export function App() {
         totalDays={dayCount}
         days={days}
         onJump={onJump}
+        spotify={{
+          configured: hasClientId(),
+          authed: Boolean(spotifyToken),
+          status: spotifyStatus,
+          onLogin: () => void login(),
+          onLogout: disconnectSpotify,
+          onPlay: () => void playCurrentDay(),
+          onToggle: () => void togglePlayPause(),
+        }}
       />
     </div>
   );

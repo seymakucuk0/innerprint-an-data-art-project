@@ -89,9 +89,45 @@ All three are deterministic (the mock screen-time generator is seeded).
 
 ## What's next
 
-- [x] Lock the 8-month dataset (this commit)
-- [ ] Map each daily row to a spiral segment: corridor width, wall height,
-      colour, light, ambient sound
-- [ ] React + Three.js (react-three-fiber) shell with orbit + walk modes
+- [x] Lock the 8-month dataset
+- [x] React + Three.js (react-three-fiber) shell with orbit + walk modes
+- [x] Spiral corridor with two walls, floor, ceiling
+- [x] Per-day vertical gradient (album signature ↔ weather anchor)
+- [x] Corridor width + wall height driven by screen time, ±10% by steps
+- [x] Floor luminosity driven by step count
+- [x] Wall flicker shimmer scaled by screen-time intensity
+- [x] Spotify Web Playback SDK: walk → press P → song plays
+- [x] Date jump (J key + native picker)
 - [ ] Tone.js soundscape that morphs as you walk between regions
+- [ ] Category stains on the floor (productivity / social / entertainment)
 - [ ] STL export of the spiral mesh
+
+## Running the art
+
+```bash
+cd art
+npm install
+npm run dev      # → http://localhost:5173/
+```
+
+### Spotify integration (optional — for full-track playback)
+
+1. Create an app at https://developer.spotify.com/dashboard
+2. Edit Settings → add Redirect URI: `http://localhost:5173/`
+3. Copy `art/.env.example` to `art/.env.local` and paste your Client ID
+4. Restart `npm run dev`
+5. Hit "connect spotify" in the bottom-left of the canvas, log in
+6. While walking (V), press **P** to play the current day's top song
+
+Requires Spotify Premium (Web Playback SDK only authorizes Premium accounts).
+
+### Controls
+
+| Key | Action |
+|---|---|
+| V | toggle orbit ↔ walk |
+| ↑ / W | walk into the spiral (toward today) |
+| ↓ / S | walk back (toward Aug 2025) |
+| ← → / A D | glance sideways |
+| J | jump to date (opens picker) |
+| P | play current day's song on Spotify |

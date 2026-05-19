@@ -1,6 +1,16 @@
 import { useEffect, useRef } from "react";
 import type { Day } from "../types";
 
+type SpotifyHud = {
+  configured: boolean;
+  authed: boolean;
+  status: string | null;
+  onLogin: () => void;
+  onLogout: () => void;
+  onPlay: () => void;
+  onToggle: () => void;
+};
+
 type Props = {
   mode: "orbit" | "walk";
   currentDay: Day | null;
@@ -8,9 +18,10 @@ type Props = {
   totalDays: number;
   days: Day[] | null;
   onJump: (dateIso: string) => void;
+  spotify: SpotifyHud;
 };
 
-export function HUD({ mode, currentDay, dayIndex, totalDays, days, onJump }: Props) {
+export function HUD({ mode, currentDay, dayIndex, totalDays, days, onJump, spotify }: Props) {
   const dateRef = useRef<HTMLInputElement>(null);
   const firstDate = days?.[0]?.date ?? "2025-08-26";
   const lastDate = days?.[days.length - 1]?.date ?? "2026-05-18";
@@ -81,6 +92,108 @@ export function HUD({ mode, currentDay, dayIndex, totalDays, days, onJump }: Pro
         <div style={{ opacity: 0.5, marginTop: 6 }}>
           <b style={{ opacity: 0.9 }}>j</b> &nbsp;jump to date
         </div>
+        {spotify.authed && (
+          <div style={{ opacity: 0.5, marginTop: 2 }}>
+            <b style={{ opacity: 0.9 }}>p</b> &nbsp;play current song
+          </div>
+        )}
+      </div>
+
+      <div
+        style={{
+          position: "absolute",
+          left: 24,
+          bottom: 24,
+          fontSize: 11,
+          letterSpacing: 1.2,
+          textTransform: "uppercase",
+          color: "#f5e9d8",
+          opacity: 0.78,
+          pointerEvents: "auto",
+          display: "flex",
+          alignItems: "center",
+          gap: 10,
+        }}
+      >
+        {!spotify.configured ? (
+          <span style={{ opacity: 0.45 }}>spotify: set client id</span>
+        ) : !spotify.authed ? (
+          <button
+            onClick={spotify.onLogin}
+            style={{
+              background: "transparent",
+              border: "1px solid rgba(245, 233, 216, 0.25)",
+              color: "#f5e9d8",
+              padding: "5px 10px",
+              borderRadius: 2,
+              fontFamily: "inherit",
+              fontSize: 11,
+              letterSpacing: 1.2,
+              textTransform: "uppercase",
+              cursor: "pointer",
+            }}
+          >
+            ▶ connect spotify
+          </button>
+        ) : (
+          <>
+            <button
+              onClick={spotify.onPlay}
+              style={{
+                background: "rgba(245, 233, 216, 0.08)",
+                border: "1px solid rgba(245, 233, 216, 0.35)",
+                color: "#f5e9d8",
+                padding: "5px 12px",
+                borderRadius: 2,
+                fontFamily: "inherit",
+                fontSize: 11,
+                letterSpacing: 1.2,
+                textTransform: "uppercase",
+                cursor: "pointer",
+              }}
+            >
+              ▶ play this day
+            </button>
+            <button
+              onClick={spotify.onToggle}
+              title="toggle play / pause"
+              style={{
+                background: "transparent",
+                border: "1px solid rgba(245, 233, 216, 0.2)",
+                color: "#f5e9d8",
+                padding: "5px 9px",
+                borderRadius: 2,
+                fontFamily: "inherit",
+                fontSize: 11,
+                letterSpacing: 1.2,
+                cursor: "pointer",
+              }}
+            >
+              ⏸
+            </button>
+            <button
+              onClick={spotify.onLogout}
+              title="disconnect"
+              style={{
+                background: "transparent",
+                border: "none",
+                color: "#f5e9d8",
+                opacity: 0.45,
+                fontSize: 10,
+                letterSpacing: 1.2,
+                textTransform: "uppercase",
+                cursor: "pointer",
+              }}
+            >
+              disconnect
+            </button>
+          </>
+        )}
+        {spotify.status && (
+          <span style={{ opacity: 0.55, fontSize: 10, marginLeft: 6 }}>
+            {spotify.status}
+          </span>
+        )}
       </div>
 
       <div

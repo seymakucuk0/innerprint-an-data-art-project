@@ -284,16 +284,18 @@ function buildCorridor(days: Day[]) {
         col *= lift;
 
         // ── Stroke layer ────────────────────────────────────────────────
-        // Dense vertical lines on the wall. Strokes drift slightly along
-        // a slow flow so the wall has movement without becoming a static
-        // texture. Pure sine + hash, no expensive noise.
-        float strokeDrift = sin(uTime * 0.15 + seed) * 0.4;
-        float strokeCoord = vY * 26.0 + sin(vWorld.x * 0.7 + uTime * 0.2) * 0.9 + strokeDrift;
-        float stroke = abs(fract(strokeCoord) - 0.5);   // 0..0.5 triangle
-        stroke = 1.0 - smoothstep(0.04, 0.34, stroke);   // peak at line centres
+        // Very fine VERTICAL lines on the wall. Coordinate is horizontal
+        // along the spiral (atan2 from centre + a small radius offset so
+        // adjacent turns aren't synced). vY does NOT enter — lines run
+        // top-to-bottom unbroken.
+        float horiz = atan(vWorld.z, vWorld.x) + length(vWorld.xz) * 0.25;
+        float strokeDrift = sin(uTime * 0.12 + seed) * 0.015;
+        float strokeCoord = horiz * 95.0 + strokeDrift;
+        float stroke = abs(fract(strokeCoord) - 0.5);
+        // tighter line: thin sharp peaks instead of wide bands
+        stroke = 1.0 - smoothstep(0.0, 0.05, stroke);
 
-        // Colour of the stroke ramps red ↔ purple ↔ light-blue
-        // following screen intensity.
+        // Colour ramps red ↔ purple ↔ light-blue with screen intensity.
         vec3 cRed    = vec3(0.95, 0.22, 0.26);
         vec3 cPurple = vec3(0.58, 0.22, 0.78);
         vec3 cBlue   = vec3(0.52, 0.80, 0.96);
@@ -301,16 +303,14 @@ function buildCorridor(days: Day[]) {
           ? mix(cBlue,   cPurple, vScreen * 2.0)
           : mix(cPurple, cRed,    (vScreen - 0.5) * 2.0);
 
-        // Flicker — disabled on light days, intense on heavy days. Two
-        // bands of randomness so it reads as 'electrical' not glitchy.
+        // Flicker — off on quiet days, twitchy on heavy. Two random bands.
         float hSeed = floor(vWorld.x * 1.4) + floor(vWorld.z * 1.4) * 17.0;
         float hi = hash(vec2(hSeed, floor(uTime * 30.0)));
         float lo = hash(vec2(hSeed * 0.31, floor(uTime * 9.0)));
         float twitch = mix(1.0, mix(hi, lo, 0.5), vScreen * 0.85);
 
-        // Overall stroke strength: even quiet days get a soft pale-blue
-        // hint; heavy days punch a vivid red.
-        float strokeStrength = (0.18 + 0.42 * vScreen) * twitch;
+        // Strength: a whisper on quiet days, present (not dominant) on peak.
+        float strokeStrength = (0.04 + 0.22 * vScreen) * twitch;
 
         col = mix(col, strokeColor, stroke * strokeStrength);
 

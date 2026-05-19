@@ -3,7 +3,7 @@
     "2025-08-26",
     "2026-05-18"
   ],
-  "count": 115,
+  "count": 134,
   "albums": [
     {
       "album": "200 KM/H In The Wrong Lane",
@@ -18,6 +18,12 @@
       "reason": "nocturnal Turkish rap noir"
     },
     {
+      "album": "Absolution",
+      "artist": "Muse",
+      "signature_hex": "#4A6B8A",
+      "reason": "Falling figures silhouette steel blue"
+    },
+    {
       "album": "All I Did Was Dream of You (feat. The Marías)",
       "artist": "beabadoobee",
       "signature_hex": "#7DA3C9",
@@ -28,6 +34,30 @@
       "artist": "Güneş",
       "signature_hex": "#3F5CB0",
       "reason": "deep underwater electric blue"
+    },
+    {
+      "album": "Ayten Alpman Klasikleri",
+      "artist": "Ayten Alpman",
+      "signature_hex": "#B8860B",
+      "reason": "Vintage Turkish sepia gold nostalgia"
+    },
+    {
+      "album": "Back On The Streets",
+      "artist": "Gary Moore",
+      "signature_hex": "#8B3A1F",
+      "reason": "Weathered brick and wood brown"
+    },
+    {
+      "album": "Backspacer",
+      "artist": "Pearl Jam",
+      "signature_hex": "#E63946",
+      "reason": "Bright primary red comic panels"
+    },
+    {
+      "album": "Bad Dream",
+      "artist": "Wallows",
+      "signature_hex": "#E8A4B0",
+      "reason": "Hazy dreamy pink Wallows palette"
     },
     {
       "album": "Baldur's Gate 3 (Original Game Soundtrack)",
@@ -52,6 +82,12 @@
       "artist": "Nova Norda",
       "signature_hex": "#D94F8A",
       "reason": "Turkish indie-pop magenta"
+    },
+    {
+      "album": "Bewitched",
+      "artist": "Laufey",
+      "signature_hex": "#C9B27A",
+      "reason": "Silvery gold mermaid sequins glow"
     },
     {
       "album": "BRAT",
@@ -126,10 +162,22 @@
       "reason": "deep noir cobalt blue background of the chair scene"
     },
     {
+      "album": "ELLERİM BOŞ",
+      "artist": "M Lisa",
+      "signature_hex": "#6A2DAD",
+      "reason": "Saturated electric violet monochrome portrait"
+    },
+    {
       "album": "En İyileriyle Ayla Algan",
       "artist": "Ayla Algan",
       "signature_hex": "#8FBF9E",
       "reason": "vintage mint-green backdrop"
+    },
+    {
+      "album": "England Made Me",
+      "artist": "Black Box Recorder",
+      "signature_hex": "#2B2B2B",
+      "reason": "Stark black white industrial portrait"
     },
     {
       "album": "England Made Me [25th Anniversary Edition]",
@@ -160,6 +208,12 @@
       "artist": "Billie Marten",
       "signature_hex": "#C46A2A",
       "reason": "warm amber-orange bathtub light wash"
+    },
+    {
+      "album": "First Band On The Moon",
+      "artist": "The Cardigans",
+      "signature_hex": "#C9A66B",
+      "reason": "Warm pastel retro gold tone"
     },
     {
       "album": "FIRTINAYT",
@@ -222,6 +276,18 @@
       "reason": "flag-red against deep blue, iconic political red"
     },
     {
+      "album": "Hako Is Alive and She Is 59",
+      "artist": "Hako Yamazaki",
+      "signature_hex": "#E94E1B",
+      "reason": "Bold vermillion red panel and text"
+    },
+    {
+      "album": "Hako Yamazaki Best Collection",
+      "artist": "Hako Yamazaki",
+      "signature_hex": "#C84A1E",
+      "reason": "Burnt orange seventies portrait glow"
+    },
+    {
       "album": "Heligoland",
       "artist": "Massive Attack",
       "signature_hex": "#F3961D",
@@ -256,6 +322,12 @@
       "artist": "King Crimson",
       "signature_hex": "#B8232A",
       "reason": "screaming crimson face"
+    },
+    {
+      "album": "Inside",
+      "artist": "Chris Avantgarde",
+      "signature_hex": "#E10600",
+      "reason": "Stark red INSIDE title block"
     },
     {
       "album": "IV",
@@ -318,6 +390,12 @@
       "reason": "iconic monochrome beetle, black is the identity"
     },
     {
+      "album": "minor",
+      "artist": "Gracie Abrams",
+      "signature_hex": "#B82A2A",
+      "reason": "Red border around polaroid portrait"
+    },
+    {
       "album": "Misery Is a Butterfly",
       "artist": "Blonde Redhead",
       "signature_hex": "#6B8DA6",
@@ -328,6 +406,12 @@
       "artist": "Damien Rice",
       "signature_hex": "#E8DFCB",
       "reason": "faded paper cream, the fantasy is faded"
+    },
+    {
+      "album": "my future",
+      "artist": "Billie Eilish",
+      "signature_hex": "#3B5A8C",
+      "reason": "Moonlit midnight blue night sky"
     },
     {
       "album": "Mystery",
@@ -352,6 +436,12 @@
       "artist": "Wallows",
       "signature_hex": "#F2B5A0",
       "reason": "peachy suburban indie-pop"
+    },
+    {
+      "album": "Nouvelle vague",
+      "artist": "Nouvelle Vague",
+      "signature_hex": "#F39200",
+      "reason": "Bright sixties pop orange backdrop"
     },
     {
       "album": "OK Computer",
@@ -462,6 +552,12 @@
       "reason": "vivid Irish-flag red field"
     },
     {
+      "album": "Something To Give Each Other",
+      "artist": "Troye Sivan",
+      "signature_hex": "#D89B7A",
+      "reason": "Warm sunlit skin peach tone"
+    },
+    {
       "album": "Songs of Her's",
       "artist": "Her's",
       "signature_hex": "#9E2467",
@@ -484,6 +580,12 @@
       "artist": "PJ Harvey",
       "signature_hex": "#C44A22",
       "reason": "Times Square neon red glow defining the night-city mood"
+    },
+    {
+      "album": "Street Spirit (Fade Out)",
+      "artist": "Radiohead",
+      "signature_hex": "#A8C5D6",
+      "reason": "Radiohead Bends ice blue melancholy"
     },
     {
       "album": "Submarine",
@@ -576,6 +678,12 @@
       "reason": "pool-water cobalt blue of the swimmer artwork"
     },
     {
+      "album": "Tonight",
+      "artist": "Franz Ferdinand",
+      "signature_hex": "#F2B600",
+      "reason": "Sodium streetlight yellow title text"
+    },
+    {
       "album": "Trench",
       "artist": "Twenty One Pilots",
       "signature_hex": "#D4B33A",
@@ -610,6 +718,12 @@
       "artist": "ABBA",
       "signature_hex": "#1CA7D8",
       "reason": "electric disco cyan-blue of the pyramid backdrop"
+    },
+    {
+      "album": "Warhaus",
+      "artist": "Warhaus",
+      "signature_hex": "#1C1C1C",
+      "reason": "Stark black blazer monochrome portrait"
     },
     {
       "album": "We're Just Making It Worse",

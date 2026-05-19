@@ -44,6 +44,7 @@ def main() -> None:
     weather = load(PROC / "weather.csv")
     screen = load(PROC / "screentime.csv")
     signature = load_signature_palette()
+    top_song = load(PROC / "top_song.csv") if (PROC / "top_song.csv").exists() else {}
 
     # Columns we want in the merged file, in this order
     out_cols = [
@@ -59,7 +60,8 @@ def main() -> None:
         # spotify (subset; full detail stays in spotify.csv)
         "total_plays", "minutes_listened", "unique_tracks", "unique_artists",
         "top_artist", "top_artist_minutes", "top_album",
-        "album_signature_artist", "album_signature_hex",
+        "top_song", "top_song_artist", "top_song_album", "top_song_plays",
+        "album_signature_artist", "album_signature_hex", "signature_source",
         "library_match_ratio", "discovery_streams",
         "late_night_streams", "morning_streams", "search_count",
         "podcast_minutes", "dominant_color_hex",
@@ -103,11 +105,27 @@ def main() -> None:
                       "late_night_streams", "morning_streams", "search_count",
                       "podcast_minutes", "dominant_color_hex"):
                 out[c] = sp.get(c, "")
-            album = sp.get("top_album", "").strip()
-            if album and album in signature:
-                out["album_signature_hex"] = signature[album]["signature_hex"]
-                out["album_signature_artist"] = signature[album]["artist"]
             sources["spotify"] = "real"
+
+        # The signature color follows: (1) the album of the song played the
+        # most that day, then (2) the album with the most total minutes
+        # that day, then (3) nothing (will be lerp-filled in the art layer).
+        ts = top_song.get(key)
+        if ts:
+            out["top_song"] = ts.get("top_song", "")
+            out["top_song_artist"] = ts.get("top_song_artist", "")
+            out["top_song_album"] = ts.get("top_song_album", "")
+            out["top_song_plays"] = ts.get("top_song_plays", "")
+        ts_album = (ts.get("top_song_album", "").strip() if ts else "")
+        top_album = (sp.get("top_album", "").strip() if sp else "")
+        if ts_album and ts_album in signature:
+            out["album_signature_hex"] = signature[ts_album]["signature_hex"]
+            out["album_signature_artist"] = signature[ts_album]["artist"]
+            out["signature_source"] = "top_song"
+        elif top_album and top_album in signature:
+            out["album_signature_hex"] = signature[top_album]["signature_hex"]
+            out["album_signature_artist"] = signature[top_album]["artist"]
+            out["signature_source"] = "top_album"
 
         sc = screen.get(key)
         if sc:
@@ -137,7 +155,8 @@ def main() -> None:
                 "late_night_streams", "morning_streams", "search_count",
                 "podcast_minutes", "screen_total_min", "screen_productivity_min",
                 "screen_social_min", "screen_entertainment_min", "screen_other_min",
-                "weather_code", "top_track_plays", "color_sequence_count"}
+                "weather_code", "top_track_plays", "color_sequence_count",
+                "top_song_plays"}
     float_cols = {"temp_max_c", "temp_min_c", "temp_mean_c", "feels_max_c",
                   "feels_min_c", "precipitation_mm", "rain_mm", "snowfall_cm",
                   "wind_max_kmh", "wind_gusts_kmh", "sunshine_hours",

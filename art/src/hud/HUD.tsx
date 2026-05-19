@@ -74,18 +74,38 @@ export function HUD({ mode, currentDay, dayIndex, totalDays }: Props) {
           <div style={{ fontSize: 22, letterSpacing: 3, marginTop: 4 }}>
             {currentDay.date}
           </div>
-          {currentDay.top_album && (
+          {currentDay.top_song && (
             <div
               style={{
-                fontSize: 11,
+                fontSize: 13,
                 marginTop: 10,
+                opacity: 0.78,
+                letterSpacing: 0.4,
+                textTransform: "none",
+              }}
+            >
+              {currentDay.top_song}
+              <span style={{ opacity: 0.55 }}> · {currentDay.top_song_artist ?? "—"}</span>
+            </div>
+          )}
+          {(currentDay.top_song_album || currentDay.top_album) && (
+            <div
+              style={{
+                fontSize: 10,
+                marginTop: 4,
                 fontStyle: "italic",
-                opacity: 0.65,
+                opacity: 0.55,
                 letterSpacing: 0.6,
                 textTransform: "none",
               }}
             >
-              {currentDay.top_album} — {currentDay.album_signature_artist ?? currentDay.top_artist ?? "—"}
+              from {currentDay.top_song_album || currentDay.top_album}
+              {currentDay.album_signature_artist
+                ? ` — ${currentDay.album_signature_artist}`
+                : ""}
+              {currentDay.top_song_plays
+                ? ` · ${currentDay.top_song_plays} plays`
+                : ""}
             </div>
           )}
           <div

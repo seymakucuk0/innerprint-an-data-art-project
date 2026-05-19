@@ -10,7 +10,10 @@ __pycache__/
 .venv/
 venv/
 
-# node (for art/ later)
+# node
+art/node_modules/
+art/dist/
+art/.vite/
 node_modules/
 dist/
 .vite/

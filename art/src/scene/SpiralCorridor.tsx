@@ -266,36 +266,55 @@ function buildCorridor(days: Day[]) {
       varying float vScreen;
       varying vec3 vWorld;
 
-      void main() {
-        // World-space phase seed so neighbouring segments breathe out
-        // of sync — no two days flow in lockstep.
-        float seed = vWorld.x * 0.18 + vWorld.z * 0.14;
+      float hash(vec2 p) {
+        return fract(sin(dot(p, vec2(12.9898, 78.233))) * 43758.5453);
+      }
 
-        // 'Freedom' is the inverse of screen intensity. Light-screen
-        // days breathe and shimmer; heavy-screen days hold almost
-        // still (frozen by the phone).
+      void main() {
+        // Per-segment phase seed
+        float seed = vWorld.x * 0.18 + vWorld.z * 0.14;
         float freedom = 1.0 - vScreen;
 
-        // Slow vertical breathing of the gradient transition point —
-        // the boundary between bottom and top anchors gently rises
-        // and falls. Pure smooth sine, no noise.
-        float breathe = sin(uTime * 0.45 + seed * 1.3) * 0.09 * freedom;
+        // Gentle breathing on the gradient transition (kept from before
+        // but at low amplitude so the stroke layer reads cleanly).
+        float breathe = sin(uTime * 0.45 + seed * 1.3) * 0.06 * freedom;
         float tt = smoothstep(0.0, 1.0, clamp(vY + breathe, 0.0, 1.0));
-
         vec3 col = mix(vBottom, vTop, tt);
-
-        // Static bow so flat unbroken walls still feel hand-lit.
         float lift = 1.0 + 0.05 * (1.0 - 4.0 * vY * (1.0 - vY));
+        col *= lift;
 
-        // Two overlapping slow sines for a soft luminance flow.
-        // Amplitude bottoms out at ~3% even at full compression so the
-        // wall is never completely dead — but is unmistakably calmer.
-        float w1 = sin(uTime * 0.85 + seed * 1.7 + vY * 3.0);
-        float w2 = sin(uTime * 0.42 + seed * 0.7 - vY * 1.4);
-        float flow = (w1 + w2) * 0.5;
-        float modulation = 1.0 + flow * (0.03 + 0.12 * freedom);
+        // ── Stroke layer ────────────────────────────────────────────────
+        // Dense vertical lines on the wall. Strokes drift slightly along
+        // a slow flow so the wall has movement without becoming a static
+        // texture. Pure sine + hash, no expensive noise.
+        float strokeDrift = sin(uTime * 0.15 + seed) * 0.4;
+        float strokeCoord = vY * 26.0 + sin(vWorld.x * 0.7 + uTime * 0.2) * 0.9 + strokeDrift;
+        float stroke = abs(fract(strokeCoord) - 0.5);   // 0..0.5 triangle
+        stroke = 1.0 - smoothstep(0.04, 0.34, stroke);   // peak at line centres
 
-        gl_FragColor = vec4(col * lift * modulation, 1.0);
+        // Colour of the stroke ramps red ↔ purple ↔ light-blue
+        // following screen intensity.
+        vec3 cRed    = vec3(0.95, 0.22, 0.26);
+        vec3 cPurple = vec3(0.58, 0.22, 0.78);
+        vec3 cBlue   = vec3(0.52, 0.80, 0.96);
+        vec3 strokeColor = (vScreen < 0.5)
+          ? mix(cBlue,   cPurple, vScreen * 2.0)
+          : mix(cPurple, cRed,    (vScreen - 0.5) * 2.0);
+
+        // Flicker — disabled on light days, intense on heavy days. Two
+        // bands of randomness so it reads as 'electrical' not glitchy.
+        float hSeed = floor(vWorld.x * 1.4) + floor(vWorld.z * 1.4) * 17.0;
+        float hi = hash(vec2(hSeed, floor(uTime * 30.0)));
+        float lo = hash(vec2(hSeed * 0.31, floor(uTime * 9.0)));
+        float twitch = mix(1.0, mix(hi, lo, 0.5), vScreen * 0.85);
+
+        // Overall stroke strength: even quiet days get a soft pale-blue
+        // hint; heavy days punch a vivid red.
+        float strokeStrength = (0.18 + 0.42 * vScreen) * twitch;
+
+        col = mix(col, strokeColor, stroke * strokeStrength);
+
+        gl_FragColor = vec4(col, 1.0);
       }
     `,
   });

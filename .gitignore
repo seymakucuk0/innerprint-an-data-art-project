@@ -1,0 +1,23 @@
+# raw exports — not shared
+data/raw/
+*.xml
+*_export/
+album_covers/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# node (for art/ later)
+node_modules/
+dist/
+.vite/
+
+# macOS
+.DS_Store
+
+# editor
+.vscode/
+.idea/

@@ -1,0 +1,367 @@
+date,total_plays,counted_streams,minutes_listened,unique_tracks,unique_artists,top_artist,top_artist_minutes,top_artist_share,top_album,top_album_minutes,top_album_share,library_match_ratio,discovery_streams,top_track,top_track_plays,late_night_streams,morning_streams,search_count,late_night_searches,podcast_minutes,color_sequence_count,dominant_color_hex
+2025-05-06,37,26,68.3,22,17,Sabrina Carpenter,7.7,0.112,Prelude to Ecstasy,3.4,0.05,0.269,19,Paris Paloma — labour,2,0,0,0,0,0,19,#DC2C7E
+2025-05-07,43,29,82.1,20,12,Charli xcx,25.4,0.31,The New Abnormal,13.4,0.163,0.31,20,Gracie Abrams — That’s So True,6,0,18,0,0,0,13,#DC2C9C
+2025-05-08,37,31,89.3,26,20,Charli xcx,14.3,0.16,"Girl, so confusing featuring lorde",14.3,0.16,0.484,16,"Charli xcx — Girl, so confusing featuring lorde",5,8,4,0,0,0,22,#49DC2C
+2025-05-09,109,71,252.2,56,44,Lana Del Rey,44.1,0.175,Live From Electric Lady Studios/WRXP New York,13.4,0.053,0.211,56,Lana Del Rey — Off To The Races,6,10,15,0,0,0,48,#DC2F2C
+2025-05-10,97,55,163.1,52,26,Dolu Kadehi Ters Tut,25.8,0.158,The New Abnormal,5.9,0.036,0.255,41,Sufle — Pus,2,16,0,0,0,0,35,#DC2C9C
+2025-05-11,171,113,352.6,81,41,TV Girl,54.4,0.154,The New Abnormal,14.4,0.041,0.257,84,Scorpions — No One Like You - 2015 - Remaster,7,34,0,0,0,0,48,#DC2C9C
+2025-05-12,86,55,167.1,46,28,TV Girl,19.2,0.115,OK Computer,5.0,0.03,0.2,44,"Tyler, The Creator — Like Him (feat. Lola Young)",4,23,0,0,0,0,33,#2C4CDC
+2025-05-13,108,78,222.3,67,45,Göksel,20.1,0.09,Kirli Suyunda Parıltılar,4.3,0.019,0.321,53,Göksel — Uzaktan,6,7,0,0,0,0.6,54,#4F2CDC
+2025-05-14,91,58,198.4,41,28,Kanye West,25.4,0.128,Hako Is Alive and She Is 59,10.9,0.055,0.345,38,Kanye West — Devil In A New Dress,8,11,7,0,0,0,33,#2CDCDC
+2025-05-15,151,86,275.5,73,44,Karsu,36.8,0.134,Colors,14.5,0.053,0.349,56,Yalın — Kasma,4,8,10,0,0,0,51,#AA2CDC
+2025-05-16,88,67,247.3,50,24,Pink Floyd,103.2,0.417,Animals,17.1,0.069,0.388,41,Dedublüman — Sakladığın Bir Şeyler Var,5,21,17,0,0,0,31,#2CB6DC
+2025-05-17,52,43,185.5,29,21,Radiohead,32.0,0.172,In The Court Of The Crimson King (Expanded & Remastered Original Album Mix),26.3,0.142,0.419,25,Dedublüman — Sakladığın Bir Şeyler Var,3,0,27,0,0,0,25,#8DDC2C
+2025-05-18,49,31,98.9,24,19,Radiohead,25.1,0.253,Hako Is Alive and She Is 59,13.8,0.14,0.548,14,MokuMoku — Hako Is Alive and She Is 59,4,4,0,0,0,0,20,#2CDCDC
+2025-05-19,85,67,235.1,60,35,Charli xcx,34.2,0.146,Who Really Cares,10.4,0.044,0.343,44,SZA — Kill Bill,3,10,1,0,0,0,43,#DC2C93
+2025-05-20,74,53,159.6,31,16,The Neighbourhood,20.3,0.127,I Love You.,12.3,0.077,0.472,28,MOLIY — Shake It To The Max (FLY) - Remix,5,21,0,0,0,0,23,#DC2C5B
+2025-05-21,75,54,165.8,49,33,Faye Webster,13.1,0.079,The Bends,5.4,0.032,0.426,31,sombr — back to friends,2,11,1,0,0,0,38,#962CDC
+2025-05-22,71,47,140.3,37,12,Karsu,71.3,0.509,Colors,22.5,0.16,0.34,31,Karsu — Diamonds,4,9,0,0,0,0,17,#AA2CDC
+2025-05-23,11,7,16.2,7,3,Dolu Kadehi Ters Tut,10.0,0.617,Who Really Cares,3.3,0.205,0.286,5,TV Girl — Cigarettes out the Window,1,0,0,0,0,0,3,#DC2C93
+2025-05-24,65,47,156.2,43,35,King Crimson,12.0,0.077,－･･ ･－ －･ －･－･ ･ －－ ･ － －－－ － ････ ･ ･ －･ －･･ －－－ ･･－･ ･－･･ －－－ ･･･－ ･,6.2,0.04,0.255,35,Gracie Abrams — That’s So True - Live From Radio City Music Hall,3,0,14,0,0,0,37,#A4DC2C
+2025-05-25,13,9,31.0,9,7,Radiohead,8.4,0.272,Melody of Certain Damaged Lemons,4.7,0.152,0.333,6,Erdem Kınay — Rota,1,1,0,0,0,0,9,#2CDC75
+2025-05-26,90,63,215.1,47,27,Radiohead,66.9,0.311,OK Computer,10.9,0.051,0.444,35,Radiohead — Let Down - Remastered,6,6,28,0,0,0,35,#2C4CDC
+2025-05-27,24,15,44.8,11,10,The Last Dinner Party,6.9,0.154,Prelude to Ecstasy,6.9,0.154,0.467,8,The Smile — The Smoke,2,6,0,0,0,0,10,#DC2C7E
+2025-05-28,33,27,89.6,27,18,Faye Webster,13.9,0.155,Chinese Democracy,5.6,0.062,0.296,19,Radiohead — Let Down,1,23,0,0,0,0,19,#2CDC3E
+2025-05-29,83,61,170.4,46,22,The Marías,34.9,0.205,Submarine,14.7,0.086,0.426,35,The Marías — No One Noticed (Extended Spanish),5,17,0,0,0,0,31,#ADDC2C
+2025-05-30,90,81,271.8,64,39,Sezen Aksu,23.2,0.085,Bewitched,7.8,0.029,0.333,54,Eyedress — Something About You,4,35,0,0,0,0,51,#DC2C8D
+2025-05-31,35,25,84.4,25,18,Büyük Ev Ablukada,23.5,0.278,Full Faça,6.0,0.071,0.52,12,Pilli Bebek — Bak,1,0,0,0,0,0,20,#2FDC2C
+2025-06-01,48,27,76.5,22,17,Cameron Avery,12.2,0.16,We're Just Making It Worse,12.2,0.16,0.37,17,Cameron Avery — We're Just Making It Worse,3,11,0,0,0,0,19,#87DC2C
+2025-06-02,21,18,64.5,16,14,Nilüfer,10.6,0.165,Teen Dream,5.1,0.079,0.278,13,Nilüfer — Ta Uzak Yollardan,3,2,0,0,0,0,14,#672CDC
+2025-06-03,35,24,79.1,24,16,TV Girl,10.5,0.133,Let You Break My Heart Again,4.5,0.057,0.375,15,"Tyler, The Creator — See You Again (feat. Kali Uchis)",1,13,0,0,0,0,21,#2C64DC
+2025-06-04,29,18,46.1,14,8,Billie Eilish,17.4,0.378,AT.LONG.LAST.A$AP,5.9,0.127,0.167,15,Rihanna — Bitch Better Have My Money,2,0,0,0,0,0,8,#72DC2C
+2025-06-05,77,60,192.4,56,27,The Neighbourhood,76.7,0.398,I Love You.,20.2,0.105,0.383,37,The Neighbourhood — Reflections,4,10,26,0,0,0,35,#DC2C5B
+2025-06-06,64,50,171.7,48,34,Kendrick Lamar,31.1,0.181,Bewitched,6.5,0.038,0.28,36,Kendrick Lamar — good kid,2,15,18,0,0,0,34,#DC2C8D
+2025-06-07,14,11,34.0,10,9,Fred again..,7.2,0.213,Actual Life 2 (February 2 - October 15 2021),7.2,0.213,0.455,6,Fred again.. — Billie (loving arms),2,0,0,0,0,0,9,#2CDC5B
+2025-06-08,65,55,180.5,54,27,Men I Trust,47.5,0.263,Turn On The Bright Lights,6.5,0.036,0.418,32,Peter Cat Recording Co. — Memory Box,2,12,24,0,0,0,38,#2C4CDC
+2025-06-09,61,57,216.5,54,33,Radiohead,22.9,0.106,Dizzy up the Girl,9.7,0.045,0.491,29,The Goo Goo Dolls — Iris,2,35,0,0,0,0,43,#D0DC2C
+2025-06-10,22,17,58.7,17,14,The Weeknd,8.6,0.146,Wish You Were Here,6.2,0.106,0.647,6,Charli xcx — 360,1,4,5,0,0,0,17,#DC2C99
+2025-06-11,20,17,60.8,15,11,Billie Eilish,12.3,0.203,The New Abnormal,5.9,0.096,0.471,9,Billie Eilish — i love you,2,1,0,0,0,0,13,#DC2C9C
+2025-06-12,47,36,133.0,29,22,Radiohead,23.4,0.176,Live From Electric Lady Studios/WRXP New York,3.4,0.026,0.111,32,Marvin Gaye — I Want You,3,0,0,0,0,0,23,#DC2F2C
+2025-06-13,73,63,235.2,58,46,Radiohead,18.6,0.079,Z,8.0,0.034,0.397,38,Soko — Replaceable Heads,4,21,0,0,0,0,52,#2CB6DC
+2025-06-14,76,52,177.8,50,40,Balthazar,18.7,0.105,Who Really Cares,6.3,0.035,0.385,32,Rex Orange County — Loving Is Easy,2,16,18,0,0,0,42,#DC2C93
+2025-06-15,32,23,72.1,21,13,The Marías,15.9,0.22,No One Noticed (Extended),4.7,0.066,0.304,16,The Marías — Nobody New,2,2,0,0,0,0,16,#752CDC
+2025-06-16,76,61,216.4,59,38,The Marías,27.6,0.127,I Don't Know You,10.6,0.049,0.492,31,The Marías — I Don't Know You,3,31,0,0,0,0,50,#B9DC2C
+2025-06-17,30,16,58.3,15,10,Tame Impala,20.4,0.349,Currents,7.4,0.128,0.438,9,Tame Impala — Eventually,2,9,4,0,0,0,12,#DC6D2C
+2025-06-18,21,15,51.3,11,4,Coldplay,38.6,0.753,Parachutes,9.7,0.189,0.267,11,Coldplay — Sparks,5,9,1,0,0,0,5,#2C32DC
+2025-06-19,80,43,153.1,34,18,Radiohead,58.8,0.384,OK Computer,20.8,0.136,0.395,26,Radiohead — All I Need,4,16,5,0,0,0,25,#2C4CDC
+2025-06-20,8,7,25.9,7,5,MokuMoku,8.5,0.329,Black Heaven,4.4,0.171,0.571,3,Tempesst — Must Be a Dream,1,0,0,0,0,0,6,#2CDC43
+2025-06-21,24,20,63.1,11,8,MokuMoku,21.4,0.339,Hako Is Alive and She Is 59,21.4,0.339,0.85,3,MokuMoku — Hako Is Alive and She Is 59,6,5,6,0,0,0,9,#2CDCDC
+2025-06-22,96,51,150.8,47,40,Wallows,8.9,0.059,Dizzy up the Girl,8.5,0.057,0.608,20,MokuMoku — Hako Is Alive and She Is 59,2,3,8,0,0,0,45,#D0DC2C
+2025-06-23,58,40,132.2,38,33,Lana Del Rey,9.9,0.075,Model,8.9,0.068,0.6,16,Wallows — Calling After Me,2,0,0,0,0,0,35,#2CCEDC
+2025-06-24,31,21,65.7,21,15,Sezen Aksu,9.9,0.15,Comedown Machine,7.8,0.118,0.429,12,Sezen Aksu — Bir Çocuk Sevdim,1,0,12,0,0,0,19,#43DC2C
+2025-06-25,2,1,3.2,1,1,Tempesst,2.8,0.877,Prisoner of Desire,2.8,0.877,1.0,0,Tempesst — She Knows How to Get What She Wants,1,0,0,0,0,0,1,#2C8DDC
+2025-06-26,64,50,144.9,39,32,Tempesst,15.6,0.108,Prelude to Ecstasy,12.2,0.084,0.42,29,The Last Dinner Party — Nothing Matters,4,0,20,0,0,0,35,#DC2C7E
+2025-06-27,33,19,50.2,16,9,Lorde,27.3,0.543,Melodrama,13.9,0.276,0.526,9,Lorde — Sober,2,0,0,0,0,0,10,#DC2CA4
+2025-06-28,73,61,215.2,59,35,Tame Impala,23.7,0.11,The New Abnormal,8.6,0.04,0.361,39,Σtella — Charmed,2,3,0,0,0,0,40,#DC2C9C
+2025-06-29,48,34,110.1,32,14,Radiohead,63.8,0.58,In Rainbows,11.4,0.104,0.412,20,Radiohead — House Of Cards,2,0,9,0,0,0,16,#DC992C
+2025-06-30,3,3,9.7,3,2,Radiohead,6.1,0.621,OK Computer,5.0,0.512,1.0,0,Radiohead — House Of Cards,1,0,0,0,0,0,3,#2C4CDC
+2025-07-01,25,23,85.6,23,13,Radiohead,48.6,0.567,In Rainbows,15.6,0.182,0.391,14,Radiohead — 15 Step,1,0,0,0,0,0,14,#DC992C
+2025-07-02,69,58,189.9,57,40,Radiohead,27.9,0.147,OK Computer,5.0,0.026,0.19,47,manifest — KTS,2,17,0,0,0,0,41,#2C4CDC
+2025-07-03,56,25,67.9,23,16,U2,17.9,0.264,The Joshua Tree,7.6,0.113,0.64,9,U2 — One,2,0,12,0,0,0,18,#2CDCD0
+2025-07-04,56,46,184.9,31,16,Radiohead,45.4,0.246,Hako Is Alive and She Is 59,17.4,0.094,0.543,21,MokuMoku — Hako Is Alive and She Is 59,4,0,0,0,0,0,20,#2CDCDC
+2025-07-05,57,41,158.4,30,10,Radiohead,100.1,0.632,In Rainbows,23.6,0.149,0.415,24,Radiohead — Weird Fishes / Arpeggi,3,0,16,0,0,0,15,#DC992C
+2025-07-06,14,13,50.4,8,7,Led Zeppelin,15.9,0.314,Songs Of Innocence,8.4,0.167,0.538,6,MokuMoku — Hako Is Alive and She Is 59,2,0,0,0,0,0,8,#43DC2C
+2025-07-07,21,14,55.9,13,8,Radiohead,15.3,0.273,Hako Is Alive and She Is 59,5.8,0.104,0.286,10,Radiohead — Weird Fishes / Arpeggi,2,0,13,0,0,0,10,#2CDCDC
+2025-07-08,114,84,304.3,82,44,Led Zeppelin,23.8,0.078,Songs Of Innocence,9.5,0.031,0.345,55,Twenty One Pilots — Car Radio,2,0,24,0,0,0,54,#43DC2C
+2025-07-09,110,99,399.5,97,37,Kendrick Lamar,41.3,0.103,Screaming For Vengeance,7.2,0.018,0.303,69,The Marías — No One Noticed (Extended Spanish),2,1,33,0,0,0,51,#2CDC55
+2025-07-10,13,12,44.7,12,4,Radiohead,32.1,0.718,In Rainbows,10.3,0.23,0.417,7,Radiohead — Just,1,0,1,0,0,0,6,#DC992C
+2025-07-11,99,76,257.5,71,47,Radiohead,30.8,0.12,Lust For Life,10.3,0.04,0.303,53,Kendrick Lamar — Poetic Justice,2,4,23,0,0,0,52,#DC6A2C
+2025-07-12,2,1,4.2,1,1,MokuMoku,4.1,0.973,Hako Is Alive and She Is 59,4.1,0.973,1.0,0,MokuMoku — Hako Is Alive and She Is 59,1,0,0,0,0,0,1,#2CDCDC
+2025-07-13,3,1,4.6,1,1,U2,4.2,0.906,Songs Of Innocence,4.2,0.906,1.0,0,U2 — Every Breaking Wave,1,0,0,0,0,0,1,#43DC2C
+2025-07-14,51,31,107.8,31,22,Kendrick Lamar,14.5,0.135,OK Computer,11.3,0.104,0.548,14,manifest — Snap,1,0,0,0,0,0,24,#2C4CDC
+2025-07-15,68,44,133.3,37,23,Sade,37.8,0.284,Öptüm,15.0,0.112,0.364,28,Sezen Aksu — Unuttun mu Beni,4,2,0,0,0,0,26,#9F2CDC
+2025-07-16,47,39,157.3,39,30,Pink Floyd,12.0,0.076,Led Zeppelin,6.8,0.043,0.359,25,Coldplay — Don't Panic,1,0,13,0,0,0,34,#DC2CD6
+2025-07-17,38,27,86.7,26,14,Halsey,16.1,0.186,Ultraviolence,9.2,0.106,0.37,17,AURORA — Runaway,2,0,21,0,0,0,18,#2CDCA7
+2025-07-18,103,88,330.5,74,39,Radiohead,92.4,0.28,The New Abnormal,18.9,0.057,0.443,49,Radiohead — Man of War,7,12,33,0,0,0,55,#DC2C9C
+2025-07-19,8,5,19.9,5,5,King Crimson,7.5,0.377,In The Court Of The Crimson King (Expanded & Remastered Original Album Mix),7.5,0.377,0.6,2,Snowy White — How Was It for You,1,0,0,0,0,0,5,#8DDC2C
+2025-07-20,25,23,93.0,23,18,The Smiths,12.5,0.135,Super Trouper,6.4,0.069,0.217,18,ABBA — The Winner Takes It All,1,0,0,0,0,0,20,#81DC2C
+2025-07-21,31,23,85.2,23,20,Tame Impala,13.1,0.154,The English Riviera,4.6,0.054,0.478,12,Radiohead — Man of War,1,16,4,0,0,0,21,#9F2CDC
+2025-07-22,132,98,328.7,80,50,manifest,38.2,0.116,Prelude to Ecstasy,26.4,0.08,0.48,51,The Last Dinner Party — Nothing Matters,9,25,27,0,0,0,55,#DC2C7E
+2025-07-23,136,111,356.8,85,42,Chappell Roan,34.0,0.095,The Rise and Fall of a Midwest Princess,22.9,0.064,0.45,61,Charli xcx — Talk talk,3,0,37,0,0,0,54,#722CDC
+2025-07-24,57,46,190.0,42,25,Daft Punk,49.5,0.26,Discovery,8.9,0.047,0.5,23,Billie Eilish — L’AMOUR DE MA VIE,2,0,24,0,0,0,30,#2C9FDC
+2025-07-25,64,46,159.4,43,37,Tame Impala,18.7,0.117,THE E.N.D. (THE ENERGY NEVER DIES),9.2,0.058,0.5,23,Tame Impala — Let It Happen,2,0,22,0,0,0,38,#DC2C9C
+2025-07-26,20,16,48.7,15,12,Radiohead,12.0,0.247,Hako Is Alive and She Is 59,3.9,0.081,0.5,8,MokuMoku — Hako Is Alive and She Is 59,2,0,0,0,0,0,14,#2CDCDC
+2025-07-27,24,12,57.1,12,11,Led Zeppelin,14.1,0.247,Led Zeppelin,6.7,0.117,0.667,4,MokuMoku — Hako Is Alive and She Is 59,1,12,0,0,0,0,12,#DC2CD6
+2025-07-28,31,20,93.6,15,11,The Voidz,40.1,0.428,Tyranny,21.2,0.227,0.65,7,The Voidz — Did My Best,3,0,11,0,0,0,13,#4C2CDC
+2025-07-29,56,46,156.2,40,27,The Voidz,36.4,0.233,Virtue,14.0,0.09,0.435,26,The Voidz — Did My Best,3,0,20,0,0,0,31,#432CDC
+2025-07-30,63,44,149.8,39,25,Radiohead,26.8,0.179,The New Abnormal,13.3,0.089,0.523,21,The Strokes — Selfless,2,0,20,0,0,0,32,#DC2C9C
+2025-07-31,4,3,6.8,2,1,Daft Punk,6.4,0.944,Discovery,0.8,0.114,0.333,2,Daft Punk — Instant Crush (feat. Julian Casablancas),2,0,0,0,0,0,2,#2C9FDC
+2025-08-01,48,43,166.3,37,10,Daft Punk,96.4,0.579,Random Access Memories,39.9,0.24,0.349,28,Daft Punk — Infinity Repeating (2013 Demo) [feat. Julian Casablancas+The Voidz],3,0,21,0,0,0,13,#DC8D2C
+2025-08-02,5,4,9.8,4,4,Daft Punk,5.4,0.549,As It Was,2.8,0.285,0.25,3,"Tyler, The Creator — RUNNING OUT OF TIME",1,0,0,0,0,0,4,#DC8A2C
+2025-08-03,3,0,0.2,0,0,,0,0.0,,0,0.0,0.0,0,,0,0,0,0,0,0,0,
+2025-08-04,90,67,247.2,66,44,Radiohead,56.9,0.23,Hail To the Thief,14.9,0.06,0.403,40,Radiohead — A Wolf At the Door,2,0,24,0,0,0,47,#93DC2C
+2025-08-05,77,52,199.2,51,34,Daft Punk,22.5,0.113,The New Abnormal,9.6,0.048,0.423,30,MokuMoku — Hako Is Alive and She Is 59,2,0,32,0,0,0,43,#DC2C9C
+2025-08-06,47,31,95.9,30,16,Fred again..,31.6,0.329,Walking On A Dream,4.5,0.046,0.194,25,manifest — Manifest,2,4,20,0,0,0,19,#D9DC2C
+2025-08-07,15,10,31.1,10,9,manifest,5.3,0.171,Eyelid Movies,4.2,0.133,0.4,6,manifest — Manifest,1,0,0,0,0,0,9,#DC7B2C
+2025-08-08,68,48,163.8,46,27,The Strokes,20.2,0.123,OK Computer,14.1,0.086,0.479,25,Daft Punk — Instant Crush (feat. Julian Casablancas),2,0,24,0,0,0,33,#2C4CDC
+2025-08-09,1,0,0.1,0,0,,0,0.0,,0,0.0,0.0,0,,0,0,0,0,0,0,0,
+2025-08-10,21,18,66.3,18,14,The Strokes,12.8,0.192,The New Abnormal,9.6,0.144,0.556,8,"The Strokes — I'll Try Anything Once (""You Only Live Once"" demo) - Heart In a Cage B-Side",1,0,0,0,0,0,15,#DC2C9C
+2025-08-11,11,6,19.2,6,4,Radiohead,6.6,0.344,Songs Of Innocence,4.2,0.219,0.667,2,Radiohead — Weird Fishes / Arpeggi,1,1,0,0,0,0,4,#43DC2C
+2025-08-12,86,61,193.6,58,36,The Strokes,32.5,0.168,Is This It,20.3,0.105,0.443,34,Led Zeppelin — Since I've Been Loving You - Remaster,2,5,36,0,0,0,42,#DCC52C
+2025-08-13,89,68,230.7,62,34,Radiohead,30.0,0.13,The New Abnormal,11.1,0.048,0.397,41,KATSEYE — Gnarly,3,0,25,0,0,0,46,#DC2C9C
+2025-08-14,123,81,265.2,68,15,The Strokes,199.1,0.751,Is This It,25.8,0.097,0.469,43,The Strokes — Under Control,2,0,44,0,0,0,22,#DCC52C
+2025-08-15,75,52,173.9,47,20,Daft Punk,48.6,0.279,Random Access Memories,27.2,0.156,0.385,32,Daft Punk — Infinity Repeating (2013 Demo) [feat. Julian Casablancas+The Voidz],3,0,19,0,0,0,27,#DC8D2C
+2025-08-16,6,5,13.4,5,1,Karsu,13.3,0.995,Colors,3.5,0.26,0.2,4,Karsu — Birak Beni Böyle,1,0,0,0,0,0,2,#AA2CDC
+2025-08-17,70,53,181.3,42,26,Lorde,42.3,0.234,Comedown Machine,22.7,0.125,0.434,30,The Strokes — Welcome To Japan,6,1,0,0,0,0,35,#43DC2C
+2025-08-18,87,68,254.6,54,16,Daft Punk,165.6,0.651,Random Access Memories,40.1,0.158,0.25,51,Daft Punk — Infinity Repeating (2013 Demo) [feat. Julian Casablancas+The Voidz],4,15,8,0,0,0,22,#DC8D2C
+2025-08-19,96,61,231.0,50,17,Daft Punk,85.7,0.371,Random Access Memories,17.2,0.075,0.492,31,Daft Punk — Veridis Quo,3,4,23,0,0,0,28,#DC8D2C
+2025-08-20,144,93,306.5,87,48,Daft Punk,76.4,0.249,Random Access Memories,12.4,0.041,0.376,58,KATSEYE — Gnarly,2,0,13,0,0,0,53,#DC8D2C
+2025-08-21,55,51,211.6,47,11,Beach House,142.5,0.674,Bloom,8.6,0.041,0.333,34,Radiohead — 15 Step,2,5,0,0,0,0,19,#DC2C61
+2025-08-22,31,25,98.0,21,9,The Strokes,52.7,0.538,Comedown Machine,26.8,0.273,0.48,13,The Strokes — 80's Comedown Machine,2,1,0,0,0,0,14,#43DC2C
+2025-08-23,57,35,114.6,33,21,Daft Punk,30.8,0.269,Kirli Suyunda Parıltılar,5.6,0.049,0.229,27,Daft Punk — Around the World,2,0,0,0,0,0,23,#4F2CDC
+2025-08-24,19,5,16.0,5,4,Radiohead,6.5,0.402,OK Computer,6.5,0.402,0.8,1,The Strokes — Welcome To Japan,1,1,0,0,0,0,5,#2C4CDC
+2025-08-25,129,104,319.1,93,45,Mitski,94.7,0.297,Bury Me At Makeout Creek,8.5,0.027,0.298,73,Mitski — Francis Forever,3,3,34,0,0,0,55,#2C75DC
+2025-08-26,46,40,143.9,37,11,Büyük Ev Ablukada,93.7,0.652,FIRTINAYT,15.0,0.104,0.325,27,Büyük Ev Ablukada — Beklediğim Gibiyim,2,0,22,0,0,0,15,#DC2C99
+2025-08-27,114,75,231.0,64,32,The Neighbourhood,53.4,0.231,I Love You.,18.4,0.08,0.507,37,The Neighbourhood — Flawless,3,6,18,0,0,0,39,#DC2C5B
+2025-08-28,74,58,199.7,53,32,Radiohead,13.7,0.069,Random Access Memories,8.0,0.04,0.466,31,Dayglow — Can I Call You Tonight?,3,21,22,0,0,0,43,#DC8D2C
+2025-08-29,18,8,19.0,7,6,Daft Punk,5.8,0.306,Random Access Memories,4.5,0.238,0.75,2,Daft Punk — Infinity Repeating (2013 Demo) [feat. Julian Casablancas+The Voidz],2,2,1,0,0,0,7,#DC8D2C
+2025-08-30,4,4,11.4,3,2,Franz Ferdinand,7.6,0.667,Franz Ferdinand,4.0,0.348,0.75,1,Daft Punk — Something About Us,2,4,0,0,0,0,3,#AA2CDC
+2025-08-31,11,7,16.9,7,4,The Marías,7.8,0.462,Comedown Machine,7.7,0.452,0.714,2,Daft Punk — Something About Us,1,0,0,0,0,0,5,#43DC2C
+2025-09-01,49,40,106.7,35,22,The Marías,25.0,0.235,Teen Dream,10.1,0.094,0.425,23,The Marías — No One Noticed (Extended Spanish),2,14,0,0,0,0,27,#672CDC
+2025-09-02,122,81,286.5,76,36,Franz Ferdinand,34.8,0.122,Ten,11.0,0.038,0.444,45,The Marías — Back To Me,3,0,37,0,0,0,54,#992CDC
+2025-09-03,140,73,252.9,59,33,Franz Ferdinand,22.2,0.088,Comedown Machine,9.5,0.038,0.562,32,Billie Eilish — my future,4,8,5,0,0,0,44,#43DC2C
+2025-09-04,137,76,283.1,67,41,The Marías,23.3,0.082,No One Noticed (Extended),9.5,0.033,0.408,45,Faye Webster — In A Good Way,2,15,37,0,0,0,55,#752CDC
+2025-09-05,66,51,183.8,44,22,Daft Punk,55.1,0.3,Discovery,13.1,0.071,0.373,32,Daft Punk — Something About Us,3,13,10,0,0,0,27,#2C9FDC
+2025-09-06,62,53,192.7,49,25,Bad Bunny,47.2,0.245,The Queen Is Dead,4.1,0.021,0.151,45,Bad Bunny — LA MuDANZA,3,30,0,0,0,0,29,#2CDCC2
+2025-09-07,52,46,166.5,45,25,Radiohead,33.6,0.201,OK Computer,15.9,0.095,0.457,25,The Strokes — Selfless,2,8,0,0,0,0,37,#2C4CDC
+2025-09-08,95,73,256.2,73,40,Kanye West,36.1,0.141,La La Land,10.1,0.04,0.219,57,Sabrina Carpenter — Taste,1,19,32,0,0,0,41,#96DC2C
+2025-09-09,48,36,94.6,27,11,Franz Ferdinand,30.8,0.325,"Girl, so confusing featuring lorde",6.7,0.07,0.278,26,Dua Lipa — Training Season,3,0,21,0,0,0,18,#49DC2C
+2025-09-10,1,0,0.0,0,0,,0,0.0,,0,0.0,0.0,0,,0,0,0,0,0,0,0,
+2025-09-11,47,38,128.3,33,11,Franz Ferdinand,87.7,0.683,You Could Have It So Much Better,7.8,0.06,0.342,25,Franz Ferdinand — Michael,2,0,8,0,0,0,18,#2CDCA4
+2025-09-12,23,23,79.3,22,5,Bad Bunny,39.4,0.497,Franz Ferdinand,4.0,0.05,0.13,20,Twenty One Pilots — Car Radio,2,1,0,0,0,0,8,#AA2CDC
+2025-09-13,55,27,74.9,23,10,Franz Ferdinand,31.9,0.426,Franz Ferdinand,8.8,0.117,0.296,19,Franz Ferdinand — The Dark Of The Matinée,3,0,2,0,0,0,13,#AA2CDC
+2025-09-14,11,4,11.0,4,2,sombr,6.7,0.612,Franz Ferdinand,4.0,0.36,0.25,3,sombr — 12 to 12,1,0,0,0,0,0,2,#AA2CDC
+2025-09-15,112,88,336.7,85,54,Snowy White,29.9,0.089,The Joshua Tree,9.6,0.028,0.364,56,Snowy White — How Was It for You,3,0,32,0,0,0,66,#2CDCD0
+2025-09-16,150,116,429.3,100,47,Radiohead,48.2,0.112,Grace,15.4,0.036,0.448,64,MokuMoku — Hako Is Alive and She Is 59,3,6,44,0,0,0,63,#70DC2C
+2025-09-17,77,54,191.1,52,35,Radiohead,28.8,0.151,OK Computer,8.0,0.042,0.444,30,MokuMoku — Hako Is Alive and She Is 59,3,17,20,0,0,0,37,#2C4CDC
+2025-09-18,46,33,108.2,24,13,Lorde,38.0,0.351,Melodrama,12.8,0.118,0.273,24,Lorde — Buzzcut Season,2,0,29,0,0,0,15,#DC2CA4
+2025-09-19,55,48,172.3,44,28,Radiohead,33.9,0.197,OK Computer,12.1,0.07,0.438,27,sombr — 12 to 12,3,1,0,0,0,0,34,#2C4CDC
+2025-09-20,62,37,109.6,33,19,Charli xcx,16.5,0.15,OK Computer,6.5,0.059,0.297,26,sombr — 12 to 12,3,0,0,0,0,0,23,#2C4CDC
+2025-09-21,186,106,336.5,98,53,Billie Eilish,19.1,0.057,The New Abnormal,11.9,0.035,0.292,75,sombr — 12 to 12,2,8,16,0,0,0,63,#DC2C9C
+2025-09-22,96,60,227.3,57,25,Daft Punk,83.3,0.366,Random Access Memories,24.0,0.106,0.417,35,Radiohead — Man of War,3,0,39,0,0,0,34,#DC8D2C
+2025-09-23,42,24,92.5,24,7,Daft Punk,39.9,0.431,Random Access Memories,28.8,0.312,0.25,18,Daft Punk — Give Life Back to Music,1,0,15,0,0,0,8,#DC8D2C
+2025-09-24,86,71,247.8,67,27,PJ Harvey,73.0,0.295,"Stories From The City, Stories From The Sea",29.9,0.12,0.423,41,PJ Harvey — This Mess We're In,4,13,7,0,0,0,36,#8D2CDC
+2025-09-25,131,97,306.2,84,33,PJ Harvey,73.7,0.241,"Stories From The City, Stories From The Sea",26.7,0.087,0.433,55,PJ Harvey — This Mess We're In,3,0,19,0,0,0,51,#8D2CDC
+2025-09-26,23,23,94.2,23,14,PJ Harvey,21.3,0.226,"Stories From The City, Stories From The Sea",14.0,0.149,0.565,10,PJ Harvey — This Mess We're In,1,0,0,0,0,0,17,#8D2CDC
+2025-09-27,21,10,32.0,10,7,Twenty One Pilots,8.7,0.271,Trench,8.7,0.271,0.3,7,sombr — 12 to 12,1,0,0,0,0,0,7,#DCD92C
+2025-09-28,184,71,198.4,67,30,manifest,36.1,0.182,"Stories From The City, Stories From The Sea",11.0,0.056,0.197,57,manifest — Rampapapam - Arem Ozguc & Arman Aydin Remix,3,0,0,0,0,0,35,#8D2CDC
+2025-09-29,152,83,250.6,78,45,Rainbow Kitten Surprise,19.4,0.078,Submarine,5.3,0.021,0.277,60,Gracie Abrams — That’s So True,3,13,29,0,0,0,52,#ADDC2C
+2025-09-30,41,38,151.7,37,13,PJ Harvey,28.6,0.189,Dummy,14.2,0.093,0.316,26,Gracie Abrams — That’s So True,2,3,31,0,0,0,21,#2CDC55
+2025-10-01,177,80,273.5,74,39,Billie Eilish,29.5,0.108,OK Computer,14.2,0.052,0.425,46,"Gracie Abrams — I miss you, I’m sorry",2,11,42,0,0,0,50,#2C4CDC
+2025-10-02,87,43,166.8,43,29,Büyük Ev Ablukada,14.6,0.088,FIRTINAYT,7.2,0.043,0.302,30,Büyük Ev Ablukada — İHTİMALLERİN HEYECANINA ÜZÜLÜYORUM,1,27,12,0,0,0,34,#DC2C99
+2025-10-03,1,1,2.2,1,1,Mac DeMarco,2.2,1.0,,0,0.0,0.0,1,Mac DeMarco — Heart To Heart,1,0,0,0,0,0,1,
+2025-10-04,17,12,39.0,12,12,Lana Del Rey,5.0,0.128,THE E.N.D. (THE ENERGY NEVER DIES),4.7,0.122,0.25,9,Charli xcx — party 4 u,1,0,11,0,0,0,12,#DC2C9C
+2025-10-05,85,36,105.3,32,20,Daft Punk,18.3,0.173,Submarine,8.8,0.084,0.583,15,The Marías — Run Your Mouth,2,5,0,0,0,0,27,#ADDC2C
+2025-10-06,101,54,161.9,45,23,The Marías,42.7,0.264,No One Noticed (Extended),16.2,0.1,0.389,33,The Marías — No One Noticed (Extended English),3,5,15,0,0,0,31,#752CDC
+2025-10-07,31,18,53.3,14,9,Billie Eilish,24.7,0.462,Guitar Songs,13.1,0.246,0.556,8,Billie Eilish — The 30th,4,0,2,0,0,0,12,#2CDCB9
+2025-10-08,18,9,20.8,9,6,Sabrina Carpenter,6.0,0.29,OMG,3.0,0.143,0.111,8,Billie Eilish — my strange addiction,1,0,6,0,0,0,6,#B92CDC
+2025-10-09,68,24,66.8,23,13,Charli xcx,13.5,0.202,Who Really Cares,6.1,0.092,0.292,17,TV Girl — Not Allowed,2,2,22,0,0,0,17,#DC2C93
+2025-10-10,25,5,12.3,5,4,ALIZADE,3.6,0.295,24/7,2.5,0.201,0.2,4,ALIZADE — Trip attım,1,1,0,0,0,0,5,#812CDC
+2025-10-11,29,19,50.8,16,10,Charli xcx,12.5,0.245,Escapism.,4.5,0.089,0.158,16,Charli xcx — Everything is romantic featuring caroline polachek,3,0,2,0,0,0,13,#75DC2C
+2025-10-12,136,77,250.8,75,34,MARINA,31.1,0.124,Submarine,13.1,0.052,0.286,55,The Marías — Sienna,2,3,0,0,0,0,44,#ADDC2C
+2025-10-13,77,38,104.3,26,15,MARINA,36.7,0.352,CUNTISSIMO,8.0,0.077,0.184,31,RAYE — WHERE IS MY HUSBAND!,3,9,17,0,0,0,17,#2C64DC
+2025-10-14,72,40,145.8,29,10,MARINA,59.0,0.405,"Stories From The City, Stories From The Sea",25.4,0.174,0.625,15,MARINA — CUNTISSIMO,4,5,25,0,0,0,17,#8D2CDC
+2025-10-15,79,34,103.8,32,14,MARINA,26.3,0.254,"Stories From The City, Stories From The Sea",9.6,0.093,0.353,22,Sonic Youth — Bull In The Heather,2,10,12,0,0,0,20,#8D2CDC
+2025-10-16,55,40,114.7,37,21,Billie Eilish,27.1,0.236,CUNTISSIMO,4.5,0.039,0.2,32,MARINA — CUNTISSIMO,3,18,18,0,0,0,24,#2C64DC
+2025-10-17,94,75,254.1,59,21,Tame Impala,54.4,0.214,Dummy,25.5,0.1,0.427,43,PJ Harvey — This Mess We're In,4,13,23,0,0,0,28,#2CDC55
+2025-10-18,98,62,207.4,56,24,Gorillaz,75.8,0.366,Plastic Beach,8.6,0.041,0.323,42,Fontaines D.C. — Starburster,2,10,0,0,0,0,29,#2CDC49
+2025-10-19,9,4,8.5,4,3,PJ Harvey,4.6,0.54,"Stories From The City, Stories From The Sea",3.9,0.465,0.75,1,Billie Eilish — The 30th,1,0,0,0,0,0,4,#8D2CDC
+2025-10-20,22,10,30.7,9,5,MARINA,14.9,0.487,CUNTISSIMO,3.5,0.114,0.4,6,Lady Gaga — LoveGame,2,0,0,0,0,0,7,#2C64DC
+2025-10-21,77,42,133.0,35,24,The Marías,16.5,0.124,Submarine,8.2,0.061,0.333,28,Charli xcx — Everything is romantic featuring caroline polachek,4,9,21,0,0,0,27,#ADDC2C
+2025-10-22,33,21,66.1,18,12,Hozier,24.1,0.365,The New Abnormal,5.6,0.085,0.238,16,Radiohead — Weird Fishes / Arpeggi,2,8,0,0,0,0,13,#DC2C9C
+2025-10-23,69,44,143.4,42,20,The Marías,20.4,0.142,Submarine,10.1,0.071,0.432,25,Billie Eilish — The 30th,2,6,18,0,0,0,27,#ADDC2C
+2025-10-24,71,48,174.4,42,19,Tame Impala,41.3,0.237,OK Computer,9.7,0.056,0.271,35,Charli xcx — Everything is romantic featuring caroline polachek,3,0,38,0,0,0,23,#2C4CDC
+2025-10-25,45,25,88.3,22,15,Massive Attack,17.2,0.195,"Stories From The City, Stories From The Sea",10.0,0.113,0.56,11,PJ Harvey — This Mess We're In,3,0,0,0,0,0,17,#8D2CDC
+2025-10-26,57,30,106.1,28,24,Radiohead,12.8,0.121,Dummy,12.1,0.114,0.633,11,Portishead — Glory Box,2,7,1,0,0,0,24,#2CDC55
+2025-10-27,13,8,27.4,8,6,RAYE,6.3,0.232,Dirty,6.0,0.218,0.625,3,RAYE — Oscar Winning Tears.,1,0,2,0,0,0,7,#DC2CA7
+2025-10-28,68,44,147.7,37,12,The Weeknd,82.7,0.56,Hurry Up Tomorrow,10.0,0.068,0.227,34,MGMT — Someone's Missing,4,0,22,0,0,0,15,#2C90DC
+2025-10-29,8,7,24.8,7,6,Beach House,8.5,0.342,Songs of Her's,3.9,0.158,0.429,4,Sabrina Carpenter — When Did You Get Hot?,1,0,0,0,0,0,7,#64DC2C
+2025-10-30,38,26,85.9,25,13,Blonde Redhead,27.5,0.32,Misery Is a Butterfly,9.2,0.107,0.577,11,Blonde Redhead — Elephant Woman,2,4,4,0,0,0,19,#DC2CB9
+2025-10-31,67,59,238.8,46,30,Beach House,25.7,0.108,Tyranny,21.9,0.092,0.39,36,The Voidz — Human Sadness,3,1,28,0,0,0,37,#4C2CDC
+2025-11-01,82,56,224.4,54,23,No Clear Mind,50.7,0.226,Teen Dream,10.1,0.045,0.286,40,PJ Harvey — This Mess We're In,2,7,0,0,0,0,31,#672CDC
+2025-11-02,88,62,204.0,48,30,TV Girl,28.5,0.14,Who Really Cares,22.9,0.112,0.532,29,TV Girl — Not Allowed,7,44,0,0,0,0,37,#DC2C93
+2025-11-03,85,51,169.4,42,28,The Strokes,23.7,0.14,Comedown Machine,15.4,0.091,0.471,27,sombr — back to friends,3,8,8,0,0,0,32,#43DC2C
+2025-11-04,71,61,193.9,49,27,The Last Dinner Party,44.1,0.228,From The Pyre,14.0,0.072,0.295,43,The Last Dinner Party — The Scythe,4,6,19,0,0,0,31,#2C90DC
+2025-11-05,80,55,164.6,40,22,The Last Dinner Party,47.9,0.291,From The Pyre,38.5,0.234,0.727,15,The Last Dinner Party — Rifle,12,9,14,0,0,2.0,33,#2C90DC
+2025-11-06,126,82,274.3,80,34,MARINA,78.8,0.287,Tyranny,10.9,0.04,0.415,48,The Last Dinner Party — Sail Away,2,1,34,0,0,0,50,#4C2CDC
+2025-11-07,47,38,131.1,34,20,Wallows,29.9,0.228,Nothing Happens,5.7,0.044,0.289,27,Wallows — Bad Dream,2,0,33,0,0,0,25,#2C75DC
+2025-11-08,21,14,47.6,14,11,The Last Dinner Party,10.4,0.218,Prelude to Ecstasy,5.8,0.123,0.5,7,Nouvelle Vague — In a Manner of Speaking,1,8,0,0,0,0,12,#DC2C7E
+2025-11-09,99,59,191.1,55,29,The Marías,29.3,0.153,Phoenix,16.4,0.086,0.441,33,The Marías — Back To Me,2,10,0,0,0,0,38,#C5DC2C
+2025-11-10,118,98,355.0,92,53,The Marías,27.1,0.076,Tyranny,10.9,0.031,0.367,62,TV Girl — Not Allowed,3,11,49,0,0,0,67,#4C2CDC
+2025-11-11,131,72,209.1,65,30,Mitski,27.9,0.133,CUNTISSIMO,12.3,0.059,0.306,50,MARINA — CUNTISSIMO,4,21,2,0,0,0.8,34,#2C64DC
+2025-11-12,67,36,98.6,26,15,RAYE,58.6,0.594,Escapism.,4.5,0.046,0.167,30,RAYE — The Thrill Is Gone.,4,0,0,0,0,0,16,#75DC2C
+2025-11-13,58,39,137.8,33,20,RAYE,20.7,0.151,Dummy,5.1,0.037,0.462,21,RAYE — The Thrill Is Gone.,4,13,5,0,0,0,28,#2CDC55
+2025-11-14,33,22,69.3,21,14,The Marías,12.5,0.181,Escapism.,5.5,0.08,0.409,13,RAYE — Escapism.,2,16,6,0,0,0,18,#75DC2C
+2025-11-15,88,38,121.1,32,19,TV Girl,30.7,0.253,Who Really Cares,11.1,0.091,0.526,18,Billie Eilish — The 30th,2,0,0,0,0,0.0,24,#DC2C93
+2025-11-16,21,12,44.8,10,7,Radiohead,13.2,0.294,Random Access Memories,11.9,0.265,0.583,5,Daft Punk — Infinity Repeating (2013 Demo) [feat. Julian Casablancas+The Voidz],3,0,0,0,0,0,8,#DC8D2C
+2025-11-17,25,9,29.8,9,8,The Last Dinner Party,5.9,0.197,Did My Best,5.0,0.169,0.556,4,The Voidz — Did My Best,1,2,3,0,0,0,9,#4CDC2C
+2025-11-18,22,16,51.6,15,12,The Voidz,18.7,0.363,Tyranny,10.9,0.212,0.562,7,The Marías — Sienna,2,0,6,0,0,0.0,14,#4C2CDC
+2025-11-19,49,26,82.9,24,18,Portishead,9.3,0.112,Dummy,9.3,0.112,0.615,10,Billie Eilish — everything i wanted,2,2,6,0,0,0,20,#2CDC55
+2025-11-20,34,19,49.2,19,15,Mitski,9.2,0.186,OK Computer,5.0,0.101,0.474,10,Karsu — Diamonds,1,0,7,0,0,0,18,#2C4CDC
+2025-11-21,21,15,67.7,14,10,Blonde Redhead,14.1,0.209,Dummy,9.3,0.138,0.667,5,Gary Moore — Parisienne Walkways,2,7,6,0,0,0,13,#2CDC55
+2025-11-22,38,27,89.4,26,22,ABBA,12.6,0.141,Super Trouper,12.6,0.141,0.778,6,ABBA — The Winner Takes It All,2,4,0,0,0,0,24,#81DC2C
+2025-11-23,74,46,129.1,42,36,Graham Coxon,12.3,0.095,Super Trouper,9.3,0.072,0.261,34,Chris Avantgarde — Inside,3,0,0,0,0,0,35,#81DC2C
+2025-11-24,44,22,68.1,13,11,ABBA,17.5,0.258,Super Trouper,14.0,0.206,0.818,4,MokuMoku — Hako Is Alive and She Is 59,4,0,15,0,0,0,12,#81DC2C
+2025-11-25,74,35,110.2,22,17,Asaf Avidan,26.9,0.244,Super Trouper,10.1,0.092,0.343,23,Asaf Avidan — The Labyrinth Song,7,1,15,0,0,0,18,#81DC2C
+2025-11-26,32,15,51.0,12,9,Asaf Avidan,14.4,0.283,Melody of Certain Damaged Lemons,7.4,0.145,0.333,10,Asaf Avidan — The Labyrinth Song,3,1,1,0,0,0,9,#2CDC75
+2025-11-27,201,93,319.5,80,56,ABBA,34.5,0.108,Super Trouper,21.7,0.068,0.516,45,Regina Spektor — Hero,3,30,14,0,0,0,61,#81DC2C
+2025-11-28,68,55,199.9,44,25,Asaf Avidan,30.8,0.154,Super Trouper,14.7,0.074,0.4,33,Asaf Avidan — The Labyrinth Song,5,18,9,0,0,0,32,#81DC2C
+2025-11-29,52,26,99.3,24,18,Fontaines D.C.,13.5,0.136,Melody of Certain Damaged Lemons,11.2,0.113,0.692,8,PJ Harvey — This Mess We're In,2,8,14,0,0,0,21,#2CDC75
+2025-11-30,49,33,115.4,30,18,Radiohead,37.4,0.324,The New Abnormal,10.9,0.094,0.485,17,Asaf Avidan — The Labyrinth Song,2,0,0,0,0,0,21,#DC2C9C
+2025-12-01,140,69,218.4,58,38,Queen,28.3,0.129,Super Trouper,18.9,0.086,0.464,37,Kenshi Yonezu — IRIS OUT,6,1,6,0,0,0,48,#81DC2C
+2025-12-02,117,59,195.6,46,21,Doja Cat,32.3,0.165,In Rainbows,12.8,0.066,0.356,38,RAYE — The Thrill Is Gone.,4,22,16,0,0,0,28,#DC992C
+2025-12-03,125,44,142.1,39,17,ABBA,38.6,0.271,Voulez-Vous,15.0,0.106,0.432,25,ABBA — Gimme! Gimme! Gimme! (A Man After Midnight),3,2,19,0,0,0,22,#2CDCAD
+2025-12-04,51,36,116.1,27,17,ABBA,40.8,0.351,Super Trouper,32.5,0.28,0.694,11,ABBA — Super Trouper,4,8,8,0,0,0,22,#81DC2C
+2025-12-05,41,24,79.9,16,10,Sezen Aksu,21.0,0.263,Firuze,19.8,0.248,0.667,8,Sezen Aksu — Bir Zamanlar Deli Gönlüm,5,3,9,0,0,0,13,#2CDCB3
+2025-12-06,72,38,119.8,34,22,manifest,19.8,0.165,Begin to Hope,7.2,0.06,0.342,25,RAYE — The Thrill Is Gone.,2,6,0,0,0,0,23,#7EDC2C
+2025-12-07,58,40,128.9,30,25,Regina Spektor,11.4,0.089,"Ах, как хочется жить",10.4,0.081,0.5,20,Regina Spektor — Us,3,3,0,0,0,0,26,#DC2C5E
+2025-12-08,108,66,211.1,49,28,Ajda Pekkan,61.4,0.291,The Best Of Ajda Pekkan,14.2,0.067,0.606,26,"Sea Power — Ecstatic Vibrations, Totally Transcendent",4,26,36,0,0,0.5,37,#8D2CDC
+2025-12-09,53,34,112.7,21,17,kl4ra,19.0,0.169,В последний раз,19.0,0.169,0.794,7,kl4ra — В последний раз,6,18,9,0,0,0,21,#2CDC7E
+2025-12-10,46,29,100.1,27,21,ABBA,15.4,0.154,Super Trouper,10.5,0.105,0.586,12,ABBA — Lay All Your Love On Me,2,2,16,0,0,0,24,#81DC2C
+2025-12-11,64,40,108.4,36,25,manifest,17.7,0.163,The New Abnormal,6.7,0.062,0.375,25,manifest — Amatör,5,0,0,0,0,0,27,#DC2C9C
+2025-12-12,173,59,191.0,49,30,The Strokes,29.3,0.153,Comedown Machine,17.3,0.09,0.492,30,The Cardigans — Lovefool,4,6,5,0,0,0,35,#43DC2C
+2025-12-13,86,44,151.9,41,18,Kino,48.2,0.317,Последний герой,9.7,0.064,0.5,22,Ajda Pekkan — Kimler Geldi Kimler Geçti,2,11,31,0,0,0,31,#DC2C7B
+2025-12-14,15,13,36.3,13,8,Kino,13.5,0.372,Группа крови,4.7,0.131,0.308,9,MARINA — Primadonna,1,1,0,0,0,0,9,#DC642C
+2025-12-15,29,17,48.8,16,12,Ajda Pekkan,7.3,0.149,Firuze,4.3,0.089,0.706,5,manifest — Amatör,2,13,0,0,0,0,13,#2CDCB3
+2025-12-16,44,32,88.4,27,15,M Lisa,21.5,0.244,Super Trouper,4.9,0.056,0.188,26,M Lisa — ARABA,6,8,6,0,0,0,16,#81DC2C
+2025-12-17,75,39,111.5,35,23,M Lisa,19.0,0.17,CUNTISSIMO,4.0,0.036,0.179,32,M Lisa — ARABA,4,5,14,0,0,0,26,#2C64DC
+2025-12-18,22,9,26.2,8,7,The Strokes,7.3,0.278,Comedown Machine,3.7,0.143,0.556,4,Queen — Under Pressure - Remastered 2011,2,1,3,0,0,0,8,#43DC2C
+2025-12-19,25,18,56.2,13,9,Blonde Redhead,15.9,0.282,Melody of Certain Damaged Lemons,8.0,0.143,0.444,10,Blonde Redhead — Hated Because of Great Qualities,3,0,0,0,0,0,11,#2CDC75
+2025-12-20,7,6,23.8,6,6,Portishead,5.1,0.216,Dummy,5.1,0.216,0.667,2,Blonde Redhead — Hated Because of Great Qualities,1,3,0,0,0,0,6,#2CDC55
+2025-12-21,14,9,33.9,9,8,Massive Attack,6.3,0.187,Mezzanine,6.3,0.187,0.778,2,Nouvelle Vague — In a Manner of Speaking,1,1,0,0,0,0,9,#DC2C61
+2025-12-22,24,17,57.7,16,12,Ajda Pekkan,8.7,0.15,Mezzanine,5.4,0.093,0.529,8,RAYE — Escapism.,2,8,3,0,0,0,15,#DC2C61
+2025-12-23,43,29,115.5,27,15,The Strokes,27.0,0.234,The New Abnormal,22.5,0.195,0.69,9,The Strokes — Ode To The Mets,2,21,6,0,0,0,24,#DC2C9C
+2025-12-24,78,51,171.0,44,31,The Strokes,21.6,0.126,Comedown Machine,11.8,0.069,0.549,23,"Metro Boomin — Annihilate (Spider-Man: Across the Spider-Verse) (Metro Boomin & Swae Lee, Lil Wayne, Offset)",3,0,8,0,0,0,37,#43DC2C
+2025-12-25,45,30,90.4,26,19,Queen,14.7,0.163,Super Trouper,9.8,0.109,0.6,12,Queen — Under Pressure - Remastered 2011,2,7,1,0,0,0,25,#81DC2C
+2025-12-26,51,30,94.4,28,13,Sezen Aksu,41.8,0.443,Sen Aglama,10.7,0.114,0.6,12,Sezen Aksu — Yeter,3,16,0,0,0,0.0,22,#2CDCBF
+2025-12-27,77,53,176.1,44,21,Blonde Redhead,47.1,0.267,Sezen Aksu '88,14.4,0.082,0.547,24,Sezen Aksu — Seni Istiyorum,5,9,0,0,0,0,33,#DC2CBC
+2025-12-28,28,18,41.8,15,11,The Last Dinner Party,15.1,0.362,Prelude to Ecstasy,7.7,0.185,0.611,7,The Last Dinner Party — Rifle,2,6,0,0,0,0,14,#DC2C7E
+2025-12-29,22,9,20.8,9,9,The Weeknd,4.9,0.235,Hurry Up Tomorrow,4.9,0.235,0.556,4,Laufey — From The Start,1,5,3,0,0,0,9,#2C90DC
+2025-12-30,32,17,65.0,16,10,Blonde Redhead,16.4,0.252,Sit Down for Dinner,9.7,0.149,0.353,11,"Metro Boomin — Am I Dreaming (Metro Boomin & A$AP Rocky, Roisee)",2,4,0,0,0,0,13,#DCD02C
+2025-12-31,76,66,242.0,63,41,Radiohead,30.2,0.125,The New Abnormal,18.9,0.078,0.394,40,The Strokes — Selfless,2,41,0,0,0,0,45,#DC2C9C
+2026-01-01,122,59,229.0,59,32,Justin Timberlake,34.3,0.15,THE E.N.D. (THE ENERGY NEVER DIES),8.8,0.038,0.237,45,RAYE — WHERE IS MY HUSBAND!,1,40,0,0,0,0,39,#DC2C9C
+2026-01-02,28,18,68.1,18,11,Hümeyra,11.8,0.173,In The Court Of The Crimson King (Expanded & Remastered Original Album Mix),8.8,0.129,0.667,6,Sezen Aksu — Seni Istiyorum,1,0,0,0,0,0,17,#8DDC2C
+2026-01-03,164,79,271.2,73,45,PJ Harvey,38.5,0.142,"Stories From The City, Stories From The Sea",32.9,0.121,0.481,41,Muse — Hysteria,2,11,6,0,0,0,51,#8D2CDC
+2026-01-04,16,8,31.8,8,6,Thom Yorke,8.4,0.264,No Faith Required,6.9,0.216,0.625,3,Pearl Jam — The End,1,0,0,0,0,0.1,7,#2C8ADC
+2026-01-05,156,86,282.0,73,44,Ajda Pekkan,42.0,0.149,Seksenlerin En Güzel 4 Albümü,14.0,0.05,0.558,38,The Cardigans — Lovefool,2,9,7,0,0,0,62,#DCBF2C
+2026-01-06,78,26,75.4,19,14,Kino,13.7,0.181,Sezen Aksu '88,12.1,0.16,0.462,14,Sezen Aksu — Seni Istiyorum,4,2,10,0,0,0,16,#DC2CBC
+2026-01-07,97,76,277.0,70,43,Ajda Pekkan,46.0,0.166,"Süper Star, Vol.2",7.8,0.028,0.408,45,Ajda Pekkan — Ya Sonra,2,19,0,0,0,0,50,#2C81DC
+2026-01-08,108,75,254.2,72,43,Glen Hansard,17.8,0.07,Melodrama,13.1,0.052,0.48,39,Lorde — Sober,2,15,3,0,0,0,52,#DC2CA4
+2026-01-09,52,35,121.7,30,16,Lorde,54.2,0.445,Melodrama,18.9,0.155,0.429,20,Lorde — Sober,3,17,0,0,0,0,19,#DC2CA4
+2026-01-10,98,44,123.3,36,21,Lorde,22.0,0.178,Teatro d'ira - Vol. I,16.5,0.134,0.568,19,Måneskin — ZITTI E BUONI,5,27,0,0,0,0,25,#B3DC2C
+2026-01-11,13,7,19.0,6,3,MARINA,14.3,0.751,CUNTISSIMO,4.0,0.212,0.429,4,MARINA — CUNTISSIMO,2,0,0,0,0,0,4,#2C64DC
+2026-01-12,70,49,170.0,44,32,Franz Ferdinand,16.5,0.097,Disco Elysium,8.2,0.048,0.612,19,Franz Ferdinand — Ulysses,3,19,0,0,0,0,39,#2C58DC
+2026-01-13,94,69,190.9,60,41,Sedef Sebüktekin,30.5,0.16,Teatro d'ira - Vol. I,8.5,0.045,0.536,32,Måneskin — ZITTI E BUONI,3,17,0,0,0,0,50,#B3DC2C
+2026-01-14,62,42,141.3,39,33,Low,9.8,0.069,I Could Live In Hope,9.8,0.069,0.5,21,M Lisa — ELLERİM BOŞ,3,21,0,0,0,0,36,#2CDC99
+2026-01-15,161,98,284.0,81,52,M Lisa,21.8,0.077,Beteri Yok Uslanmaktan,7.1,0.025,0.378,61,M Lisa — VURDUM TELLERİNE,4,50,28,0,0,0,59,#672CDC
+2026-01-16,90,54,178.9,48,19,Büyük Ev Ablukada,79.5,0.444,The Rise and Fall of a Midwest Princess,21.7,0.121,0.426,31,Nova Norda — Beteri Yok Uslanmaktan,2,1,31,0,0,0,28,#722CDC
+2026-01-17,95,63,195.1,59,40,The Red Army Choir,20.1,0.103,The Rise and Fall of a Midwest Princess,16.0,0.082,0.667,21,M Lisa — VURDUM TELLERİNE,2,15,0,0,0,0,44,#722CDC
+2026-01-18,160,97,331.1,87,60,Sedef Sebüktekin,24.2,0.073,Atlantis,14.6,0.044,0.608,38,Güneş — NKBİ,3,63,29,0,0,0,70,#2C3EDC
+2026-01-19,12,6,8.9,5,4,M Lisa,4.3,0.482,Atlantis,2.9,0.321,0.667,2,M Lisa — ELLERİM BOŞ,2,0,0,0,0,0,5,#2C3EDC
+2026-01-20,42,28,103.4,27,21,Büyük Ev Ablukada,21.5,0.208,Defansif Dizayn,5.2,0.05,0.393,17,Büyük Ev Ablukada — Kopuk Uçurtma,2,3,0,0,0,0,23,#DC2C6A
+2026-01-21,69,44,140.1,40,32,Büyük Ev Ablukada,23.5,0.168,Teatro d'ira - Vol. I,5.8,0.041,0.477,23,t.A.T.u. — All The Things She Said,3,18,0,0,0,0,34,#B3DC2C
+2026-01-22,99,88,366.2,73,45,Radiohead,40.3,0.11,Super Trouper,23.2,0.063,0.625,33,Sezen Aksu — Bir Zamanlar Deli Gönlüm,2,59,6,0,0,0,60,#81DC2C
+2026-01-23,19,13,42.0,13,11,ABBA,5.9,0.141,Misery Is a Butterfly,5.1,0.122,0.692,4,Black Mountain — Space to Bakersfield,1,3,0,0,0,0,13,#DC2CB9
+2026-01-24,10,5,15.0,5,4,Fontaines D.C.,5.1,0.341,Skinty Fia,5.1,0.341,0.4,3,Fontaines D.C. — I Love You,1,4,1,0,0,0,4,#2CDC4F
+2026-01-25,58,18,75.6,16,12,Büyük Ev Ablukada,14.3,0.189,IV,11.4,0.151,0.556,8,Black Mountain — Space to Bakersfield,2,7,4,0,0,0,12,#3E2CDC
+2026-01-26,140,78,280.7,72,46,Sabrina Carpenter,28.8,0.103,Loose,12.1,0.043,0.372,49,Muse — Madness,3,0,8,0,0,0,52,#A72CDC
+2026-01-27,17,15,64.0,14,9,Sezen Aksu,17.8,0.279,Git,9.9,0.154,0.4,9,Sezen Aksu — Deger mi?,2,4,0,0,0,0,13,#2C67DC
+2026-01-28,52,46,133.9,40,32,Kino,14.3,0.107,Beteri Yok Uslanmaktan,11.3,0.084,0.543,21,Nova Norda — Beteri Yok Uslanmaktan,3,23,0,0,0,0,35,#672CDC
+2026-01-29,114,67,215.1,57,31,Sezen Aksu,30.4,0.141,Super Trouper,9.1,0.042,0.522,32,Sezen Aksu — Deger mi?,3,1,0,0,0,0,43,#81DC2C
+2026-01-30,51,26,77.7,22,16,Sea Power,19.1,0.246,Disco Elysium,10.8,0.139,0.308,18,"Sea Power — Ecstatic Vibrations, Totally Transcendent",3,0,0,0,0,0,18,#2C58DC
+2026-01-31,105,48,145.6,44,23,M Lisa,27.8,0.191,En İyileriyle Ayla Algan,6.8,0.047,0.354,31,M Lisa — VURDUM TELLERİNE,3,7,0,0,0,0,26,#DC2C81
+2026-02-01,9,9,31.9,9,9,U2,5.3,0.167,Songs Of Innocence,5.3,0.167,0.556,4,Daft Punk — Instant Crush (feat. Julian Casablancas),1,2,0,0,0,0,9,#43DC2C
+2026-02-02,82,77,267.0,76,53,Ajda Pekkan,37.2,0.139,Seksenlerin En Güzel 4 Albümü,7.5,0.028,0.299,54,Ajda Pekkan — Sana Doğru,2,45,0,0,0,0,59,#DCBF2C
+2026-02-03,37,31,111.1,26,19,Lola Young,36.3,0.327,Messy,18.9,0.17,0.387,19,Lola Young — Messy,5,0,0,0,0,0,19,#2CDC55
+2026-02-04,34,24,82.1,23,17,Nilüfer,8.1,0.099,Ten,4.8,0.059,0.25,18,Pearl Jam — Jeremy,2,0,0,0,0,0,20,#992CDC
+2026-02-05,84,57,191.8,56,28,Bad Bunny,51.1,0.267,The Rise and Fall of a Midwest Princess,6.7,0.035,0.333,38,Troye Sivan — Rush,2,1,42,0,0,0,35,#722CDC
+2026-02-06,11,5,15.9,5,4,Charli xcx,6.8,0.428,BRAT,3.4,0.214,0.2,4,Charli xcx — Everything is romantic featuring caroline polachek,1,0,0,0,0,0,5,#DC2CAD
+2026-02-07,76,32,84.5,29,17,Billie Eilish,16.4,0.194,Volume One,13.7,0.162,0.375,20,She & Him — I Thought I Saw Your Face Today,4,2,0,16,0,0,19,#46DC2C
+2026-02-08,15,6,19.3,6,4,Lana Del Rey,7.6,0.394,"Stories From The City, Stories From The Sea",3.9,0.204,0.667,2,PJ Harvey — This Mess We're In,1,2,0,3,0,0,5,#8D2CDC
+2026-02-09,23,16,38.6,16,10,EGE!,7.0,0.181,Volume One,5.3,0.138,0.625,6,SUKI — Aruarian Dance,1,0,0,1,0,0,12,#46DC2C
+2026-02-10,34,20,65.3,16,10,Bad Bunny,31.0,0.475,We're Just Making It Worse,4.1,0.062,0.3,14,Bad Bunny — BAILE INoLVIDABLE,4,2,5,2,0,0,12,#87DC2C
+2026-02-11,61,46,161.5,44,26,Kanye West,59.7,0.37,The New Abnormal,5.6,0.035,0.391,28,The Smashing Pumpkins — Today - 2011 Remaster,2,0,0,13,0,0,33,#DC2C9C
+2026-02-12,16,13,29.6,12,8,PinkPantheress,8.3,0.279,Fancy Some More?,6.2,0.208,0.308,9,PinkPantheress — Stateside + Zara Larsson,2,1,6,17,0,0,9,#DC2C2C
+2026-02-13,119,74,247.1,67,36,PinkPantheress,32.3,0.131,Fancy Some More?,15.9,0.064,0.392,45,PinkPantheress — Stateside + Zara Larsson,5,7,14,28,0,0,44,#DC2C2C
+2026-02-14,82,44,162.9,39,22,Kino,41.6,0.256,Serçe,12.1,0.074,0.545,20,Sezen Aksu — Sizi,4,27,0,3,2,0,33,#412CDC
+2026-02-15,122,103,382.6,92,49,Sezen Aksu,40.3,0.105,Fancy Some More?,18.8,0.049,0.35,67,PinkPantheress — Stateside + Zara Larsson,6,31,6,3,1,0,62,#DC2C2C
+2026-02-16,104,73,268.2,66,49,King Crimson,26.5,0.099,In The Court Of The Crimson King (Expanded & Remastered Original Album Mix),17.6,0.065,0.274,53,PinkPantheress — Stateside + Zara Larsson,4,24,5,31,0,0,52,#8DDC2C
+2026-02-17,36,17,52.8,17,17,Blonde Redhead,5.1,0.097,Misery Is a Butterfly,5.1,0.097,0.529,8,Charli xcx — Apple,1,0,7,2,0,0,17,#DC2CB9
+2026-02-18,8,2,4.9,2,2,Lin Pesto,3.6,0.746,KABUL,3.6,0.746,1.0,0,Måneskin — LA PAURA DEL BUIO,1,0,0,0,0,0,2,#2CDC9C
+2026-02-19,68,30,91.3,25,15,Blonde Redhead,37.2,0.407,Misery Is a Butterfly,13.6,0.149,0.6,12,Kendrick Lamar — PRIDE.,2,4,14,3,1,0,20,#DC2CB9
+2026-02-20,52,32,100.8,27,7,Blonde Redhead,76.8,0.762,Misery Is a Butterfly,12.5,0.124,0.531,15,Blonde Redhead — Elephant Woman,3,15,0,1,0,0,12,#DC2CB9
+2026-02-21,32,15,45.2,9,3,Blonde Redhead,20.3,0.449,Misery Is a Butterfly,7.6,0.168,0.2,12,The Walkmen — We've Been Had,6,8,0,31,30,0,5,#DC2CB9
+2026-02-22,64,46,162.8,46,21,Mitski,50.5,0.31,Songs Of Innocence,8.8,0.054,0.413,27,Guns N' Roses — Civil War,1,6,0,3,0,0,27,#43DC2C
+2026-02-23,48,23,62.3,23,17,Büyük Ev Ablukada,13.5,0.217,Defansif Dizayn,5.6,0.09,0.435,13,sombr — Homewrecker,1,3,0,12,0,0,19,#DC2C6A
+2026-02-24,40,16,55.9,14,13,Massive Attack,8.3,0.148,Pure Heroine,4.1,0.074,0.25,12,Charli xcx — Everything is romantic featuring caroline polachek,2,0,5,7,0,0,14,#2CDC41
+2026-02-25,23,13,33.0,4,4,Wet Leg,23.3,0.708,Prelude to Ecstasy,2.9,0.089,0.154,11,Wet Leg — Wet Dream,10,0,0,0,0,0,4,#DC2C7E
+2026-02-26,77,40,154.4,39,24,Sergei Rachmaninoff,41.0,0.266,Rachmaninov: Piano Concerto No.2,10.7,0.07,0.55,18,U2 — Every Breaking Wave,2,0,17,8,0,0,31,#DC2C96
+2026-02-27,102,64,220.3,58,33,Ajda Pekkan,19.6,0.089,In The Court Of The Crimson King (Expanded & Remastered Original Album Mix),14.9,0.068,0.594,26,Arctic Monkeys — Balaclava,4,5,0,21,0,0,46,#8DDC2C
+2026-02-28,18,11,30.5,9,3,Arctic Monkeys,25.5,0.836,"Whatever People Say I Am, That's What I'm Not",7.7,0.252,0.545,5,Ayten Alpman — Ben Böyleyim,2,1,0,22,0,0,5,#DC6D2C
+2026-03-01,39,30,114.1,29,9,Arctic Monkeys,50.4,0.442,The New Abnormal,15.2,0.133,0.333,20,Arctic Monkeys — Do Me a Favour,2,3,0,0,0,0,16,#DC2C9C
+2026-03-02,57,43,128.2,31,9,Arctic Monkeys,76.6,0.597,Favourite Worst Nightmare,9.6,0.075,0.256,32,Arctic Monkeys — Balaclava,3,16,0,2,0,0,13,#7B2CDC
+2026-03-03,50,20,47.9,19,7,manifest,24.7,0.514,"Girl, so confusing featuring lorde",3.6,0.076,0.15,17,manifest — Amatör,2,0,0,0,0,0,8,#49DC2C
+2026-03-04,120,115,383.8,114,13,Arctic Monkeys,96.5,0.252,"Whatever People Say I Am, That's What I'm Not",15.0,0.039,0.183,94,Arctic Monkeys — Perhaps Vampires Is A Bit Strong But…,2,68,21,0,0,0,26,#DC6D2C
+2026-03-05,31,24,79.3,20,16,The Strokes,21.5,0.271,The Singles - Volume 01,11.9,0.15,0.542,11,The Strokes — Modern Girls & Old Fashion Men - Reptilia B-Side,3,0,7,19,0,0,19,#DC2C64
+2026-03-06,168,90,257.0,75,42,Arctic Monkeys,59.9,0.233,"Whatever People Say I Am, That's What I'm Not",18.8,0.073,0.5,45,Danger Mouse — Little Girl (feat. Julian Casablancas),4,0,13,24,0,0,49,#DC6D2C
+2026-03-07,97,37,117.2,35,16,Arctic Monkeys,36.1,0.308,The New Abnormal,14.6,0.125,0.297,26,The Strokes — Ode To The Mets,2,2,0,5,0,0,20,#DC2C9C
+2026-03-08,75,52,162.9,51,28,Billie Eilish,70.0,0.429,Super Trouper,4.9,0.03,0.346,34,Billie Eilish — Bored,2,13,0,22,0,0,35,#81DC2C
+2026-03-09,46,31,95.7,31,27,Muse,7.4,0.077,Volume One,5.3,0.056,0.452,17,The Strokes — Modern Girls & Old Fashion Men - Reptilia B-Side,1,3,0,26,0,0,28,#46DC2C
+2026-03-10,96,64,234.2,61,48,The Voidz,13.9,0.059,Did My Best,9.9,0.042,0.438,36,The Voidz — Did My Best,3,14,11,1,0,0,52,#4CDC2C
+2026-03-11,68,54,192.7,49,28,Lin Pesto,40.8,0.212,Graduation,10.1,0.052,0.463,29,Gracie Abrams — That’s So True,2,4,8,14,0,0,35,#2CDCDC
+2026-03-12,134,97,308.3,82,52,Charli xcx,32.0,0.104,Super Trouper,17.0,0.055,0.567,42,PinkPantheress — Stateside + Zara Larsson,3,13,55,5,0,0.1,62,#81DC2C
+2026-03-13,66,54,182.5,53,33,Kanye West,51.4,0.281,The Lumineers,4.7,0.025,0.148,46,Doja Cat — AAAHH MEN!,2,17,0,25,0,0,34,#81DC2C
+2026-03-14,81,50,167.6,47,35,ABBA,18.6,0.111,Super Trouper,13.7,0.082,0.4,30,Doja Cat — AAAHH MEN!,3,20,0,3,0,0,36,#81DC2C
+2026-03-15,59,45,163.3,45,23,Tame Impala,32.2,0.197,The New Abnormal,9.6,0.059,0.378,28,Tame Impala — Borderline,1,7,0,0,0,0,29,#DC2C9C
+2026-03-16,65,24,69.0,20,15,Arctic Monkeys,14.5,0.21,All I Did Was Dream of You (feat. The Marías),7.4,0.107,0.5,12,Arctic Monkeys — Fluorescent Adolescent,2,0,9,5,0,0,18,#2CDC99
+2026-03-17,91,45,160.8,38,15,Kanye West,52.7,0.328,METRO BOOMIN PRESENTS SPIDER-MAN: ACROSS THE SPIDER-VERSE,7.7,0.048,0.244,34,A$AP Rocky — Sundress,2,0,0,43,0,0,23,#2CDC52
+2026-03-18,45,31,92.6,29,21,Kanye West,17.3,0.187,Baldur's Gate 3 (Original Game Soundtrack),7.7,0.083,0.452,17,The Weeknd — São Paulo (feat. Anitta),2,2,0,14,0,0,24,#67DC2C
+2026-03-19,139,107,365.5,89,51,Kanye West,95.1,0.26,Dark Night of The Soul,13.6,0.037,0.402,64,Danger Mouse — Little Girl (feat. Julian Casablancas),3,17,37,26,0,0,60,#DC2CD3
+2026-03-20,57,49,173.5,44,36,Kanye West,29.5,0.17,KABUL,7.3,0.042,0.51,24,Lin Pesto — Sadece Sevilmek İstedim,3,15,0,1,0,0,36,#2CDC9C
+2026-03-21,50,46,166.3,42,31,Arctic Monkeys,16.7,0.101,My Favourite Faded Fantasy,9.5,0.057,0.348,30,The Smiths — This Night Has Opened My Eyes - 2011 Remaster,2,2,0,18,0,0,33,#DC2CCB
+2026-03-22,110,69,234.8,65,31,Radiohead,60.3,0.257,Hail To the Thief,8.8,0.038,0.449,38,Radiohead — Talk Show Host,2,0,0,15,0,0,42,#93DC2C
+2026-03-23,87,48,150.4,46,32,Warhaus,11.8,0.078,Sahar,7.0,0.047,0.458,26,Warhaus — Love's a Stranger,2,1,11,16,0,0,36,#DC2CBC
+2026-03-24,34,12,28.2,9,8,"Tyler, The Creator",6.4,0.228,METRO BOOMIN PRESENTS SPIDER-MAN: ACROSS THE SPIDER-VERSE,3.8,0.136,0.25,9,U2 — Every Breaking Wave,2,0,9,0,0,0,9,#2CDC52
+2026-03-25,25,18,54.8,18,12,Kendrick Lamar,20.0,0.364,Parachutes,4.5,0.082,0.333,12,"Metro Boomin — Annihilate (Spider-Man: Across the Spider-Verse) (Metro Boomin & Swae Lee, Lil Wayne, Offset)",1,1,0,59,0,0,12,#2C32DC
+2026-03-26,88,52,162.0,45,28,Black Box Recorder,40.7,0.251,England Made Me [25th Anniversary Edition],8.0,0.05,0.442,29,Black Box Recorder — Seasons In The Sun - 2023 Remaster,3,1,0,37,0,0,32,#2CDC75
+2026-03-27,62,56,203.0,55,37,Billie Eilish,16.5,0.081,Feeding Seahorses by Hand,8.3,0.041,0.429,32,Charlotte Cardin — Main Girl,2,19,3,0,0,0,45,#2CBFDC
+2026-03-28,112,84,278.8,78,44,Billie Eilish,46.0,0.165,Dummy,14.4,0.051,0.488,43,Black Box Recorder — England Made Me,2,20,2,32,0,0,50,#2CDC55
+2026-03-29,30,17,26.7,16,3,Kanye West,22.0,0.823,BULLY,2.8,0.105,0.176,14,Kanye West — On God,2,12,4,7,0,0,5,#2CDC58
+2026-03-30,63,30,74.4,21,4,Kanye West,67.6,0.909,BULLY,24.3,0.326,0.267,22,Kanye West — FATHER (feat. Travis Scott),3,1,0,4,3,0,5,#2CDC58
+2026-03-31,44,32,90.5,30,18,Kanye West,25.3,0.28,Mystery,5.2,0.057,0.312,22,Kanye West — LAST BREATH (feat. Peso Pluma),2,2,10,3,1,0.0,21,#2CD9DC
+2026-04-01,44,20,56.4,20,13,Kanye West,16.0,0.284,BULLY,6.3,0.112,0.25,15,Daniel Pemberton — My Name Is... Miles Morales,1,0,0,3,0,0,15,#2CDC58
+2026-04-02,45,31,104.4,31,23,The Red Army Choir,14.8,0.142,La La Land,7.8,0.075,0.806,6,Low — Lullaby,1,16,0,0,0,0,27,#96DC2C
+2026-04-03,63,45,158.2,45,37,Blonde Redhead,15.1,0.095,The New Abnormal,5.6,0.036,0.556,20,"Ryan Gosling — City Of Stars - From ""La La Land"" Soundtrack",1,14,0,16,14,0,40,#DC2C9C
+2026-04-04,92,52,145.1,48,30,ABBA,20.4,0.141,Super Trouper,11.9,0.082,0.519,25,ABBA — Dancing Queen,3,17,0,44,0,0,37,#81DC2C
+2026-04-05,38,32,106.8,27,16,The Strokes,32.6,0.306,Melodrama,6.6,0.062,0.562,14,Lorde — Sober,2,16,0,6,1,0,19,#DC2CA4
+2026-04-06,56,42,138.0,41,32,Imagine Dragons,10.1,0.073,The New Abnormal,5.9,0.042,0.452,23,Ajda Pekkan — Seninleyim,2,4,0,22,0,0,36,#DC2C9C
+2026-04-07,36,22,58.7,14,7,Ajda Pekkan,41.3,0.704,Sana Neler Edeceğim,37.4,0.637,0.818,4,Ajda Pekkan — Seninleyim,3,6,0,1,1,0,8,#DC432C
+2026-04-08,89,78,298.1,62,28,Halsey,52.2,0.175,Z,16.0,0.054,0.321,53,Hako Yamazaki — Help Me,3,8,1,1,0,0,33,#2CB6DC
+2026-04-09,31,25,74.7,24,9,REO Speedwagon,26.2,0.35,Ultraviolence,5.3,0.071,0.12,22,Halsey — Strangers,2,14,0,11,0,0,10,#2CDCA7
+2026-04-10,78,59,218.7,58,38,Kino,55.4,0.253,Звезда по имени Солнце,23.0,0.105,0.39,36,Kino — Невесёлая песня,2,20,6,44,13,0,40,#2CA4DC
+2026-04-11,45,31,81.4,30,9,Kendrick Lamar,57.0,0.7,Section.80,10.8,0.132,0.323,21,Kendrick Lamar — reincarnated,2,23,8,3,3,0,12,#2C5BDC
+2026-04-12,24,14,41.4,13,7,t.A.T.u.,12.7,0.306,200 KM/H In The Wrong Lane,9.3,0.225,0.571,6,t.A.T.u. — All The Things She Said,2,0,0,15,0,0,10,#DC9C2C
+2026-04-13,49,30,74.9,28,20,Le Tigre,6.5,0.087,Le Tigre,6.5,0.087,0.6,12,Le Tigre — Deceptacon,2,1,27,0,0,0.2,22,#DCB62C
+2026-04-14,14,8,25.3,7,7,"Tyler, The Creator",6.5,0.257,Visions,4.1,0.163,0.625,3,"Tyler, The Creator — NEW MAGIC WAND",2,0,0,0,0,0,7,#DC2C8D
+2026-04-15,10,6,19.0,6,5,Sabrina Carpenter,7.6,0.4,Did My Best,2.9,0.15,0.5,3,The Smiths — Back to the Old House - 2011 Remaster,1,0,0,1,0,0,5,#4CDC2C
+2026-04-16,35,13,40.3,12,10,Charlotte Cardin,12.3,0.305,Phoenix,7.2,0.18,0.385,8,Charlotte Cardin — Meaningless,2,7,0,8,0,0,11,#C5DC2C
+2026-04-17,24,6,12.6,4,2,ALIZADE,7.8,0.616,STOP SMOKING,3.3,0.258,0.333,4,ALIZADE — IMMIGRANT,2,1,0,17,2,0,3,#DCC22C
+2026-04-18,118,102,330.1,54,35,Mitski,116.0,0.351,The Black Parade,23.5,0.071,0.363,65,Mitski — Liquid Smooth,41,2,0,15,0,0,44,#DCB02C
+2026-04-19,92,51,145.2,49,35,Auktyon,39.9,0.275,Птица,19.3,0.133,0.333,34,Auktyon — Дорога,2,12,0,62,20,0,36,#DC2CD0
+2026-04-20,46,31,97.5,30,23,Auktyon,12.6,0.13,Птица,7.6,0.078,0.323,21,Labrinth — All For Us,2,9,21,1,0,0,27,#DC2CD0
+2026-04-21,45,32,116.9,30,21,The Red Army Choir,14.8,0.127,Птица,12.4,0.106,0.625,12,Auktyon — Дорога,3,21,7,8,0,0,28,#DC2CD0
+2026-04-22,47,40,127.3,38,18,Agatha Christie,35.5,0.279,Звезда по имени Солнце,9.7,0.076,0.6,16,Kino — Группа крови,2,23,0,19,0,0,24,#2CA4DC
+2026-04-23,51,42,134.8,36,22,Agatha Christie,29.0,0.215,Для никого,11.5,0.085,0.452,23,Agatha Christie — Для никого,3,13,0,13,0,0,27,#2C93DC
+2026-04-24,62,43,120.2,38,31,Kino,8.5,0.071,ПРОСТИ МЕНЯ МОЯ ЛЮБОВЬ,6.6,0.055,0.512,21,Zemfira — ХОЧЕШЬ?,2,11,0,40,24,0.1,35,#DC2C6D
+2026-04-25,130,63,219.2,45,25,Kino,43.7,0.2,ПРОСТИ МЕНЯ МОЯ ЛЮБОВЬ,20.7,0.095,0.841,10,Марія Чайковська — Целуй меня,4,8,32,6,0,0,34,#DC2C6D
+2026-04-26,83,50,154.5,35,4,Lady Gaga,141.7,0.917,24/7,3.1,0.02,0.06,47,Lady Gaga — LoveGame,3,0,0,11,0,0,6,#812CDC
+2026-04-27,118,52,158.1,50,28,Lady Gaga,41.9,0.265,Целуй меня,9.1,0.058,0.5,26,Марія Чайковська — Целуй меня,2,0,25,0,0,0.0,32,#DCB02C
+2026-04-28,13,7,22.3,7,6,Britney Spears,6.6,0.297,Circus (Deluxe Version),2.4,0.109,0.286,5,Nelly Furtado — Maneater,1,0,0,0,0,0,7,#72DC2C
+2026-04-29,75,56,188.0,56,39,The Cardigans,25.1,0.134,Heligoland,9.4,0.05,0.5,28,Марія Чайковська — Целуй меня,1,17,7,11,0,0,45,#DC752C
+2026-04-30,17,13,36.0,12,10,Labrinth,5.8,0.162,Pure Heroine,4.1,0.114,0.308,9,Rihanna — Don't Stop The Music,2,6,1,25,15,0,11,#2CDC41
+2026-05-01,64,53,155.8,49,41,NF,19.5,0.125,Целуй меня,5.7,0.037,0.283,38,Auktyon — Дорога,3,8,17,14,3,0,38,#DCB02C
+2026-05-02,46,32,125.9,32,22,Sonic Youth,17.0,0.135,"Stories From The City, Stories From The Sea",10.9,0.087,0.844,5,Zemfira — П.М.М.Л.,1,11,0,27,27,0,28,#8D2CDC
+2026-05-03,90,61,212.2,55,30,Lady Gaga,49.6,0.234,Последний герой,11.3,0.053,0.492,31,Lady Gaga — Shape of a Woman,3,9,7,0,0,0,37,#DC2C7B
+2026-05-04,204,119,306.3,79,26,BEGE,168.3,0.549,BEGEFENDİ,67.2,0.219,0.445,66,BEGE — B.S.G,10,21,39,39,0,0.3,36,#722CDC
+2026-05-05,113,58,171.1,52,17,Hayko Cepkin,65.7,0.384,BEGEFENDİ,13.8,0.081,0.431,33,BEGE — B.S.G,3,24,25,16,11,0.0,26,#722CDC
+2026-05-06,164,113,334.8,83,42,BEGE,80.6,0.241,BEGEFENDİ,24.2,0.072,0.504,56,BEGE — B.S.G,4,0,53,33,0,4.2,51,#722CDC

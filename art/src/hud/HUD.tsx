@@ -150,19 +150,6 @@ export function HUD({ mode, currentDay, dayIndex, totalDays, days, onJump, spoti
             }}
           >
             {fmtScreen(currentDay.screen_total_min)}
-            {currentDay.screen_source === "mock" && (
-              <span
-                style={{
-                  fontSize: 9,
-                  marginLeft: 8,
-                  opacity: 0.45,
-                  letterSpacing: 1.2,
-                  fontWeight: 400,
-                }}
-              >
-                · mock
-              </span>
-            )}
           </div>
           <div style={{ marginTop: 10, opacity: 0.7, fontSize: 10 }}>
             <CategoryBar

@@ -299,15 +299,16 @@ function buildCorridor(days: Day[]) {
         float gSlow = hash(vec2(hSeed * 0.4,     floor(uTime * 7.0)));
         float glitch = mix(gFast, gSlow, 0.6);
 
-        // Constant dimming + jittery dimming on heavy days.
-        float dim    = 1.0 - heavy * 0.55;
-        float jitter = 1.0 + heavy * 0.40 * (glitch - 0.5) * 2.0;
+        // Constant dimming + jittery dimming on heavy days (~20% softer
+        // than the first pass).
+        float dim    = 1.0 - heavy * 0.44;
+        float jitter = 1.0 + heavy * 0.32 * (glitch - 0.5) * 2.0;
         col *= dim * jitter;
 
         // Occasional darker bursts — random patches drop further.
         float burst = hash(vec2(hSeed * 0.18, floor(uTime * 2.3)));
         float blackout = smoothstep(0.92, 1.00, burst) * heavy;
-        col *= 1.0 - blackout * 0.70;
+        col *= 1.0 - blackout * 0.56;
 
         gl_FragColor = vec4(col, 1.0);
       }
